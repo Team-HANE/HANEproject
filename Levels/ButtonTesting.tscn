@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://6k8h5w7768cr"]
+
+[ext_resource type="Texture2D" uid="uid://c2serfs3agxoq" path="res://Art/icon.svg" id="1_6ax4t"]
+[ext_resource type="Texture2D" uid="uid://dh5knkoslthys" path="res://Art/TESTNappi.png" id="1_8oftv"]
+[ext_resource type="Texture2D" uid="uid://ccrds4pjrvmwv" path="res://Art/TESTNappiPainettu.png" id="2_y2ns0"]
+[ext_resource type="Script" path="res://Scripts/TESTButtonScrpt.cs" id="3_87d76"]
+[ext_resource type="Texture2D" uid="uid://ds8avl807ibuc" path="res://Art/signs/otherdangertri.png" id="5_7a8x5"]
+[ext_resource type="Script" path="res://Scripts/TESTtextureSwapper.cs" id="6_wx6o8"]
+[ext_resource type="Texture2D" uid="uid://d3ejp7s0ux51i" path="res://Art/signs/crossing.png" id="7_i7iap"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -42.0
+offset_top = -26.0
+offset_right = 60.0
+offset_bottom = 32.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("1_8oftv")
+texture_pressed = ExtResource("2_y2ns0")
+script = ExtResource("3_87d76")
+_initializedImage = ExtResource("1_6ax4t")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 61.0
+offset_top = -81.0
+offset_right = 1951.0
+offset_bottom = 1336.0
+scale = Vector2(0.219024, 0.218104)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("5_7a8x5")
+script = ExtResource("6_wx6o8")
+_secondTexture = ExtResource("7_i7iap")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 6)
