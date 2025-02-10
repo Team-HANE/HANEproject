@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://smxi4gjvebdo"
+=======
+uid="uid://cnis4lhgtdudl"
+>>>>>>> 9b67cc16ce659d7d68b4cd58ca2786c5e0943535
 path="res://.godot/imported/volumeon.png-6b826eb8ddf9f3a1efedae7b9a05735a.ctex"
 metadata={
 "vram_texture": false

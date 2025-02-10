@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="PeliProjekti"
+<<<<<<< HEAD
 run/main_scene="res://Levels/testscene.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
+=======
+run/main_scene="res://Levels/ButtonTesting.tscn"
+config/features=PackedStringArray("4.3", "C#", "Mobile")
+>>>>>>> 9b67cc16ce659d7d68b4cd58ca2786c5e0943535
 config/icon="res://Art/icon.svg"
 
 [dotnet]

@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dunltd31x02fx"
+=======
+uid="uid://n1giujyjs5v5"
+>>>>>>> 9b67cc16ce659d7d68b4cd58ca2786c5e0943535
 path="res://.godot/imported/uglyafbackbutton.png-7bd817c1d6688403b95235a89e0843c1.ctex"
 metadata={
 "vram_texture": false

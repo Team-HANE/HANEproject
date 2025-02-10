@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://dr475v1s1100q"
-=======
-uid="uid://dtrqq0eu3utnj"
->>>>>>> 9b67cc16ce659d7d68b4cd58ca2786c5e0943535
-path="res://.godot/imported/gradientbg.png-37fba380abd8079b9e8c27e195a8191a.ctex"
+uid="uid://dh5knkoslthys"
+path="res://.godot/imported/TESTNappi.png-0d344c0c447c26bad7a6751ab369f78d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/background/gradientbg.png"
-dest_files=["res://.godot/imported/gradientbg.png-37fba380abd8079b9e8c27e195a8191a.ctex"]
+source_file="res://Art/TESTNappi.png"
+dest_files=["res://.godot/imported/TESTNappi.png-0d344c0c447c26bad7a6751ab369f78d.ctex"]
 
 [params]
 
