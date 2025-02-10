@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://dh5knkoslthys" path="res://Art/TESTNappi.png" id="1_8oftv"]
 [ext_resource type="Texture2D" uid="uid://ccrds4pjrvmwv" path="res://Art/TESTNappiPainettu.png" id="2_y2ns0"]
 [ext_resource type="Script" path="res://Scripts/TESTButtonScrpt.cs" id="3_87d76"]
-[ext_resource type="Texture2D" uid="uid://ds8avl807ibuc" path="res://Art/signs/otherdangertri.png" id="5_7a8x5"]
+[ext_resource type="Texture2D" uid="uid://dte0okwouqsm" path="res://Art/signs/otherdangertri.png" id="5_7a8x5"]
 [ext_resource type="Script" path="res://Scripts/TESTtextureSwapper.cs" id="6_wx6o8"]
-[ext_resource type="Texture2D" uid="uid://d3ejp7s0ux51i" path="res://Art/signs/crossing.png" id="7_i7iap"]
+[ext_resource type="Texture2D" uid="uid://ggt7ikkbyp2a" path="res://Art/signs/crossing.png" id="7_i7iap"]
 
 [node name="Node2D" type="Node2D"]
 
