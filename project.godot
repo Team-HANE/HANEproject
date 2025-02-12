@@ -19,6 +19,12 @@ config/icon="res://Art/icon.svg"
 
 project/assembly_name="PeliProjekti"
 
+[file_customization]
+
+folder_colors={
+"res://Scripts/": "red"
+}
+
 [rendering]
 
 renderer/rendering_method="mobile"

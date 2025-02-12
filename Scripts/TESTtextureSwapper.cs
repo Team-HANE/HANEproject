@@ -1,24 +1,30 @@
 using Godot;
 using System;
 
-public partial class TESTtextureSwapper : TextureButton
+namespace escapetampere
 {
-	Texture2D _originalTexture;
-	[Export] Texture2D _secondTexture;
+	public partial class TESTtextureSwapper : TextureButton
+	{
+		Texture2D _originalTexture;
+		[Export] Texture2D _secondTexture;
+		GameManager manager;
 
-    public override void _Ready()
-    {
-        _originalTexture = TextureNormal;
-    }
-    public override void _Pressed()
-    {
-		if (TextureNormal == _originalTexture)
+		public override void _Ready()
 		{
-			TextureNormal = _secondTexture;
+			_originalTexture = TextureNormal;
+			manager = GetNode<GameManager>("/root/GameManager");
 		}
-        else
+		public override void _Pressed()
 		{
-			TextureNormal = _originalTexture;
+			if (TextureNormal == _originalTexture)
+			{
+				TextureNormal = _secondTexture;
+			}
+			else
+			{
+				TextureNormal = _originalTexture;
+			}
+			manager.AddScore(1);
 		}
-    }
+	}
 }

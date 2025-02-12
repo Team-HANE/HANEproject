@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://6k8h5w7768cr"]
 
-[ext_resource type="Texture2D" uid="uid://c2serfs3agxoq" path="res://Art/icon.svg" id="1_6ax4t"]
 [ext_resource type="Texture2D" uid="uid://dh5knkoslthys" path="res://Art/TESTNappi.png" id="1_8oftv"]
 [ext_resource type="Texture2D" uid="uid://ccrds4pjrvmwv" path="res://Art/TESTNappiPainettu.png" id="2_y2ns0"]
 [ext_resource type="Script" path="res://Scripts/TESTButtonScrpt.cs" id="3_87d76"]
+[ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="3_k550p"]
 [ext_resource type="Texture2D" uid="uid://dte0okwouqsm" path="res://Art/signs/otherdangertri.png" id="5_7a8x5"]
 [ext_resource type="Script" path="res://Scripts/TESTtextureSwapper.cs" id="6_wx6o8"]
 [ext_resource type="Texture2D" uid="uid://ggt7ikkbyp2a" path="res://Art/signs/crossing.png" id="7_i7iap"]
@@ -11,15 +11,14 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="TextureButton" type="TextureButton" parent="."]
-offset_left = -42.0
-offset_top = -26.0
-offset_right = 60.0
-offset_bottom = 32.0
+offset_left = -406.0
+offset_top = 246.0
+offset_right = -304.0
+offset_bottom = 304.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("1_8oftv")
 texture_pressed = ExtResource("2_y2ns0")
 script = ExtResource("3_87d76")
-_initializedImage = ExtResource("1_6ax4t")
 
 [node name="TextureButton2" type="TextureButton" parent="."]
 offset_left = 61.0
@@ -34,3 +33,12 @@ _secondTexture = ExtResource("7_i7iap")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 6)
+
+[node name="Button" type="Button" parent="."]
+offset_left = -97.0
+offset_top = -52.0
+offset_right = 89.0
+offset_bottom = 51.0
+text = "skenen vaihto"
+script = ExtResource("3_k550p")
+_sceneToLoadPath = "res://Levels/testscene.tscn"
