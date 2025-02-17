@@ -1,7 +1,0 @@
-kyltin tekstit/numerot fontti: bahnschrift bold semicondenced 110,95 pt
-
-- kartat
-- tasot
-- tasoihin "kovakoodattu" rakennukset, tolppa kylteille
--suojatieassetteja 
--valoihin ukkelityms
