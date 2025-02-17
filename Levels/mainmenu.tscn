@@ -1,31 +1,45 @@
-[gd_scene load_steps=5 format=3 uid="uid://cm50rsyqsl0sh"]
+[gd_scene load_steps=7 format=3 uid="uid://cm50rsyqsl0sh"]
 
+[ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_1n8yq"]
 [ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_jcxl6"]
 [ext_resource type="Texture2D" uid="uid://cvwaq7g5kgujt" path="res://Art/buttons/startbuttblue.png" id="2_02dy2"]
 [ext_resource type="Texture2D" uid="uid://rjj60bmodeax" path="res://Art/buttons/settings.png" id="3_pdluq"]
 [ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="4_yd6r1"]
+[ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="6_1ypeq"]
 
-[node name="Mainmenu" type="Node2D"]
+[node name="GameManager" type="Node2D"]
+position = Vector2(538, 420)
+script = ExtResource("1_1n8yq")
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="Mainmenu" type="Node2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Mainmenu"]
 format = 2
 
-[node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
+[node name="TileMapLayer" type="TileMapLayer" parent="Mainmenu/TileMap"]
 
-[node name="Singlecolorbg" type="Sprite2D" parent="TileMap"]
+[node name="Singlecolorbg" type="Sprite2D" parent="Mainmenu/TileMap"]
 position = Vector2(257, 245)
 texture = ExtResource("1_jcxl6")
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="TileMap"]
+[node name="TileMapLayer2" type="TileMapLayer" parent="Mainmenu/TileMap"]
 
-[node name="Startbuttblue" type="Sprite2D" parent="TileMap"]
-position = Vector2(607, 459)
-texture = ExtResource("2_02dy2")
-
-[node name="Settings" type="Sprite2D" parent="TileMap"]
+[node name="Settings" type="Sprite2D" parent="Mainmenu/TileMap"]
 position = Vector2(1021, 163)
 texture = ExtResource("3_pdluq")
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap"]
+[node name="HaneLogoChatgpt" type="Sprite2D" parent="Mainmenu/TileMap"]
 position = Vector2(122, 173)
 texture = ExtResource("4_yd6r1")
+
+[node name="StartButtBlue" type="TextureButton" parent="Mainmenu/TileMap"]
+offset_left = 538.0
+offset_top = 420.0
+offset_right = 675.0
+offset_bottom = 497.0
+texture_normal = ExtResource("2_02dy2")
+script = ExtResource("6_1ypeq")
+_sceneToLoadPath = "res://Levels/LevelSelect.tscn"
+
+[node name="Camera2D" type="Camera2D" parent="Mainmenu"]
+position = Vector2(611, 348)

@@ -5,7 +5,7 @@ namespace escapetampere
 {
 	public partial class SceneSwapper : Button
 	{
-		[Export] String _sceneToLoadPath;
+		[Export] string _sceneToLoadPath;
 		GameManager manager;
 
 		// Called when the node enters the scene tree for the first time.

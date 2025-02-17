@@ -35,10 +35,11 @@ _secondTexture = ExtResource("7_i7iap")
 position = Vector2(0, 6)
 
 [node name="Button" type="Button" parent="."]
-offset_left = -97.0
-offset_top = -52.0
-offset_right = 89.0
-offset_bottom = 51.0
-text = "skenen vaihto"
+offset_left = -455.0
+offset_top = -246.0
+offset_right = -269.0
+offset_bottom = -143.0
+text = "level 1
+"
 script = ExtResource("3_k550p")
-_sceneToLoadPath = "res://Levels/testscene.tscn"
+_sceneToLoadPath = "res://Levels/leveltestscene.tscn"

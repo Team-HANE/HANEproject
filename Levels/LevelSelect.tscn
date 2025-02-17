@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://02pyujlesocj"]
+
+[ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_3ugs4"]
+[ext_resource type="PackedScene" uid="uid://1c50qmbjnhuo" path="res://Levels/text_box.tscn" id="2_gkw5c"]
+[ext_resource type="PackedScene" uid="uid://6k8h5w7768cr" path="res://Levels/ButtonTesting.tscn" id="3_mqfek"]
+
+[node name="GameManager" type="Node2D"]
+script = ExtResource("1_3ugs4")
+
+[node name="TextBox" parent="." instance=ExtResource("2_gkw5c")]
+offset_left = 3.0
+offset_top = -5.0
+offset_right = 1143.0
+offset_bottom = 638.0
+
+[node name="buttons" parent="." instance=ExtResource("3_mqfek")]
+position = Vector2(580, 313)
