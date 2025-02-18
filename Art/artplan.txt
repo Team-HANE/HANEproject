@@ -4,5 +4,6 @@ tasoihin "kovakoodattu" rakennukset, tolppa kylteille
 still need:
 - kartat
 - tasot
-- suojatieassetteja 
-- vääriä valoja
+- suojatieassetteja?
+
+viewport w 1152 h 648
