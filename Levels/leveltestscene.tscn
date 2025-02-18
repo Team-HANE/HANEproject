@@ -24,8 +24,8 @@ scale = Vector2(0.0688512, 0.0784211)
 texture = ExtResource("3_7ctsf")
 
 [node name="Crossing" type="Sprite2D" parent="."]
-position = Vector2(744, 182)
-scale = Vector2(0.072284, 0.0761335)
+position = Vector2(743, 159)
+scale = Vector2(0.336142, 0.312045)
 texture = ExtResource("4_f0idb")
 
 [node name="BackButt" type="TextureButton" parent="."]
