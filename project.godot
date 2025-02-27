@@ -25,6 +25,10 @@ folder_colors={
 "res://Scripts/": "red"
 }
 
+[gui]
+
+theme/custom_font="res://Art/font/Party Confetti.ttf"
+
 [rendering]
 
 renderer/rendering_method="mobile"
