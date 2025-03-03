@@ -84,7 +84,6 @@
 #team {
   display: flex;
   align-items: center;
-  margin-left: 200px;
 }
 
 .game {
@@ -103,6 +102,9 @@ body, h1, h2, p {
 
 img {
   margin-left: 10px;
+  width: 80%;
+  height: 80%;
+  border-radius: 30px;
 }
 
 *,
