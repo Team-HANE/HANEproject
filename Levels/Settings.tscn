@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7k5b2jfsiy6x"]
+[gd_scene load_steps=9 format=3 uid="uid://b7k5b2jfsiy6x"]
 
 [ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
 [ext_resource type="Texture2D" uid="uid://jkccmab4vdmp" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_tdrrs"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_8qehj"]
 [ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="6_y5yc3"]
+[ext_resource type="Texture2D" uid="uid://b2uhdgcyvg8w2" path="res://Art/logo/tiko_logo_musta_fin.png" id="7_ve4nn"]
+[ext_resource type="Texture2D" uid="uid://bccmp52eprnkf" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
 
 [node name="Settings" type="Node2D"]
 
@@ -53,10 +55,12 @@ text = "Linkki html"
 position = Vector2(-245, 69)
 texture = ExtResource("6_y5yc3")
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap/HaneLogoChatgpt"]
-position = Vector2(171, -1)
-texture = ExtResource("6_y5yc3")
+[node name="TikoLogoMustaFin" type="Sprite2D" parent="."]
+position = Vector2(-16, 69)
+scale = Vector2(0.334043, 0.395307)
+texture = ExtResource("7_ve4nn")
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap/HaneLogoChatgpt/HaneLogoChatgpt"]
-position = Vector2(167, 3)
-texture = ExtResource("6_y5yc3")
+[node name="Yhtalogo" type="Sprite2D" parent="."]
+position = Vector2(249, 73)
+scale = Vector2(0.305195, 0.301394)
+texture = ExtResource("8_ge08d")
