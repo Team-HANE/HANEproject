@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://b2uhdgcyvg8w2" path="res://Art/logo/tiko_logo_musta_fin.png" id="7_ve4nn"]
 [ext_resource type="Texture2D" uid="uid://bccmp52eprnkf" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
 
-[node name="Settings" type="Node2D"]
+[node name="Settings" type="Panel"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -19,48 +19,49 @@ format = 2
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 
 [node name="Singlecolorbg" type="Sprite2D" parent="TileMap"]
-position = Vector2(379, 395)
+position = Vector2(-5, -3)
+scale = Vector2(0.638095, 0.49409)
 texture = ExtResource("1_q27jl")
 
-[node name="Volumeoff" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(-365, -590)
+[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap"]
+position = Vector2(-261, 147)
+texture = ExtResource("6_y5yc3")
+
+[node name="Volumeoff" type="Sprite2D" parent="TileMap"]
+position = Vector2(118, -147)
 scale = Vector2(1.22581, 1.29032)
 texture = ExtResource("2_uldn3")
 
-[node name="Volumeon" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(-540, -598)
+[node name="Volumeon" type="Sprite2D" parent="TileMap"]
+position = Vector2(-57, -155)
 texture = ExtResource("3_5vwhq")
 
-[node name="BackButt" type="TextureButton" parent="TileMap/Singlecolorbg"]
+[node name="BackButt" type="TextureButton" parent="TileMap"]
 anchors_preset = -1
 anchor_left = -8.618
 anchor_right = -8.618
-offset_left = 15405.0
-offset_top = -599.0
-offset_right = 15649.0
-offset_bottom = -355.0
+offset_left = -556.0
+offset_top = -308.0
+offset_right = -312.0
+offset_bottom = -64.0
 scale = Vector2(0.206463, 0.199675)
 texture_normal = ExtResource("4_tdrrs")
 script = ExtResource("5_8qehj")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
 
-[node name="TextEdit" type="TextEdit" parent="TileMap/Singlecolorbg"]
-offset_left = -566.0
-offset_top = -162.0
-offset_right = -382.0
-offset_bottom = -94.0
+[node name="TextEdit" type="TextEdit" parent="TileMap"]
+offset_left = -105.0
+offset_top = 245.0
+offset_right = 79.0
+offset_bottom = 313.0
 text = "Linkki html"
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap"]
-position = Vector2(-245, 69)
-texture = ExtResource("6_y5yc3")
-
 [node name="TikoLogoMustaFin" type="Sprite2D" parent="."]
-position = Vector2(-16, 69)
+position = Vector2(-22, 149)
 scale = Vector2(0.334043, 0.395307)
 texture = ExtResource("7_ve4nn")
 
 [node name="Yhtalogo" type="Sprite2D" parent="."]
-position = Vector2(249, 73)
+position = Vector2(263, 145)
 scale = Vector2(0.305195, 0.301394)
 texture = ExtResource("8_ge08d")
