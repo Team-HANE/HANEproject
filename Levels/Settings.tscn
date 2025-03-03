@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b7k5b2jfsiy6x"]
+[gd_scene load_steps=11 format=3 uid="uid://b7k5b2jfsiy6x"]
 
 [ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
 [ext_resource type="Texture2D" uid="uid://jkccmab4vdmp" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="6_y5yc3"]
 [ext_resource type="Texture2D" uid="uid://b2uhdgcyvg8w2" path="res://Art/logo/tiko_logo_musta_fin.png" id="7_ve4nn"]
 [ext_resource type="Texture2D" uid="uid://bccmp52eprnkf" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
+[ext_resource type="Texture2D" uid="uid://ds5p4smob36lr" path="res://Art/buttons/fi.png" id="9_i5234"]
+[ext_resource type="Texture2D" uid="uid://ccdrm5r74jjtw" path="res://Art/buttons/eng.png" id="10_jvy5k"]
 
 [node name="Settings" type="Panel"]
 
@@ -33,7 +35,7 @@ scale = Vector2(1.22581, 1.29032)
 texture = ExtResource("2_uldn3")
 
 [node name="Volumeon" type="Sprite2D" parent="TileMap"]
-position = Vector2(-57, -155)
+position = Vector2(-57, -148)
 texture = ExtResource("3_5vwhq")
 
 [node name="BackButt" type="TextureButton" parent="TileMap"]
@@ -65,3 +67,12 @@ texture = ExtResource("7_ve4nn")
 position = Vector2(263, 145)
 scale = Vector2(0.305195, 0.301394)
 texture = ExtResource("8_ge08d")
+
+[node name="Fi" type="Sprite2D" parent="."]
+position = Vector2(443, -263)
+texture = ExtResource("9_i5234")
+
+[node name="Eng" type="Sprite2D" parent="."]
+position = Vector2(529, -264)
+scale = Vector2(0.8, 0.78)
+texture = ExtResource("10_jvy5k")
