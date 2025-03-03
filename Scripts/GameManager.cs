@@ -6,7 +6,7 @@ namespace escapetampere
 	public partial class GameManager : Node
 	{
 		#region Player Score Management
-		private int _score = 0;
+		private int _score = 3;
 
 		public int Score
 		{
@@ -26,6 +26,24 @@ namespace escapetampere
 			if (amount > 0)
 			{
 				_score += amount;
+				EmitSignal(SignalName.ScoreChange, Score);
+			}
+		}
+
+		public void RemoveScore(int amount)
+		{
+			if (amount > 0)
+			{
+				_score -= amount;
+				EmitSignal(SignalName.ScoreChange, Score);
+			}
+		}
+
+		public void SetScore(int amount)
+		{
+			if (amount >= 0)
+			{
+				_score = amount;
 				EmitSignal(SignalName.ScoreChange, Score);
 			}
 		}
