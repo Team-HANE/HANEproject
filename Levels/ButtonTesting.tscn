@@ -1,21 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://6k8h5w7768cr"]
+[gd_scene load_steps=2 format=3 uid="uid://6k8h5w7768cr"]
 
-[ext_resource type="Texture2D" uid="uid://dh5knkoslthys" path="res://Art/TESTNappi.png" id="1_8oftv"]
-[ext_resource type="Texture2D" uid="uid://bktb1pllkbyck" path="res://Art/buttons/checkmark.png" id="2_2hnka"]
-[ext_resource type="Script" path="res://Scripts/TESTButtonScrpt.cs" id="3_87d76"]
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="3_k550p"]
 
 [node name="Node2D" type="Node2D"]
-
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_left = 212.0
-offset_top = 148.0
-offset_right = 314.0
-offset_bottom = 206.0
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("1_8oftv")
-texture_pressed = ExtResource("2_2hnka")
-script = ExtResource("3_87d76")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 6)
@@ -31,6 +18,7 @@ script = ExtResource("3_k550p")
 _sceneToLoadPath = "res://Levels/LevelOne.tscn"
 
 [node name="Button" type="Button" parent="Button"]
+layout_mode = 0
 offset_left = -3.0
 offset_top = 172.0
 offset_right = 183.0
