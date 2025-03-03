@@ -14,6 +14,7 @@ namespace escapetampere
 			_originalTexture = TextureNormal;
 			manager = GetNode<GameManager>("/root/GameManager");
 		}
+
 		public override void _Pressed()
 		{
 			if (TextureNormal == _originalTexture)
@@ -24,7 +25,6 @@ namespace escapetampere
 			{
 				TextureNormal = _originalTexture;
 			}
-			manager.AddScore(1);
 		}
 	}
 }

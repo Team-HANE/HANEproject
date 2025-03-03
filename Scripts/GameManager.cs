@@ -6,7 +6,7 @@ namespace escapetampere
 	public partial class GameManager : Node
 	{
 		#region Player Score Management
-		private int _score = 3;
+		private int _score = 5;
 
 		public int Score
 		{
@@ -18,7 +18,7 @@ namespace escapetampere
 			// readonly
 		}
 
-		// Score event for UI
+		// Event UI:lle että score vaihtuu
 		[Signal] public delegate void ScoreChangeEventHandler(int score);
 
 		public void AddScore(int amount)
@@ -54,19 +54,23 @@ namespace escapetampere
 
 		public void ChangeScene(String newScenePath)
 		{
+			// poistetaan vanha skene
 			foreach (Node child in GetChildren())
 			{
 				child.QueueFree();
 			}
+			// ladataan uusi skene
 			PackedScene scene = ResourceLoader.Load<PackedScene>(newScenePath);
 			if (scene == null)
 			{
 				GD.PrintErr("Cannot find scene! Make sure the path is correct.");
 				return;
 			}
+			// luodaan uusi skene maailmaan ja asetetaan managerin lapseksi
 			Node instance = scene.Instantiate();
 			AddChild(instance);
-			EmitSignal(SignalName.ScoreChange, Score);
+			// resetoidaan skore (elämät)
+			SetScore(5);
 		}
 
 		#endregion

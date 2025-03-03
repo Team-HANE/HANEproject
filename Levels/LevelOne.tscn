@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bdu37yryu36wg"]
+[gd_scene load_steps=12 format=3 uid="uid://bdu37yryu36wg"]
 
 [ext_resource type="Texture2D" uid="uid://5vsjy1m28qwu" path="res://Art/background/level1bg.png" id="1_uxoxl"]
 [ext_resource type="Texture2D" uid="uid://dte0okwouqsm" path="res://Art/signs/otherdangertri.png" id="2_ii5xk"]
@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://bktb1pllkbyck" path="res://Art/buttons/checkmark.png" id="5_oh8nn"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_uo0lq"]
 [ext_resource type="Script" path="res://Scripts/TESTtextureSwapper.cs" id="6_08203"]
-[ext_resource type="Script" path="res://Scripts/TESTButtonScrpt.cs" id="6_oyxxm"]
 [ext_resource type="Texture2D" uid="uid://ggt7ikkbyp2a" path="res://Art/signs/crossing.png" id="7_ttcyo"]
 [ext_resource type="PackedScene" uid="uid://1c50qmbjnhuo" path="res://Levels/text_box.tscn" id="11_v1gqo"]
 [ext_resource type="Texture2D" uid="uid://dqk8pi7dvfyg" path="res://Art/buttons/life.png" id="12_2tkhw"]
@@ -57,7 +56,6 @@ offset_bottom = 254.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("5_hlwal")
 texture_pressed = ExtResource("5_oh8nn")
-script = ExtResource("6_oyxxm")
 
 [node name="TextureButton2" type="TextureButton" parent="."]
 offset_left = 710.0
