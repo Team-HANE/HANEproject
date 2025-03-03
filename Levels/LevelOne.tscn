@@ -11,7 +11,7 @@
 [ext_resource type="Script" path="res://Scripts/TESTButtonScrpt.cs" id="6_oyxxm"]
 [ext_resource type="Texture2D" uid="uid://ggt7ikkbyp2a" path="res://Art/signs/crossing.png" id="7_ttcyo"]
 [ext_resource type="PackedScene" uid="uid://1c50qmbjnhuo" path="res://Levels/text_box.tscn" id="11_v1gqo"]
-[ext_resource type="Texture2D" uid="uid://dqk8pi7dvfyg" path="res://Art/buttons/life.png" id="12_2tkhw"]
+[ext_resource type="Texture2D" uid="uid://b0vgrsogjsxe7" path="res://Art/buttons/5life.png" id="12_teamr"]
 
 [node name="LevelOne" type="Node2D"]
 
@@ -70,12 +70,7 @@ texture_normal = ExtResource("2_ii5xk")
 script = ExtResource("6_08203")
 _secondTexture = ExtResource("7_ttcyo")
 
-[node name="Life" type="Sprite2D" parent="."]
-position = Vector2(1059, 62)
-scale = Vector2(0.210265, 0.196667)
-texture = ExtResource("12_2tkhw")
-
-[node name="Life2" type="Sprite2D" parent="."]
-position = Vector2(1096, 62)
-scale = Vector2(0.210265, 0.196667)
-texture = ExtResource("12_2tkhw")
+[node name="5Life" type="Sprite2D" parent="."]
+position = Vector2(1080, 60)
+scale = Vector2(0.575, 0.659292)
+texture = ExtResource("12_teamr")
