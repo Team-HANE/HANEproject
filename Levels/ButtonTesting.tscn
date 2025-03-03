@@ -1,45 +1,42 @@
-[gd_scene load_steps=8 format=3 uid="uid://6k8h5w7768cr"]
+[gd_scene load_steps=5 format=3 uid="uid://6k8h5w7768cr"]
 
 [ext_resource type="Texture2D" uid="uid://dh5knkoslthys" path="res://Art/TESTNappi.png" id="1_8oftv"]
-[ext_resource type="Texture2D" uid="uid://ccrds4pjrvmwv" path="res://Art/TESTNappiPainettu.png" id="2_y2ns0"]
+[ext_resource type="Texture2D" uid="uid://bktb1pllkbyck" path="res://Art/buttons/checkmark.png" id="2_2hnka"]
 [ext_resource type="Script" path="res://Scripts/TESTButtonScrpt.cs" id="3_87d76"]
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="3_k550p"]
-[ext_resource type="Texture2D" uid="uid://dte0okwouqsm" path="res://Art/signs/otherdangertri.png" id="5_7a8x5"]
-[ext_resource type="Script" path="res://Scripts/TESTtextureSwapper.cs" id="6_wx6o8"]
-[ext_resource type="Texture2D" uid="uid://ggt7ikkbyp2a" path="res://Art/signs/crossing.png" id="7_i7iap"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="TextureButton" type="TextureButton" parent="."]
-offset_left = -406.0
-offset_top = 246.0
-offset_right = -304.0
-offset_bottom = 304.0
+offset_left = 212.0
+offset_top = 148.0
+offset_right = 314.0
+offset_bottom = 206.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("1_8oftv")
-texture_pressed = ExtResource("2_y2ns0")
+texture_pressed = ExtResource("2_2hnka")
 script = ExtResource("3_87d76")
-
-[node name="TextureButton2" type="TextureButton" parent="."]
-offset_left = 61.0
-offset_top = -81.0
-offset_right = 1951.0
-offset_bottom = 1336.0
-scale = Vector2(0.219024, 0.218104)
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("5_7a8x5")
-script = ExtResource("6_wx6o8")
-_secondTexture = ExtResource("7_i7iap")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 6)
 
 [node name="Button" type="Button" parent="."]
-offset_left = -455.0
-offset_top = -246.0
-offset_right = -269.0
-offset_bottom = -143.0
+offset_left = -85.0
+offset_top = -228.0
+offset_right = 101.0
+offset_bottom = -125.0
 text = "level 1
 "
 script = ExtResource("3_k550p")
-_sceneToLoadPath = "res://Levels/leveltestscene.tscn"
+_sceneToLoadPath = "res://Levels/LevelOne.tscn"
+
+[node name="Button" type="Button" parent="Button"]
+offset_left = -3.0
+offset_top = 172.0
+offset_right = 183.0
+offset_bottom = 275.0
+text = "level 2
+
+"
+script = ExtResource("3_k550p")
+_sceneToLoadPath = "res://Levels/LevelOne.tscn"

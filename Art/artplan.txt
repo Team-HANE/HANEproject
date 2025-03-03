@@ -6,4 +6,8 @@ still need:
 - tasot
 - suojatieassetteja?
 
+- elämänäkymät
+- settings popup
+- dialogia
+
 viewport w 1152 h 648

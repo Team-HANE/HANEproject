@@ -25,9 +25,14 @@ texture = ExtResource("1_jcxl6")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="Mainmenu/TileMap"]
 
-[node name="Settings" type="Sprite2D" parent="Mainmenu/TileMap"]
-position = Vector2(1100, 167)
-texture = ExtResource("3_pdluq")
+[node name="Settings" type="TextureButton" parent="Mainmenu/TileMap"]
+offset_left = 1055.0
+offset_top = 91.0
+offset_right = 1136.0
+offset_bottom = 173.0
+texture_normal = ExtResource("3_pdluq")
+script = ExtResource("6_1ypeq")
+_sceneToLoadPath = "res://Levels/Settings.tscn"
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Mainmenu/TileMap"]
 position = Vector2(122, 173)

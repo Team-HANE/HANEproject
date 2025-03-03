@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7k5b2jfsiy6x"]
+
+[ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
+[ext_resource type="Texture2D" uid="uid://jkccmab4vdmp" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
+[ext_resource type="Texture2D" uid="uid://dr2o7rmqjv65k" path="res://Art/buttons/volumeon.png" id="3_5vwhq"]
+[ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_tdrrs"]
+[ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_8qehj"]
+
+[node name="Settings" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
+
+[node name="Singlecolorbg" type="Sprite2D" parent="TileMap"]
+position = Vector2(357, 373)
+texture = ExtResource("1_q27jl")
+
+[node name="Volumeoff" type="Sprite2D" parent="TileMap/Singlecolorbg"]
+position = Vector2(-124, -489)
+texture = ExtResource("2_uldn3")
+
+[node name="Volumeon" type="Sprite2D" parent="TileMap/Singlecolorbg"]
+position = Vector2(-272, -500)
+texture = ExtResource("3_5vwhq")
+
+[node name="BackButt" type="TextureButton" parent="TileMap/Singlecolorbg/Volumeon"]
+offset_left = -597.0
+offset_top = -115.0
+offset_right = -353.0
+offset_bottom = 129.0
+scale = Vector2(0.206463, 0.199675)
+texture_normal = ExtResource("4_tdrrs")
+script = ExtResource("5_8qehj")
+_sceneToLoadPath = "res://Levels/mainmenu.tscn"

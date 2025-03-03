@@ -3,10 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/TESTScoreUI.cs" id="1_d1800"]
 
 [node name="TextBox" type="RichTextLabel"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_right = 126.0
+offset_bottom = 63.0
 text = "TEST"
 script = ExtResource("1_d1800")
