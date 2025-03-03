@@ -27,7 +27,7 @@ folder_colors={
 
 [gui]
 
-theme/custom_font="res://Art/font/Party Confetti.ttf"
+theme/custom_font="res://Art/font/KatahdinRound.otf"
 
 [rendering]
 
