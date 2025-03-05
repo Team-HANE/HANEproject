@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bdu37yryu36wg"]
+[gd_scene load_steps=18 format=3 uid="uid://bdu37yryu36wg"]
 
 [ext_resource type="Texture2D" uid="uid://c1jsrkqp6l8io" path="res://Art/background/Taso1.jpeg" id="1_p2aug"]
 [ext_resource type="Texture2D" uid="uid://dte0okwouqsm" path="res://Art/signs/otherdangertri.png" id="2_ii5xk"]
@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dh5knkoslthys" path="res://Art/TESTNappi.png" id="5_hlwal"]
 [ext_resource type="Texture2D" uid="uid://bktb1pllkbyck" path="res://Art/buttons/checkmark.png" id="5_oh8nn"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_uo0lq"]
-[ext_resource type="Script" path="res://Scripts/TESTtextureSwapper.cs" id="6_08203"]
+[ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="6_08203"]
 [ext_resource type="Texture2D" uid="uid://ggt7ikkbyp2a" path="res://Art/signs/crossing.png" id="7_ttcyo"]
 [ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="11_qd2gs"]
 [ext_resource type="Texture2D" uid="uid://bmsobybwdh357" path="res://Art/buttons/4life.png" id="12_7kmq3"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://qvfkdy4bwc8g" path="res://Art/buttons/3life.png" id="13_or235"]
 [ext_resource type="Texture2D" uid="uid://c3jbr100vp3kn" path="res://Art/buttons/2life.png" id="14_7vxiy"]
 [ext_resource type="Texture2D" uid="uid://d31e4fnye1v5b" path="res://Art/buttons/1life.png" id="15_7o6ed"]
+[ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="16_8qffq"]
 [ext_resource type="Texture2D" uid="uid://bx6f1kbyw0ak5" path="res://Art/buttons/0life.png" id="16_xs4i4"]
 
 [node name="LevelOne" type="Node2D"]
@@ -34,6 +35,25 @@ position = Vector2(734, 322)
 scale = Vector2(0.157296, 0.139542)
 texture = ExtResource("3_dlbge")
 
+[node name="5Life" type="Sprite2D" parent="."]
+position = Vector2(1080, 60)
+scale = Vector2(0.575, 0.659292)
+texture = ExtResource("12_teamr")
+script = ExtResource("11_qd2gs")
+lives4 = ExtResource("12_7kmq3")
+lives3 = ExtResource("13_or235")
+lives2 = ExtResource("14_7vxiy")
+lives1 = ExtResource("15_7o6ed")
+lives0 = ExtResource("16_xs4i4")
+
+[node name="TextureButton" type="TextureButton" parent="5Life"]
+offset_left = -1903.0
+offset_top = -94.0
+offset_right = 135.0
+offset_bottom = 919.0
+mouse_filter = 1
+script = ExtResource("6_08203")
+
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = 51.0
 offset_top = 24.0
@@ -47,7 +67,7 @@ _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(582, 322)
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="TEMPbutton" type="TextureButton" parent="."]
 offset_left = 822.0
 offset_top = 196.0
 offset_right = 924.0
@@ -55,10 +75,8 @@ offset_bottom = 254.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("5_hlwal")
 texture_pressed = ExtResource("5_oh8nn")
-script = ExtResource("6_08203")
-_secondTexture = ExtResource("5_oh8nn")
 
-[node name="TextureButton2" type="TextureButton" parent="."]
+[node name="SignButton" type="TextureButton" parent="."]
 offset_left = 699.0
 offset_top = 197.0
 offset_right = 1055.0
@@ -66,16 +84,5 @@ offset_bottom = 651.0
 scale = Vector2(0.219024, 0.218104)
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_ii5xk")
-script = ExtResource("6_08203")
+script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("7_ttcyo")
-
-[node name="5Life" type="Sprite2D" parent="."]
-position = Vector2(1080, 60)
-scale = Vector2(0.575, 0.659292)
-texture = ExtResource("12_teamr")
-script = ExtResource("11_qd2gs")
-lives4 = ExtResource("12_7kmq3")
-lives3 = ExtResource("13_or235")
-lives2 = ExtResource("14_7vxiy")
-lives1 = ExtResource("15_7o6ed")
-lives0 = ExtResource("16_xs4i4")
