@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bedi0nxhumeea"]
+[gd_scene load_steps=11 format=3 uid="uid://b7k5b2jfsiy6x"]
 
 [ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
 [ext_resource type="Texture2D" uid="uid://jkccmab4vdmp" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
@@ -6,8 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_tdrrs"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_8qehj"]
 [ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="6_y5yc3"]
+[ext_resource type="Texture2D" uid="uid://b2uhdgcyvg8w2" path="res://Art/logo/tiko_logo_musta_fin.png" id="7_ve4nn"]
+[ext_resource type="Texture2D" uid="uid://bccmp52eprnkf" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
+[ext_resource type="Texture2D" uid="uid://ds5p4smob36lr" path="res://Art/buttons/fi.png" id="9_i5234"]
+[ext_resource type="Texture2D" uid="uid://ccdrm5r74jjtw" path="res://Art/buttons/eng.png" id="10_jvy5k"]
 
-[node name="Settings" type="Node2D"]
+[node name="Settings" type="Panel"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -17,46 +21,58 @@ format = 2
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 
 [node name="Singlecolorbg" type="Sprite2D" parent="TileMap"]
-position = Vector2(379, 395)
+position = Vector2(-5, -3)
+scale = Vector2(0.638095, 0.49409)
 texture = ExtResource("1_q27jl")
 
-[node name="Volumeoff" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(-365, -590)
+[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap"]
+position = Vector2(-261, 147)
+texture = ExtResource("6_y5yc3")
+
+[node name="Volumeoff" type="Sprite2D" parent="TileMap"]
+position = Vector2(118, -147)
 scale = Vector2(1.22581, 1.29032)
 texture = ExtResource("2_uldn3")
 
-[node name="Volumeon" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(-540, -598)
+[node name="Volumeon" type="Sprite2D" parent="TileMap"]
+position = Vector2(-57, -148)
 texture = ExtResource("3_5vwhq")
 
-[node name="BackButt" type="TextureButton" parent="TileMap/Singlecolorbg"]
+[node name="BackButt" type="TextureButton" parent="TileMap"]
 anchors_preset = -1
 anchor_left = -8.618
 anchor_right = -8.618
-offset_left = 15405.0
-offset_top = -599.0
-offset_right = 15649.0
-offset_bottom = -355.0
+offset_left = -556.0
+offset_top = -308.0
+offset_right = -312.0
+offset_bottom = -64.0
 scale = Vector2(0.206463, 0.199675)
 texture_normal = ExtResource("4_tdrrs")
 script = ExtResource("5_8qehj")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
 
-[node name="TextEdit" type="TextEdit" parent="TileMap/Singlecolorbg"]
-offset_left = -566.0
-offset_top = -162.0
-offset_right = -382.0
-offset_bottom = -94.0
+[node name="TextEdit" type="TextEdit" parent="TileMap"]
+offset_left = -105.0
+offset_top = 245.0
+offset_right = 79.0
+offset_bottom = 313.0
 text = "Linkki html"
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap"]
-position = Vector2(-245, 69)
-texture = ExtResource("6_y5yc3")
+[node name="TikoLogoMustaFin" type="Sprite2D" parent="."]
+position = Vector2(-22, 149)
+scale = Vector2(0.334043, 0.395307)
+texture = ExtResource("7_ve4nn")
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap/HaneLogoChatgpt"]
-position = Vector2(171, -1)
-texture = ExtResource("6_y5yc3")
+[node name="Yhtalogo" type="Sprite2D" parent="."]
+position = Vector2(263, 145)
+scale = Vector2(0.305195, 0.301394)
+texture = ExtResource("8_ge08d")
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap/HaneLogoChatgpt/HaneLogoChatgpt"]
-position = Vector2(167, 3)
-texture = ExtResource("6_y5yc3")
+[node name="Fi" type="Sprite2D" parent="."]
+position = Vector2(443, -263)
+texture = ExtResource("9_i5234")
+
+[node name="Eng" type="Sprite2D" parent="."]
+position = Vector2(529, -264)
+scale = Vector2(0.8, 0.78)
+texture = ExtResource("10_jvy5k")

@@ -20,7 +20,8 @@ format = 2
 [node name="TileMapLayer" type="TileMapLayer" parent="Mainmenu/TileMap"]
 
 [node name="Singlecolorbg" type="Sprite2D" parent="Mainmenu/TileMap"]
-position = Vector2(294, 286)
+position = Vector2(597, 358)
+scale = Vector2(0.629101, 0.475741)
 texture = ExtResource("1_jcxl6")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="Mainmenu/TileMap"]
