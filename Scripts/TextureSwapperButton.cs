@@ -3,7 +3,7 @@ using System;
 
 namespace escapetampere
 {
-	public partial class TESTtextureSwapper : TextureButton
+	public partial class TextureSwapperButton : TextureButton
 	{
 		Texture2D _originalTexture;
 		[Export] Texture2D _secondTexture;
@@ -23,7 +23,7 @@ namespace escapetampere
 			}
 			else
 			{
-				TextureNormal = _originalTexture;
+				manager.RemoveLife(1);
 			}
 		}
 	}
