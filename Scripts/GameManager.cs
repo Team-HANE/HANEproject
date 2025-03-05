@@ -5,46 +5,46 @@ namespace escapetampere
 {
 	public partial class GameManager : Node
 	{
-		#region Player Score Management
-		private int _score = 5;
+		#region Player Life Management
+		private int _life = 5;
 
-		public int Score
+		public int Life
 		{
 			get
 			{
-				return _score;
+				return _life;
 			}
 
 			// readonly
 		}
 
-		// Event UI:lle että score vaihtuu
-		[Signal] public delegate void ScoreChangeEventHandler(int score);
+		// Event UI:lle että elämät vaihtuu
+		[Signal] public delegate void LifeChangeEventHandler(int life);
 
-		public void AddScore(int amount)
+		public void AddLife(int amount)
 		{
 			if (amount > 0)
 			{
-				_score += amount;
-				EmitSignal(SignalName.ScoreChange, Score);
+				_life += amount;
+				EmitSignal(SignalName.LifeChange, Life);
 			}
 		}
 
-		public void RemoveScore(int amount)
+		public void RemoveLife(int amount)
 		{
 			if (amount > 0)
 			{
-				_score -= amount;
-				EmitSignal(SignalName.ScoreChange, Score);
+				_life -= amount;
+				EmitSignal(SignalName.LifeChange, Life);
 			}
 		}
 
-		public void SetScore(int amount)
+		public void SetLife(int amount)
 		{
 			if (amount >= 0)
 			{
-				_score = amount;
-				EmitSignal(SignalName.ScoreChange, Score);
+				_life = amount;
+				EmitSignal(SignalName.LifeChange, Life);
 			}
 		}
 
@@ -69,8 +69,8 @@ namespace escapetampere
 			// luodaan uusi skene maailmaan ja asetetaan managerin lapseksi
 			Node instance = scene.Instantiate();
 			AddChild(instance);
-			// resetoidaan skore (elämät)
-			SetScore(5);
+			// resetoidaan elämät
+			SetLife(5);
 		}
 
 		#endregion

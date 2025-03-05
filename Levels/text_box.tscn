@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://1c50qmbjnhuo"]
-
-[ext_resource type="Script" path="res://Scripts/TESTScoreUI.cs" id="1_d1800"]
-
-[node name="TextBox" type="RichTextLabel"]
-offset_right = 126.0
-offset_bottom = 63.0
-text = "TEST"
-script = ExtResource("1_d1800")

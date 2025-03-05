@@ -25,6 +25,7 @@ namespace escapetampere
 			{
 				TextureNormal = _originalTexture;
 			}
+			manager.RemoveLife(1);
 		}
 	}
 }
