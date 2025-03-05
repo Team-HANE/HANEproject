@@ -81,31 +81,43 @@
   --bs-highlight-bg: #fff3cd;
 }
 
-#team {
-  display: flex;
-  align-items: center;
-}
+/*
+Own css
+ */
 
-.game {
-  display: inline-block;
-}
-
-.person {
-  padding: 20px;
-}
-
-body, h1, h2, p {
+ body, h1, h2, p {
   text-align: center;
   margin: 0px 0px 0px 0px;
     padding:0;
 }
 
+/*images*/
 img {
   margin-left: 10px;
   width: 80%;
   height: 80%;
   border-radius: 30px;
 }
+
+ /*navbar*/
+#navbar {
+  background-color: green;
+}
+
+/*team*/
+#team {
+  display: flex;
+  align-items: center;
+}
+
+.person {
+  padding: 20px;
+}
+/*game*/
+.game {
+  display: inline-block;
+}
+
 
 *,
 *::before,
