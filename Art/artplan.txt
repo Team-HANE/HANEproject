@@ -8,5 +8,7 @@ still need:
 
 - settings popup
 - dialogia
+- game over-scene
+- seuraava taso-scene
 
 viewport w 1152 h 648
