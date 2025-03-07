@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=7 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_3ugs4"]
 [ext_resource type="PackedScene" uid="uid://6k8h5w7768cr" path="res://Levels/ButtonTesting.tscn" id="3_mqfek"]
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_xnjox"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_46hm5"]
+[ext_resource type="Texture2D" uid="uid://bosciqshxtfsq" path="res://Art/map/bigmap.png" id="5_yu014"]
+[ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="6_rb1d0"]
 
 [node name="GameManager" type="Node2D"]
 script = ExtResource("1_3ugs4")
@@ -20,3 +22,16 @@ scale = Vector2(0.206463, 0.199675)
 texture_normal = ExtResource("4_xnjox")
 script = ExtResource("5_46hm5")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
+
+[node name="Bigmap" type="Sprite2D" parent="."]
+position = Vector2(591, 318.5)
+scale = Vector2(1.16309, 0.915365)
+texture = ExtResource("5_yu014")
+
+[node name="Button" type="Button" parent="Bigmap"]
+offset_left = -380.883
+offset_top = -129.457
+offset_right = -359.883
+offset_bottom = -101.457
+script = ExtResource("6_rb1d0")
+_sceneToLoadPath = "res://Levels/LevelOne.tscn"
