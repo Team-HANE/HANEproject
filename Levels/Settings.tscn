@@ -13,10 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://ccdrm5r74jjtw" path="res://Art/buttons/eng.png" id="10_jvy5k"]
 
 [node name="Settings" type="Node2D"]
-visible = false
 
 [node name="Control" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -24,6 +22,7 @@ offset_bottom = 40.0
 script = ExtResource("1_fhfov")
 
 [node name="Panel" type="Panel" parent="Control"]
+layout_mode = 0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Control/Panel"]
 
