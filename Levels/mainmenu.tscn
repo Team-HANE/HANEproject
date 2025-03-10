@@ -53,5 +53,14 @@ position = Vector2(633, 308.75)
 scale = Vector2(0.7, 0.71875)
 texture = ExtResource("7_o23rj")
 
+[node name="Popupsettingstest" type="TextureButton" parent="Mainmenu/TileMap"]
+offset_left = 995.0
+offset_top = 464.0
+offset_right = 1056.0
+offset_bottom = 530.0
+texture_normal = ExtResource("3_pdluq")
+script = ExtResource("6_1ypeq")
+_sceneToLoadPath = "res://Levels/PopUpTest.tscn"
+
 [node name="Camera2D" type="Camera2D" parent="Mainmenu"]
 position = Vector2(611, 348)

@@ -1,0 +1,80 @@
+[gd_scene load_steps=11 format=3 uid="uid://3fic7awwel03"]
+
+[ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_i0qbe"]
+[ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="2_p133d"]
+[ext_resource type="Texture2D" uid="uid://jkccmab4vdmp" path="res://Art/buttons/volumeoff.png" id="3_vk4lx"]
+[ext_resource type="Texture2D" uid="uid://dr2o7rmqjv65k" path="res://Art/buttons/volumeon.png" id="4_22j4u"]
+[ext_resource type="Texture2D" uid="uid://b2uhdgcyvg8w2" path="res://Art/logo/tiko_logo_musta_fin.png" id="5_c1s2i"]
+[ext_resource type="Texture2D" uid="uid://bccmp52eprnkf" path="res://Art/logo/yhtalogo.PNG" id="6_5t8nu"]
+[ext_resource type="Texture2D" uid="uid://ds5p4smob36lr" path="res://Art/buttons/fi.png" id="7_tvpth"]
+[ext_resource type="Texture2D" uid="uid://ccdrm5r74jjtw" path="res://Art/buttons/eng.png" id="8_vklig"]
+[ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="9_3a7vf"]
+[ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="10_p1ybr"]
+
+[node name="PopUpTest" type="CanvasLayer"]
+
+[node name="CanvasLayer" type="Popup" parent="."]
+gui_embed_subwindows = true
+visible = true
+transient_to_focused = true
+content_scale_mode = 2
+
+[node name="Singlecolorbg" type="Sprite2D" parent="."]
+position = Vector2(751, 322)
+scale = Vector2(0.304233, 0.456687)
+texture = ExtResource("1_i0qbe")
+
+[node name="HaneLogoChatgpt" type="Sprite2D" parent="Singlecolorbg"]
+position = Vector2(-657.391, 133.571)
+scale = Vector2(2.28814, 1.50723)
+texture = ExtResource("2_p133d")
+
+[node name="Volumeoff" type="Sprite2D" parent="Singlecolorbg"]
+position = Vector2(146.441, -326.665)
+scale = Vector2(2.80482, 2.24737)
+texture = ExtResource("3_vk4lx")
+
+[node name="Volumeon" type="Sprite2D" parent="Singlecolorbg"]
+position = Vector2(-109.831, -332.383)
+scale = Vector2(2.28814, 1.75209)
+texture = ExtResource("4_22j4u")
+
+[node name="TikoLogoMustaFin" type="Sprite2D" parent="Singlecolorbg"]
+position = Vector2(-62.4523, 122.622)
+scale = Vector2(0.670511, 0.626643)
+texture = ExtResource("5_c1s2i")
+
+[node name="Yhtalogo" type="Sprite2D" parent="Singlecolorbg"]
+position = Vector2(558.783, 137.95)
+scale = Vector2(0.698328, 0.585102)
+texture = ExtResource("6_5t8nu")
+
+[node name="Fi" type="Sprite2D" parent="Singlecolorbg"]
+position = Vector2(486.47, -597.784)
+scale = Vector2(1.98589, 1.2918)
+texture = ExtResource("7_tvpth")
+
+[node name="Eng" type="Sprite2D" parent="Singlecolorbg"]
+position = Vector2(726.417, -599.974)
+scale = Vector2(1.60699, 1.05105)
+texture = ExtResource("8_vklig")
+
+[node name="BackButt" type="TextureButton" parent="Singlecolorbg"]
+anchors_preset = -1
+anchor_left = -8.618
+anchor_right = -8.618
+offset_left = 15405.0
+offset_top = -662.0
+offset_right = 15861.0
+offset_bottom = -318.0
+scale = Vector2(0.206463, 0.199675)
+texture_normal = ExtResource("9_3a7vf")
+script = ExtResource("10_p1ybr")
+_sceneToLoadPath = "res://Levels/mainmenu.tscn"
+
+[node name="TextEdit" type="TextEdit" parent="Singlecolorbg"]
+offset_left = -192.203
+offset_top = 497.221
+offset_right = 114.797
+offset_bottom = 607.221
+text = "Linkki html"

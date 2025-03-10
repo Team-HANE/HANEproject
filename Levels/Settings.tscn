@@ -19,8 +19,8 @@ format = 2
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 
 [node name="Singlecolorbg" type="Sprite2D" parent="TileMap"]
-position = Vector2(159, -93)
-scale = Vector2(0.437037, 0.454526)
+position = Vector2(57.5, -71.0159)
+scale = Vector2(0.544444, 0.485555)
 texture = ExtResource("1_q27jl")
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap/Singlecolorbg"]
@@ -49,13 +49,13 @@ scale = Vector2(0.698328, 0.663095)
 texture = ExtResource("8_ge08d")
 
 [node name="Fi" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(537.712, -512.622)
-scale = Vector2(2.28814, 2.20009)
+position = Vector2(538.334, -495.273)
+scale = Vector2(2.10418, 2.03618)
 texture = ExtResource("9_i5234")
 
 [node name="Eng" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(761.949, -501.621)
-scale = Vector2(1.83051, 1.71607)
+position = Vector2(750.773, -496.222)
+scale = Vector2(1.60699, 1.60809)
 texture = ExtResource("10_jvy5k")
 
 [node name="BackButt" type="TextureButton" parent="TileMap/Singlecolorbg"]
