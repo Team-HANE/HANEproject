@@ -12,6 +12,12 @@
 [ext_resource type="Texture2D" uid="uid://ccdrm5r74jjtw" path="res://Art/buttons/eng.png" id="10_jvy5k"]
 
 [node name="Settings" type="Panel"]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 2
@@ -19,8 +25,8 @@ format = 2
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 
 [node name="Singlecolorbg" type="Sprite2D" parent="TileMap"]
-position = Vector2(57.5, -71.0159)
-scale = Vector2(0.544444, 0.485555)
+position = Vector2(39, -89)
+scale = Vector2(0.591617, 0.463833)
 texture = ExtResource("1_q27jl")
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap/Singlecolorbg"]
