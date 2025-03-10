@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://rjj60bmodeax" path="res://Art/buttons/settings.png" id="3_pdluq"]
 [ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="4_yd6r1"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="6_1ypeq"]
-[ext_resource type="Texture2D" uid="uid://21y776w7sule" path="res://Art/buttons/title.png" id="7_ve3xt"]
+[ext_resource type="Texture2D" uid="uid://c07q6071cw5jx" path="res://Art/buttons/logo.png" id="7_o23rj"]
 
 [node name="GameManager" type="Node2D"]
 position = Vector2(538, 420)
@@ -48,10 +48,10 @@ texture_normal = ExtResource("2_02dy2")
 script = ExtResource("6_1ypeq")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 
-[node name="Title" type="Sprite2D" parent="Mainmenu/TileMap"]
-position = Vector2(639, 318)
-scale = Vector2(1.65437, 1.53142)
-texture = ExtResource("7_ve3xt")
+[node name="Logo" type="Sprite2D" parent="Mainmenu/TileMap"]
+position = Vector2(633, 308.75)
+scale = Vector2(0.7, 0.71875)
+texture = ExtResource("7_o23rj")
 
 [node name="Camera2D" type="Camera2D" parent="Mainmenu"]
 position = Vector2(611, 348)
