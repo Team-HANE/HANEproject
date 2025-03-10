@@ -13,66 +13,67 @@
 
 [node name="Settings" type="Panel"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="TileMap" type="TileMap" parent="."]
 format = 2
 
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 
 [node name="Singlecolorbg" type="Sprite2D" parent="TileMap"]
-position = Vector2(191, 0.968626)
+position = Vector2(159, -93)
 scale = Vector2(0.437037, 0.454526)
 texture = ExtResource("1_q27jl")
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap"]
-position = Vector2(-97, 131)
+[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap/Singlecolorbg"]
+position = Vector2(-652.119, 134.206)
+scale = Vector2(2.28814, 2.20009)
 texture = ExtResource("6_y5yc3")
 
-[node name="Volumeoff" type="Sprite2D" parent="TileMap"]
-position = Vector2(258, -103)
-scale = Vector2(1.22581, 1.29032)
+[node name="Volumeoff" type="Sprite2D" parent="TileMap/Singlecolorbg"]
+position = Vector2(146.441, -345)
+scale = Vector2(2.80482, 2.83883)
 texture = ExtResource("2_uldn3")
 
-[node name="Volumeon" type="Sprite2D" parent="TileMap"]
-position = Vector2(150, -100)
+[node name="Volumeon" type="Sprite2D" parent="TileMap/Singlecolorbg"]
+position = Vector2(-109.831, -347.615)
+scale = Vector2(2.28814, 2.20009)
 texture = ExtResource("3_5vwhq")
 
-[node name="BackButt" type="TextureButton" parent="TileMap"]
+[node name="TikoLogoMustaFin" type="Sprite2D" parent="TileMap/Singlecolorbg"]
+position = Vector2(-91.5254, 121.005)
+scale = Vector2(0.764336, 0.869713)
+texture = ExtResource("7_ve4nn")
+
+[node name="Yhtalogo" type="Sprite2D" parent="TileMap/Singlecolorbg"]
+position = Vector2(610.932, 107.805)
+scale = Vector2(0.698328, 0.663095)
+texture = ExtResource("8_ge08d")
+
+[node name="Fi" type="Sprite2D" parent="TileMap/Singlecolorbg"]
+position = Vector2(537.712, -512.622)
+scale = Vector2(2.28814, 2.20009)
+texture = ExtResource("9_i5234")
+
+[node name="Eng" type="Sprite2D" parent="TileMap/Singlecolorbg"]
+position = Vector2(761.949, -501.621)
+scale = Vector2(1.83051, 1.71607)
+texture = ExtResource("10_jvy5k")
+
+[node name="BackButt" type="TextureButton" parent="TileMap/Singlecolorbg"]
 anchors_preset = -1
 anchor_left = -8.618
 anchor_right = -8.618
-offset_left = -182.0
-offset_top = -282.0
-offset_right = 62.0
-offset_bottom = -38.0
+offset_left = 15405.0
+offset_top = -662.0
+offset_right = 15715.0
+offset_bottom = -431.0
 scale = Vector2(0.206463, 0.199675)
 texture_normal = ExtResource("4_tdrrs")
 script = ExtResource("5_8qehj")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
 
-[node name="TextEdit" type="TextEdit" parent="TileMap"]
-offset_left = 144.0
-offset_top = 238.0
-offset_right = 267.0
-offset_bottom = 285.0
+[node name="TextEdit" type="TextEdit" parent="TileMap/Singlecolorbg"]
+offset_left = -192.203
+offset_top = 497.221
+offset_right = 114.797
+offset_bottom = 607.221
 text = "Linkki html"
-
-[node name="TikoLogoMustaFin" type="Sprite2D" parent="."]
-position = Vector2(158, 135)
-scale = Vector2(0.334043, 0.395307)
-texture = ExtResource("7_ve4nn")
-
-[node name="Yhtalogo" type="Sprite2D" parent="."]
-position = Vector2(425, 141)
-scale = Vector2(0.305195, 0.301394)
-texture = ExtResource("8_ge08d")
-
-[node name="Fi" type="Sprite2D" parent="."]
-position = Vector2(443, -263)
-texture = ExtResource("9_i5234")
-
-[node name="Eng" type="Sprite2D" parent="."]
-position = Vector2(529, -264)
-scale = Vector2(0.8, 0.78)
-texture = ExtResource("10_jvy5k")

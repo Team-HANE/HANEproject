@@ -47,18 +47,18 @@ lives1 = ExtResource("15_7o6ed")
 lives0 = ExtResource("16_xs4i4")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-offset_left = -1903.0
-offset_top = -94.0
-offset_right = 135.0
-offset_bottom = 919.0
+offset_left = -267.826
+offset_top = -91.0067
+offset_right = 114.174
+offset_bottom = 139.993
 mouse_filter = 1
 script = ExtResource("6_08203")
 
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = 51.0
 offset_top = 24.0
-offset_right = 295.0
-offset_bottom = 268.0
+offset_right = 280.0
+offset_bottom = 253.0
 scale = Vector2(0.206463, 0.199675)
 texture_normal = ExtResource("4_efu6g")
 script = ExtResource("5_uo0lq")

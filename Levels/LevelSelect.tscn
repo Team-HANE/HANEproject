@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=8 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_3ugs4"]
 [ext_resource type="PackedScene" uid="uid://6k8h5w7768cr" path="res://Levels/ButtonTesting.tscn" id="3_mqfek"]
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_xnjox"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_46hm5"]
 [ext_resource type="Texture2D" uid="uid://bosciqshxtfsq" path="res://Art/map/bigmap.png" id="5_yu014"]
+[ext_resource type="Texture2D" uid="uid://b1sx4o2llawet" path="res://Art/map/mapdot.png" id="6_nddn5"]
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="6_rb1d0"]
 
 [node name="GameManager" type="Node2D"]
@@ -29,9 +30,21 @@ scale = Vector2(1.16309, 0.915365)
 texture = ExtResource("5_yu014")
 
 [node name="Button" type="Button" parent="Bigmap"]
-offset_left = -380.883
-offset_top = -129.457
-offset_right = -359.883
-offset_bottom = -101.457
+offset_left = -419.0
+offset_top = -167.0
+offset_right = -323.0
+offset_bottom = -71.0
+icon = ExtResource("6_nddn5")
+flat = true
 script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelOne.tscn"
+
+[node name="Button2" type="Button" parent="Bigmap"]
+offset_left = -2.57932
+offset_top = -304.25
+offset_right = 93.4207
+offset_bottom = -208.25
+icon = ExtResource("6_nddn5")
+flat = true
+script = ExtResource("6_rb1d0")
+_sceneToLoadPath = "res://Levels/LevelTwo.tscn"

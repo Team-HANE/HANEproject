@@ -1,0 +1,49 @@
+[gd_scene load_steps=12 format=3 uid="uid://xgxeyu1d51fu"]
+
+[ext_resource type="Texture2D" uid="uid://c5aph7qnlqa5r" path="res://Art/background/Taso2luonnos.PNG" id="1_6rxrd"]
+[ext_resource type="Texture2D" uid="uid://b0vgrsogjsxe7" path="res://Art/buttons/5life.png" id="2_rbc1r"]
+[ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="3_cjcan"]
+[ext_resource type="Texture2D" uid="uid://bmsobybwdh357" path="res://Art/buttons/4life.png" id="4_qvc6y"]
+[ext_resource type="Texture2D" uid="uid://qvfkdy4bwc8g" path="res://Art/buttons/3life.png" id="5_fhhem"]
+[ext_resource type="Texture2D" uid="uid://c3jbr100vp3kn" path="res://Art/buttons/2life.png" id="6_wmuis"]
+[ext_resource type="Texture2D" uid="uid://d31e4fnye1v5b" path="res://Art/buttons/1life.png" id="7_qijy6"]
+[ext_resource type="Texture2D" uid="uid://bx6f1kbyw0ak5" path="res://Art/buttons/0life.png" id="8_7m3n6"]
+[ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="9_2yxc0"]
+[ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="10_7rjkb"]
+[ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="11_ku02v"]
+
+[node name="LevelTwo" type="Node2D"]
+
+[node name="Taso2Luonnos" type="Sprite2D" parent="."]
+position = Vector2(48, -66)
+scale = Vector2(0.569336, 0.501221)
+texture = ExtResource("1_6rxrd")
+
+[node name="5Life" type="Sprite2D" parent="."]
+position = Vector2(512.25, -380)
+scale = Vector2(0.5975, 0.659292)
+texture = ExtResource("2_rbc1r")
+script = ExtResource("3_cjcan")
+lives4 = ExtResource("4_qvc6y")
+lives3 = ExtResource("5_fhhem")
+lives2 = ExtResource("6_wmuis")
+lives1 = ExtResource("7_qijy6")
+lives0 = ExtResource("8_7m3n6")
+
+[node name="TextureButton" type="TextureButton" parent="5Life"]
+offset_left = -1144.35
+offset_top = -737.154
+offset_right = -856.348
+offset_bottom = -600.154
+mouse_filter = 1
+script = ExtResource("9_2yxc0")
+
+[node name="BackButt" type="TextureButton" parent="."]
+offset_left = -521.0
+offset_top = -418.0
+offset_right = -264.0
+offset_bottom = -178.0
+scale = Vector2(0.206463, 0.199675)
+texture_normal = ExtResource("10_7rjkb")
+script = ExtResource("11_ku02v")
+_sceneToLoadPath = "res://Levels/LevelSelect.tscn"
