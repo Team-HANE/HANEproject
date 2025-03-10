@@ -5,6 +5,9 @@ namespace escapetampere
 {
 	public partial class GameManager : Node
 	{
+		private PackedScene _settingsScene = null;
+		private Control _settings;
+
 		#region Player Life Management
 		private int _life = 5;
 
@@ -78,6 +81,16 @@ namespace escapetampere
 		// Called when the node enters the scene tree for the first time.
 		public override void _Ready()
 		{
+			_settingsScene = (PackedScene)ResourceLoader.Load("res://Levels/Settings.tscn");
+			_settings = (Control)_settingsScene.Instantiate();
+			AddChild(_settings);
+			_settings.Visible = false;
+
+		}
+
+		private void OnSettingsButtonPressed()
+		{
+			_settings.Visible = true;
 		}
 
 		// Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,85 +1,75 @@
-[gd_scene load_steps=11 format=3 uid="uid://b7k5b2jfsiy6x"]
+[gd_scene load_steps=12 format=3 uid="uid://b7k5b2jfsiy6x"]
 
+[ext_resource type="Script" path="res://Scripts/Settings.cs" id="1_fhfov"]
 [ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
 [ext_resource type="Texture2D" uid="uid://jkccmab4vdmp" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
 [ext_resource type="Texture2D" uid="uid://dr2o7rmqjv65k" path="res://Art/buttons/volumeon.png" id="3_5vwhq"]
+[ext_resource type="Texture2D" uid="uid://drrwi214m2x6h" path="res://Art/logo/hane_logo_chatgpt.png" id="4_7j0v8"]
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_tdrrs"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_8qehj"]
-[ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="6_y5yc3"]
 [ext_resource type="Texture2D" uid="uid://b2uhdgcyvg8w2" path="res://Art/logo/tiko_logo_musta_fin.png" id="7_ve4nn"]
 [ext_resource type="Texture2D" uid="uid://bccmp52eprnkf" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
 [ext_resource type="Texture2D" uid="uid://ds5p4smob36lr" path="res://Art/buttons/fi.png" id="9_i5234"]
 [ext_resource type="Texture2D" uid="uid://ccdrm5r74jjtw" path="res://Art/buttons/eng.png" id="10_jvy5k"]
 
-[node name="Settings" type="Panel"]
-anchors_preset = 14
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Settings" type="Node2D"]
+visible = false
 
-[node name="TileMap" type="TileMap" parent="."]
-format = 2
+[node name="Control" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_fhfov")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
+[node name="Panel" type="Panel" parent="Control"]
 
-[node name="Singlecolorbg" type="Sprite2D" parent="TileMap"]
-position = Vector2(39, -89)
-scale = Vector2(0.591617, 0.463833)
+[node name="CanvasLayer" type="CanvasLayer" parent="Control/Panel"]
+
+[node name="Singlecolorbg" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(745, 334)
+scale = Vector2(0.445238, 0.464714)
 texture = ExtResource("1_q27jl")
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(-652.119, 134.206)
-scale = Vector2(2.28814, 2.20009)
-texture = ExtResource("6_y5yc3")
-
-[node name="Volumeoff" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(146.441, -345)
-scale = Vector2(2.80482, 2.83883)
-texture = ExtResource("2_uldn3")
-
-[node name="Volumeon" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(-109.831, -347.615)
-scale = Vector2(2.28814, 2.20009)
-texture = ExtResource("3_5vwhq")
-
-[node name="TikoLogoMustaFin" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(-91.5254, 121.005)
-scale = Vector2(0.764336, 0.869713)
-texture = ExtResource("7_ve4nn")
-
-[node name="Yhtalogo" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(610.932, 107.805)
-scale = Vector2(0.698328, 0.663095)
-texture = ExtResource("8_ge08d")
-
-[node name="Fi" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(538.334, -495.273)
-scale = Vector2(2.10418, 2.03618)
-texture = ExtResource("9_i5234")
-
-[node name="Eng" type="Sprite2D" parent="TileMap/Singlecolorbg"]
-position = Vector2(750.773, -496.222)
-scale = Vector2(1.60699, 1.60809)
-texture = ExtResource("10_jvy5k")
-
-[node name="BackButt" type="TextureButton" parent="TileMap/Singlecolorbg"]
-anchors_preset = -1
-anchor_left = -8.618
-anchor_right = -8.618
-offset_left = 15405.0
-offset_top = -662.0
-offset_right = 15715.0
-offset_bottom = -431.0
-scale = Vector2(0.206463, 0.199675)
+[node name="Backbutt" type="TextureButton" parent="Control/Panel/CanvasLayer/Singlecolorbg"]
+offset_left = -892.0
+offset_top = -671.0
+offset_right = -663.0
+offset_bottom = -442.0
 texture_normal = ExtResource("4_tdrrs")
 script = ExtResource("5_8qehj")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
+metadata/_edit_use_anchors_ = true
 
-[node name="TextEdit" type="TextEdit" parent="TileMap/Singlecolorbg"]
-offset_left = -192.203
-offset_top = 497.221
-offset_right = 114.797
-offset_bottom = 607.221
-text = "Linkki html"
+[node name="HaneLogoChatgpt" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(482, 517)
+texture = ExtResource("4_7j0v8")
+
+[node name="TikoLogoMustaFin" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(749, 519)
+scale = Vector2(0.302837, 0.330325)
+texture = ExtResource("7_ve4nn")
+
+[node name="Yhtalogo" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(1012, 527)
+scale = Vector2(0.272727, 0.325784)
+texture = ExtResource("8_ge08d")
+
+[node name="Volumeon" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(610, 263)
+texture = ExtResource("3_5vwhq")
+
+[node name="Volumeoff" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(724, 269)
+scale = Vector2(1.16129, 1.20968)
+texture = ExtResource("2_uldn3")
+
+[node name="Fi" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(941, 102)
+texture = ExtResource("9_i5234")
+
+[node name="Eng" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(1060, 100)
+scale = Vector2(0.75, 0.78)
+texture = ExtResource("10_jvy5k")

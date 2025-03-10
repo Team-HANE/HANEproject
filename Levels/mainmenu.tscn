@@ -27,10 +27,10 @@ texture = ExtResource("1_jcxl6")
 [node name="TileMapLayer2" type="TileMapLayer" parent="Mainmenu/TileMap"]
 
 [node name="Settings" type="TextureButton" parent="Mainmenu/TileMap"]
-offset_left = 1055.0
-offset_top = 91.0
-offset_right = 1136.0
-offset_bottom = 173.0
+offset_left = 1086.0
+offset_top = 68.0
+offset_right = 1146.0
+offset_bottom = 128.0
 texture_normal = ExtResource("3_pdluq")
 script = ExtResource("6_1ypeq")
 _sceneToLoadPath = "res://Levels/Settings.tscn"
@@ -53,14 +53,7 @@ position = Vector2(633, 308.75)
 scale = Vector2(0.7, 0.71875)
 texture = ExtResource("7_o23rj")
 
-[node name="Popupsettingstest" type="TextureButton" parent="Mainmenu/TileMap"]
-offset_left = 995.0
-offset_top = 464.0
-offset_right = 1056.0
-offset_bottom = 530.0
-texture_normal = ExtResource("3_pdluq")
-script = ExtResource("6_1ypeq")
-_sceneToLoadPath = "res://Levels/PopUpTest.tscn"
-
 [node name="Camera2D" type="Camera2D" parent="Mainmenu"]
 position = Vector2(611, 348)
+
+[connection signal="pressed" from="Mainmenu/TileMap/Settings" to="." method="_on_settings_pressed"]
