@@ -45,17 +45,10 @@ lives1 = ExtResource("15_7o6ed")
 lives0 = ExtResource("16_xs4i4")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-<<<<<<< HEAD
-offset_left = -260.87
-offset_top = -75.8389
-offset_right = 121.13
-offset_bottom = 155.161
-=======
 offset_left = -1897.0
 offset_top = -91.0
 offset_right = 143.0
 offset_bottom = 910.0
->>>>>>> 4a352574d7ada4a967a17e4ffbdbb490820fd8f6
 mouse_filter = 1
 script = ExtResource("6_08203")
 
