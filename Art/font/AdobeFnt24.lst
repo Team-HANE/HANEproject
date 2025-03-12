@@ -1,0 +1,57 @@
+%!Adobe-FontList 1.24
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:KatahdinRound-Regular
+FamilyName:Katahdin Round
+StyleName:Regular
+FullName:Katahdin Round
+MenuName:Katahdin Round
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\KatahdinRound.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:53012
+FileModTime:1740642857
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Katahdin Round
+NameArray:0,Win,1,Katahdin Round
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\KatahdinRound.otf.import
+FileModTime:1740642953
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\LICENSE
+FileModTime:1740642857
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\OFL.txt
+FileModTime:1740642857
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\README.md
+FileModTime:1740642857
+%EndFont
+
