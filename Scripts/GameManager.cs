@@ -38,6 +38,10 @@ namespace escapetampere
 				_life -= amount;
 				EmitSignal(SignalName.LifeChange, Life);
 			}
+			if (Life == 0)
+			{
+				GameOver();
+			}
 		}
 
 		public void SetLife(int amount)
@@ -49,9 +53,25 @@ namespace escapetampere
 			}
 		}
 
+		private void GameOver()
+		{
+			ChangeScene("res://Levels/GameOver.tscn");
+		}
+
 		#endregion
 
 		#region Scene Management
+
+		private int _mistakes;
+		public int Mistakes
+		{
+			get
+			{
+				return _mistakes;
+			}
+
+			//readonly
+		}
 
 		public void ChangeScene(String newScenePath)
 		{
@@ -72,6 +92,15 @@ namespace escapetampere
 			AddChild(instance);
 			// resetoidaan elämät
 			SetLife(5);
+			CountMistakes();
+		}
+
+		void CountMistakes()
+		{
+			foreach (Node child in GetChildren(true))
+			{
+				//TODO laske kaikki virheet
+			}
 		}
 
 		#endregion
