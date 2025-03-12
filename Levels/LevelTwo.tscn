@@ -41,9 +41,8 @@ script = ExtResource("9_2yxc0")
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = -521.0
 offset_top = -418.0
-offset_right = -264.0
-offset_bottom = -178.0
-scale = Vector2(0.206463, 0.199675)
+offset_right = -463.0
+offset_bottom = -362.0
 texture_normal = ExtResource("10_7rjkb")
 script = ExtResource("11_ku02v")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"

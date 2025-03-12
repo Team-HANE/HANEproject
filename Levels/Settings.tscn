@@ -27,40 +27,30 @@ layout_mode = 0
 [node name="CanvasLayer" type="CanvasLayer" parent="Control/Panel"]
 
 [node name="Singlecolorbg" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(745, 334)
-scale = Vector2(0.445238, 0.464714)
+position = Vector2(577, 322)
+scale = Vector2(0.606349, 0.451129)
 texture = ExtResource("1_q27jl")
 
-[node name="Backbutt" type="TextureButton" parent="Control/Panel/CanvasLayer/Singlecolorbg"]
-offset_left = -892.0
-offset_top = -671.0
-offset_right = -663.0
-offset_bottom = -442.0
-texture_normal = ExtResource("4_tdrrs")
-script = ExtResource("5_8qehj")
-_sceneToLoadPath = "res://Levels/mainmenu.tscn"
-metadata/_edit_use_anchors_ = true
-
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(482, 517)
+position = Vector2(172, 529)
 texture = ExtResource("4_7j0v8")
 
 [node name="TikoLogoMustaFin" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(749, 519)
+position = Vector2(551, 534)
 scale = Vector2(0.302837, 0.330325)
 texture = ExtResource("7_ve4nn")
 
 [node name="Yhtalogo" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(1012, 527)
+position = Vector2(919, 539)
 scale = Vector2(0.272727, 0.325784)
 texture = ExtResource("8_ge08d")
 
 [node name="Volumeon" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(610, 263)
+position = Vector2(354, 335)
 texture = ExtResource("3_5vwhq")
 
 [node name="Volumeoff" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(724, 269)
+position = Vector2(525, 344)
 scale = Vector2(1.16129, 1.20968)
 texture = ExtResource("2_uldn3")
 
@@ -69,6 +59,21 @@ position = Vector2(941, 102)
 texture = ExtResource("9_i5234")
 
 [node name="Eng" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(1060, 100)
-scale = Vector2(0.75, 0.78)
+position = Vector2(1038, 102)
+scale = Vector2(1.05106, 1.03401)
 texture = ExtResource("10_jvy5k")
+
+[node name="Backbutt" type="TextureButton" parent="Control/Panel/CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.251
+anchor_top = 0.179
+anchor_right = 0.251
+anchor_bottom = 0.179
+offset_left = -28.152
+offset_top = -27.992
+offset_right = 27.848
+offset_bottom = 28.008
+texture_normal = ExtResource("4_tdrrs")
+script = ExtResource("5_8qehj")
+_sceneToLoadPath = "res://Levels/mainmenu.tscn"
+metadata/_edit_use_anchors_ = true

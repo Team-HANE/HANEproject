@@ -26,17 +26,17 @@ format = 2
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 
 [node name="Level1Bg" type="Sprite2D" parent="TileMap"]
-position = Vector2(572, 332)
-scale = Vector2(0.570556, 0.438711)
+position = Vector2(584, 409.267)
+scale = Vector2(0.575317, 0.546527)
 texture = ExtResource("1_p2aug")
 
 [node name="Weirdlight" type="Sprite2D" parent="TileMap"]
-position = Vector2(734, 322)
-scale = Vector2(0.157296, 0.139542)
+position = Vector2(748, 416)
+scale = Vector2(0.162001, 0.148515)
 texture = ExtResource("3_dlbge")
 
 [node name="5Life" type="Sprite2D" parent="."]
-position = Vector2(1080, 60)
+position = Vector2(1070, 60)
 scale = Vector2(0.575, 0.659292)
 texture = ExtResource("12_teamr")
 script = ExtResource("11_qd2gs")
@@ -47,19 +47,18 @@ lives1 = ExtResource("15_7o6ed")
 lives0 = ExtResource("16_xs4i4")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-offset_left = -267.826
-offset_top = -91.0067
-offset_right = 114.174
-offset_bottom = 139.993
+offset_left = -260.87
+offset_top = -75.8389
+offset_right = 121.13
+offset_bottom = 155.161
 mouse_filter = 1
 script = ExtResource("6_08203")
 
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = 51.0
 offset_top = 24.0
-offset_right = 280.0
-offset_bottom = 253.0
-scale = Vector2(0.206463, 0.199675)
+offset_right = 107.0
+offset_bottom = 80.0
 texture_normal = ExtResource("4_efu6g")
 script = ExtResource("5_uo0lq")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
@@ -77,11 +76,10 @@ texture_normal = ExtResource("5_hlwal")
 texture_pressed = ExtResource("5_oh8nn")
 
 [node name="SignButton" type="TextureButton" parent="."]
-offset_left = 699.0
-offset_top = 197.0
-offset_right = 1055.0
-offset_bottom = 651.0
-scale = Vector2(0.219024, 0.218104)
+offset_left = 696.0
+offset_top = 227.0
+offset_right = 802.0
+offset_bottom = 342.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_ii5xk")
 script = ExtResource("16_8qffq")
@@ -90,7 +88,6 @@ _secondTexture = ExtResource("7_ttcyo")
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
 size = Vector2i(500, 180)
-visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="PopupPanel"]

@@ -15,21 +15,22 @@ script = ExtResource("1_3ugs4")
 position = Vector2(580, 313)
 
 [node name="Bigmap" type="Sprite2D" parent="."]
-position = Vector2(591, 318.5)
-scale = Vector2(1.16309, 0.915365)
+position = Vector2(587, 320)
+scale = Vector2(1.16333, 0.919271)
 texture = ExtResource("5_yu014")
 
-[node name="Button" type="Button" parent="Bigmap"]
+[node name="Level1" type="Button" parent="Bigmap"]
 offset_left = -419.0
 offset_top = -167.0
 offset_right = -323.0
 offset_bottom = -71.0
 icon = ExtResource("6_nddn5")
 flat = true
+icon_alignment = 1
 script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelOne.tscn"
 
-[node name="Button2" type="Button" parent="Bigmap"]
+[node name="Level2" type="Button" parent="Bigmap"]
 offset_left = -2.57932
 offset_top = -304.25
 offset_right = 93.4207
@@ -40,11 +41,10 @@ script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelTwo.tscn"
 
 [node name="BackButt" type="TextureButton" parent="Bigmap"]
-offset_left = -480.0
-offset_top = -326.0
-offset_right = -251.0
-offset_bottom = -86.0
-scale = Vector2(0.206463, 0.199675)
+offset_left = -478.897
+offset_top = -320.637
+offset_right = -422.897
+offset_bottom = -264.637
 texture_normal = ExtResource("4_xnjox")
 script = ExtResource("5_46hm5")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"

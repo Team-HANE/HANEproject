@@ -55,5 +55,3 @@ texture = ExtResource("7_o23rj")
 
 [node name="Camera2D" type="Camera2D" parent="Mainmenu"]
 position = Vector2(611, 348)
-
-[connection signal="pressed" from="Mainmenu/TileMap/Settings" to="." method="_on_settings_pressed"]
