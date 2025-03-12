@@ -82,11 +82,12 @@
 }
 
 /*Project colors
-
-Plum: 3C1642
+Plum: #3d1743
+Cyan: #086375
+Teal: #1dd3b0
+Yellowgreen: #affc41
+Lightgreen: #b2ff9e
 */
-
-
 
 /*
 Own css
@@ -95,7 +96,7 @@ Own css
  body, h1, h2, p {
   text-align: center;
   margin: 0px 0px 0px 0px;
-    padding:0;
+  padding:0;
 }
 
 /*images*/
@@ -108,7 +109,7 @@ img {
 
  /*navbar*/
 #navbar {
-  background-color: green;
+  background-color: #1dd3b0;
 }
 
 /*team*/
@@ -120,6 +121,7 @@ img {
 .person {
   padding: 20px;
 }
+
 /*game*/
 .game {
   display: inline-block;
