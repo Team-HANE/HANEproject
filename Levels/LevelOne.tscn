@@ -86,3 +86,23 @@ mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_ii5xk")
 script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("7_ttcyo")
+
+[node name="PopupPanel" type="PopupPanel" parent="."]
+initial_position = 2
+size = Vector2i(500, 180)
+visible = true
+borderless = false
+
+[node name="Label" type="Label" parent="PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 496.0
+offset_bottom = 176.0
+text = "Tervetuloa peliin!
+
+Sinun täytyy selvittää,
+ miten päästä tien yli turvallisesti.
+
+Klikkaa kohtia, jotka ovat väärin."
+horizontal_alignment = 1
+vertical_alignment = 1

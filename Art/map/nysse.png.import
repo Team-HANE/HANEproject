@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds02bbk83qex3"
-path="res://.godot/imported/nysse.png-87da3b39ffa90d45a2a59697c5600a21.ctex"
+path="res://.godot/imported/nysse.png-9ac449f3ecd96cf424045287f5a12608.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/buttons/nysse.png"
-dest_files=["res://.godot/imported/nysse.png-87da3b39ffa90d45a2a59697c5600a21.ctex"]
+source_file="res://Art/map/nysse.png"
+dest_files=["res://.godot/imported/nysse.png-9ac449f3ecd96cf424045287f5a12608.ctex"]
 
 [params]
 

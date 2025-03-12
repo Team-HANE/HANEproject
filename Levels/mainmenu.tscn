@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://rjj60bmodeax" path="res://Art/buttons/settings.png" id="3_pdluq"]
 [ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="4_yd6r1"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="6_1ypeq"]
-[ext_resource type="Texture2D" uid="uid://c07q6071cw5jx" path="res://Art/buttons/logo.png" id="7_o23rj"]
+[ext_resource type="Texture2D" uid="uid://c07q6071cw5jx" path="res://Art/logo/logo.png" id="7_o23rj"]
 
 [node name="GameManager" type="Node2D"]
 position = Vector2(538, 420)
@@ -36,7 +36,7 @@ script = ExtResource("6_1ypeq")
 _sceneToLoadPath = "res://Levels/Settings.tscn"
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Mainmenu/TileMap"]
-position = Vector2(122, 173)
+position = Vector2(148, 149)
 texture = ExtResource("4_yd6r1")
 
 [node name="StartButtBlue" type="TextureButton" parent="Mainmenu/TileMap"]

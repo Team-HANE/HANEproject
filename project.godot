@@ -25,10 +25,6 @@ folder_colors={
 "res://Scripts/": "red"
 }
 
-[gui]
-
-theme/custom_font="res://Art/font/KatahdinRound.otf"
-
 [rendering]
 
 renderer/rendering_method="mobile"
