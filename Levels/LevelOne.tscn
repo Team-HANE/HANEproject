@@ -28,11 +28,6 @@ position = Vector2(584, 409.267)
 scale = Vector2(0.575317, 0.546527)
 texture = ExtResource("1_p2aug")
 
-[node name="Weirdlight" type="Sprite2D" parent="TileMap"]
-position = Vector2(748, 416)
-scale = Vector2(0.162001, 0.148515)
-texture = ExtResource("3_dlbge")
-
 [node name="5Life" type="Sprite2D" parent="."]
 position = Vector2(1070, 60)
 scale = Vector2(0.575, 0.659292)
@@ -77,6 +72,7 @@ _secondTexture = ExtResource("7_ttcyo")
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
 size = Vector2i(500, 180)
+visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="PopupPanel"]
@@ -92,3 +88,7 @@ Sinun täytyy selvittää,
 Klikkaa kohtia, jotka ovat väärin."
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Weirdlight" type="Sprite2D" parent="."]
+position = Vector2(748, 405)
+texture = ExtResource("3_dlbge")
