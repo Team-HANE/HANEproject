@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bdu37yryu36wg"]
+[gd_scene load_steps=18 format=3 uid="uid://bdu37yryu36wg"]
 
 [ext_resource type="Texture2D" uid="uid://c1jsrkqp6l8io" path="res://Art/background/Taso1.jpeg" id="1_p2aug"]
 [ext_resource type="Texture2D" uid="uid://dte0okwouqsm" path="res://Art/signs/otherdangertri.png" id="2_ii5xk"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://qvfkdy4bwc8g" path="res://Art/buttons/3life.png" id="13_or235"]
 [ext_resource type="Texture2D" uid="uid://c3jbr100vp3kn" path="res://Art/buttons/2life.png" id="14_7vxiy"]
 [ext_resource type="Texture2D" uid="uid://d31e4fnye1v5b" path="res://Art/buttons/1life.png" id="15_7o6ed"]
+[ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="15_y6mhn"]
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="16_8qffq"]
 [ext_resource type="Texture2D" uid="uid://dnp0xd0tfm2uq" path="res://Art/signs/normallight.png" id="16_ddtt4"]
 [ext_resource type="Texture2D" uid="uid://bx6f1kbyw0ak5" path="res://Art/buttons/0life.png" id="16_xs4i4"]
@@ -69,6 +70,7 @@ mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_ii5xk")
 script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("7_ttcyo")
+_isCorrectScene = ExtResource("15_y6mhn")
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
