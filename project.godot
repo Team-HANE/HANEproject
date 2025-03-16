@@ -25,6 +25,13 @@ folder_colors={
 "res://Scripts/": "red"
 }
 
+[internationalization]
+
+locale/translation_remaps={
+"res://Art/buttons/eng.png": PackedStringArray(),
+"res://Art/buttons/fi.png": PackedStringArray()
+}
+
 [rendering]
 
 renderer/rendering_method="mobile"
