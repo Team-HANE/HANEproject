@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bxcg3s7q7h56v"]
+[gd_scene load_steps=10 format=3 uid="uid://bxcg3s7q7h56v"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_1n8yq"]
 [ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_jcxl6"]
@@ -7,10 +7,13 @@
 [ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="4_yd6r1"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="6_1ypeq"]
 [ext_resource type="Texture2D" uid="uid://c07q6071cw5jx" path="res://Art/logo/logo.png" id="7_o23rj"]
+[ext_resource type="AudioStream" uid="uid://f6gmr3wuwjja" path="res://Audio/optionchose.mp3" id="8_h005v"]
+[ext_resource type="AudioStream" uid="uid://epv446p3y78f" path="res://Audio/gamemusic.mp3" id="9_ehwhh"]
 
-[node name="GameManager" type="Node2D"]
+[node name="GameManager" type="Node2D" node_paths=PackedStringArray("_music")]
 position = Vector2(538, 420)
 script = ExtResource("1_1n8yq")
+_music = NodePath("Audio/BackgroundMusic")
 
 [node name="Mainmenu" type="Node2D" parent="."]
 
@@ -55,3 +58,14 @@ texture = ExtResource("7_o23rj")
 
 [node name="Camera2D" type="Camera2D" parent="Mainmenu"]
 position = Vector2(611, 348)
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="Option" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("8_h005v")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("9_ehwhh")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+current = true

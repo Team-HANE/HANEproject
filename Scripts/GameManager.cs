@@ -4,7 +4,17 @@ using System;
 namespace escapetampere
 {
 	public partial class GameManager : Node
+
 	{
+		public enum SoundEffects
+		{
+			None = 0,
+			Options,
+			Music,
+		}
+//[Export] private AudioStreamPlayer2D _optionSound = null;
+[Export] private AudioStreamPlayer2D _music = null;
+
 
 		#region Player Life Management
 		private int _life = 5;
@@ -103,6 +113,24 @@ namespace escapetampere
 			}
 		}
 
+		#endregion
+
+		#region audio
+
+		public void PlayAudio(SoundEffects soundType)
+		{
+			switch(soundType)
+			{
+				case SoundEffects.Music:
+				if(_music != null)
+				{
+					_music.Play();
+				}
+				break;
+				default:
+				break;
+			}
+		}
 		#endregion
 
 		// Called when the node enters the scene tree for the first time.
