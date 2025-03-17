@@ -15,9 +15,6 @@
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="13_10kat"]
 [ext_resource type="Texture2D" uid="uid://dbr5l1iaco6hf" path="res://Art/background/lapiokorvaus.png" id="14_ehshg"]
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="14_r242f"]
-
-[ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="15_out8e"]
-
 [ext_resource type="Texture2D" uid="uid://ff14hudiih8w" path="res://Art/background/Taso2 Kuoppa.PNG" id="17_yggx1"]
 
 [node name="LevelTwo" type="Node2D"]
