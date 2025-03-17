@@ -25,6 +25,14 @@ folder_colors={
 "res://Scripts/": "red"
 }
 
+[global_group]
+
+Mistakes=""
+
+[gui]
+
+theme/custom_font="res://Art/font/KatahdinRound.otf"
+
 [internationalization]
 
 locale/translation_remaps={

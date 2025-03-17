@@ -10,10 +10,9 @@
 [ext_resource type="AudioStream" uid="uid://f6gmr3wuwjja" path="res://Audio/optionchose.mp3" id="8_h005v"]
 [ext_resource type="AudioStream" uid="uid://epv446p3y78f" path="res://Audio/gamemusic.mp3" id="9_ehwhh"]
 
-[node name="GameManager" type="Node2D" node_paths=PackedStringArray("_music")]
+[node name="GameManager" type="Node2D"]
 position = Vector2(538, 420)
 script = ExtResource("1_1n8yq")
-_music = NodePath("Audio/BackgroundMusic")
 
 [node name="Mainmenu" type="Node2D" parent="."]
 
