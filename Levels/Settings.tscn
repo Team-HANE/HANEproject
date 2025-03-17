@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b7k5b2jfsiy6x"]
+[gd_scene load_steps=13 format=3 uid="uid://b7k5b2jfsiy6x"]
 
 [ext_resource type="Script" path="res://Scripts/Settings.cs" id="1_fhfov"]
 [ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bccmp52eprnkf" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
 [ext_resource type="Texture2D" uid="uid://ds5p4smob36lr" path="res://Art/buttons/fi.png" id="9_i5234"]
 [ext_resource type="Texture2D" uid="uid://ccdrm5r74jjtw" path="res://Art/buttons/eng.png" id="10_jvy5k"]
+[ext_resource type="AudioStream" uid="uid://epv446p3y78f" path="res://Audio/gamemusic.mp3" id="12_7d4d5"]
 
 [node name="Settings" type="Node2D"]
 
@@ -45,15 +46,6 @@ position = Vector2(919, 539)
 scale = Vector2(0.272727, 0.325784)
 texture = ExtResource("8_ge08d")
 
-[node name="Volumeon" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(354, 335)
-texture = ExtResource("3_5vwhq")
-
-[node name="Volumeoff" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(525, 344)
-scale = Vector2(1.16129, 1.20968)
-texture = ExtResource("2_uldn3")
-
 [node name="Fi" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
 position = Vector2(941, 102)
 texture = ExtResource("9_i5234")
@@ -77,3 +69,39 @@ texture_normal = ExtResource("4_tdrrs")
 script = ExtResource("5_8qehj")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
 metadata/_edit_use_anchors_ = true
+
+[node name="SoundOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
+clip_contents = true
+custom_minimum_size = Vector2(30, 30)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -93.0
+offset_right = 60.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("3_5vwhq")
+
+[node name="SoundOffButton" type="Button" parent="Control/Panel/CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.523
+anchor_top = 0.414
+anchor_right = 0.523
+anchor_bottom = 0.414
+offset_left = -167.496
+offset_top = -35.272
+offset_right = -97.496
+offset_bottom = 34.728
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("2_uldn3")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Control"]
+stream = ExtResource("12_7d4d5")
+volume_db = 9.905
+autoplay = true
+attenuation = 6.06286
