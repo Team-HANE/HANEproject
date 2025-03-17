@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=10 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_3ugs4"]
 [ext_resource type="PackedScene" uid="uid://6k8h5w7768cr" path="res://Levels/ButtonTesting.tscn" id="3_mqfek"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b1sx4o2llawet" path="res://Art/map/mapdot.png" id="6_nddn5"]
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="6_rb1d0"]
 [ext_resource type="AudioStream" uid="uid://epv446p3y78f" path="res://Audio/gamemusic.mp3" id="8_mi48u"]
+[ext_resource type="Texture2D" uid="uid://bxyl3iox3duqg" path="res://Art/map/unfinishedlevelflag.png" id="9_6nenu"]
 
 [node name="GameManager" type="Node2D"]
 script = ExtResource("1_3ugs4")
@@ -54,3 +55,23 @@ _sceneToLoadPath = "res://Levels/mainmenu.tscn"
 stream = ExtResource("8_mi48u")
 volume_db = 9.905
 autoplay = true
+
+[node name="Unfinishedlevelflag" type="Sprite2D" parent="."]
+position = Vector2(420, 495)
+scale = Vector2(0.75, 0.72)
+texture = ExtResource("9_6nenu")
+
+[node name="Unfinishedlevelflag2" type="Sprite2D" parent="."]
+position = Vector2(754, 502)
+scale = Vector2(0.7875, 0.72)
+texture = ExtResource("9_6nenu")
+
+[node name="Unfinishedlevelflag3" type="Sprite2D" parent="."]
+position = Vector2(846, 278)
+scale = Vector2(0.6625, 0.73)
+texture = ExtResource("9_6nenu")
+
+[node name="Unfinishedlevelflag4" type="Sprite2D" parent="."]
+position = Vector2(661.5, 51)
+scale = Vector2(0.6875, 0.7)
+texture = ExtResource("9_6nenu")
