@@ -24,6 +24,7 @@ namespace escapetampere
 			if (TextureNormal == _originalTexture)
 			{
 				TextureNormal = _secondTexture;
+				manager.RemoveMistake();
 			}
 			else
 			{
