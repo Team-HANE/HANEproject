@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Threading;
 
 namespace escapetampere
 {
@@ -107,7 +108,7 @@ namespace escapetampere
 			CheckVictory();
 		}
 
-		
+
 		void CountMistakes()
 		{
 			_mistakes = GetTree().GetNodeCountInGroup("Mistakes");
@@ -118,6 +119,7 @@ namespace escapetampere
 			if (_mistakes == 0)
 			{
 				LevelsCompleted++;
+
 				ChangeScene("res://Levels/NextLevel.tscn");
 			}
 		}
@@ -130,7 +132,7 @@ namespace escapetampere
 
 		public int LevelsCompleted
 		{
-			get 
+			get
 			{
 				return _levelsCompleted;
 			}

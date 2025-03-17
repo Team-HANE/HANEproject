@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5aph7qnlqa5r"
-path="res://.godot/imported/Taso2luonnos.PNG-aadacfab06340bb504143d95cd452644.ctex"
+path="res://.godot/imported/Taso2luonnos.PNG-697d5f7f88a86adb7d98fd3ddd9f204a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/background/Taso2luonnos.PNG"
-dest_files=["res://.godot/imported/Taso2luonnos.PNG-aadacfab06340bb504143d95cd452644.ctex"]
+source_file="res://Art/Taso2luonnos.PNG"
+dest_files=["res://.godot/imported/Taso2luonnos.PNG-697d5f7f88a86adb7d98fd3ddd9f204a.ctex"]
 
 [params]
 

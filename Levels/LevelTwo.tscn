@@ -1,6 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://xgxeyu1d51fu"]
+[gd_scene load_steps=13 format=3 uid="uid://xgxeyu1d51fu"]
 
-[ext_resource type="Texture2D" uid="uid://c5aph7qnlqa5r" path="res://Art/background/Taso2luonnos.PNG" id="1_6rxrd"]
+[ext_resource type="Texture2D" uid="uid://cw41yl2qic8rm" path="res://Art/background/Taso_2.PNG" id="1_4je1h"]
 [ext_resource type="Texture2D" uid="uid://b0vgrsogjsxe7" path="res://Art/buttons/5life.png" id="2_rbc1r"]
 [ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="3_cjcan"]
 [ext_resource type="Texture2D" uid="uid://bmsobybwdh357" path="res://Art/buttons/4life.png" id="4_qvc6y"]
@@ -11,17 +11,18 @@
 [ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="9_2yxc0"]
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="10_7rjkb"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="11_ku02v"]
+[ext_resource type="Texture2D" uid="uid://blgwp7cbvtt36" path="res://Art/background/Taso2Lapio.PNG" id="12_kjbsv"]
 
 [node name="LevelTwo" type="Node2D"]
 
 [node name="Taso2Luonnos" type="Sprite2D" parent="."]
-position = Vector2(48, -66)
-scale = Vector2(0.569336, 0.501221)
-texture = ExtResource("1_6rxrd")
+position = Vector2(33.0001, -40.75)
+scale = Vector2(0.594727, 0.503581)
+texture = ExtResource("1_4je1h")
 
 [node name="5Life" type="Sprite2D" parent="."]
-position = Vector2(512.25, -380)
-scale = Vector2(0.5975, 0.659292)
+position = Vector2(533.362, -335.614)
+scale = Vector2(0.624147, 0.684513)
 texture = ExtResource("2_rbc1r")
 script = ExtResource("3_cjcan")
 lives4 = ExtResource("4_qvc6y")
@@ -39,10 +40,17 @@ mouse_filter = 1
 script = ExtResource("9_2yxc0")
 
 [node name="BackButt" type="TextureButton" parent="."]
-offset_left = -521.0
-offset_top = -418.0
-offset_right = -463.0
-offset_bottom = -362.0
+offset_left = -522.725
+offset_top = -362.609
+offset_right = -464.725
+offset_bottom = -306.609
 texture_normal = ExtResource("10_7rjkb")
 script = ExtResource("11_ku02v")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
+
+[node name="Taso2Lapio" type="TextureButton" parent="." groups=["Mistakes"]]
+offset_left = -532.0
+offset_top = 19.0
+offset_right = -452.0
+offset_bottom = 133.0
+texture_normal = ExtResource("12_kjbsv")

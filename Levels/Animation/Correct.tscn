@@ -9,6 +9,7 @@ gravity = Vector3(0, 98, 0)
 [node name="Correct" type="GPUParticles2D"]
 process_material = SubResource("ParticleProcessMaterial_05qut")
 texture = ExtResource("1_2w8ot")
-explosiveness = 0.9
+lifetime = 0.4
+explosiveness = 0.97
 collision_base_size = 0.0
 trail_section_subdivisions = 1

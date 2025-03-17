@@ -12,6 +12,8 @@ namespace escapetampere
 		//Animation
 		[Export] private PackedScene _isCorrectScene = null;
 		private GpuParticles2D _correct = null;
+		[Export] private PackedScene _isWrongScene = null;
+		private GpuParticles2D _wrong = null;
 
 		public override void _Ready()
 		{
@@ -43,6 +45,17 @@ namespace escapetampere
 
 			_correct.Restart();
 			_correct.OneShot = true;
+		}
+
+		public void IsWrong()
+		{
+			if (IsWrong == null && _isWrongScene != null)
+			{
+				_wrong = _isWrongScene.Instantiate<GpuParticles2D>();
+				AddChild(_wrong);
+			}
+			_wrong.Restart();
+			_wrong.OneShot = true;
 		}
 	}
 }
