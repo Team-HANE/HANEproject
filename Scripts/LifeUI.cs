@@ -25,25 +25,25 @@ namespace escapetampere {
             manager.LifeChange -= ChangeLives;
         }
 
-        public void ChangeLives(int score)
+        public void ChangeLives(int lives)
 		{
-			if (score == 4)
+			if (lives == 4)
 			{
 				Texture = lives4;
 			}
-			if (score == 3)
+			if (lives == 3)
 			{
 				Texture = lives3;
 			}
-			if (score == 2)
+			if (lives == 2)
 			{
 				Texture = lives2;
 			}
-			if (score == 1)
+			if (lives == 1)
 			{
 				Texture = lives1;
 			}
-			if (score == 0)
+			if (lives == 0)
 			{
 				Texture = lives0;
 			}

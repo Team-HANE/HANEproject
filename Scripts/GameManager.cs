@@ -81,6 +81,7 @@ namespace escapetampere
 			AddChild(instance);
 			// resetoidaan elämät
 			SetLife(5);
+			// lasketaan kentän virheet (optimointimahdollisuus)
 			CountMistakes();
 		}
 
@@ -116,8 +117,32 @@ namespace escapetampere
 		{
 			if (_mistakes == 0)
 			{
+				LevelsCompleted++;
 				ChangeScene("res://Levels/NextLevel.tscn");
 			}
+		}
+
+		#endregion
+
+		#region Level Progression
+
+		int _levelsCompleted = 0;
+
+		public int LevelsCompleted
+		{
+			get 
+			{
+				return _levelsCompleted;
+			}
+			set
+			{
+				_levelsCompleted = value;
+			}
+		}
+
+		public void CompleteLevel()
+		{
+			_levelsCompleted++;
 		}
 
 		#endregion
