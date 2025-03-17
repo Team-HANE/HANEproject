@@ -3,3 +3,5 @@
 
 
 uuteen leveliin napit groupiin
+backbutt on button pressed in level -> oletko varma-popup
+wrong-animaatio toimimaan koko alueella

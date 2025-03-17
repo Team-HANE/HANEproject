@@ -59,6 +59,18 @@ texture_normal = ExtResource("4_efu6g")
 script = ExtResource("5_uo0lq")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 
+[node name="Popup" type="Popup" parent="BackButt"]
+size = Vector2i(200, 100)
+
+[node name="Label" type="Label" parent="BackButt/Popup"]
+offset_right = 40.0
+offset_bottom = 20.0
+text = "Oletko varma, 
+että haluat poistua?
+Peli alkaa alusta"
+horizontal_alignment = 1
+justification_flags = 0
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(582, 322)
 
