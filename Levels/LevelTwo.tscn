@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://xgxeyu1d51fu"]
+[gd_scene load_steps=18 format=3 uid="uid://xgxeyu1d51fu"]
 
 [ext_resource type="Texture2D" uid="uid://cw41yl2qic8rm" path="res://Art/background/Taso_2.PNG" id="1_4je1h"]
 [ext_resource type="Texture2D" uid="uid://b0vgrsogjsxe7" path="res://Art/buttons/5life.png" id="2_rbc1r"]
@@ -12,6 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="10_7rjkb"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="11_ku02v"]
 [ext_resource type="Texture2D" uid="uid://blgwp7cbvtt36" path="res://Art/background/Taso2Lapio.PNG" id="12_kjbsv"]
+[ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="13_10kat"]
+[ext_resource type="Texture2D" uid="uid://dbr5l1iaco6hf" path="res://Art/background/lapiokorvaus.png" id="14_ehshg"]
+[ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="14_r242f"]
+[ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="15_out8e"]
+[ext_resource type="Texture2D" uid="uid://bktp8e6vd2yv1" path="res://Art/buttons/nolife.png" id="16_icny3"]
 
 [node name="LevelTwo" type="Node2D"]
 
@@ -49,8 +54,20 @@ script = ExtResource("11_ku02v")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 
 [node name="Taso2Lapio" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = -532.0
-offset_top = 19.0
-offset_right = -452.0
-offset_bottom = 133.0
+offset_left = -527.0
+offset_top = 12.0
+offset_right = -447.0
+offset_bottom = 126.0
 texture_normal = ExtResource("12_kjbsv")
+script = ExtResource("13_10kat")
+_secondTexture = ExtResource("14_ehshg")
+_isCorrectScene = ExtResource("14_r242f")
+_isWrongScene = ExtResource("15_out8e")
+
+[node name="Nolife" type="TextureButton" parent="." groups=["Mistakes"]]
+offset_left = -130.0
+offset_top = 37.0
+offset_right = 28.0
+offset_bottom = 190.0
+scale = Vector2(0.886667, 0.916667)
+texture_normal = ExtResource("16_icny3")
