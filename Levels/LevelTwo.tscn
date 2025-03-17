@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://xgxeyu1d51fu"]
+[gd_scene load_steps=17 format=3 uid="uid://xgxeyu1d51fu"]
 
 [ext_resource type="Texture2D" uid="uid://cw41yl2qic8rm" path="res://Art/background/Taso_2.PNG" id="1_4je1h"]
 [ext_resource type="Texture2D" uid="uid://b0vgrsogjsxe7" path="res://Art/buttons/5life.png" id="2_rbc1r"]
@@ -15,8 +15,7 @@
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="13_10kat"]
 [ext_resource type="Texture2D" uid="uid://dbr5l1iaco6hf" path="res://Art/background/lapiokorvaus.png" id="14_ehshg"]
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="14_r242f"]
-[ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="15_out8e"]
-[ext_resource type="Texture2D" uid="uid://07gf1pbxl3jn" path="res://Art/background/Taso2 Kuoppa.PNG" id="17_yggx1"]
+[ext_resource type="Texture2D" uid="uid://ff14hudiih8w" path="res://Art/background/Taso2 Kuoppa.PNG" id="17_yggx1"]
 
 [node name="LevelTwo" type="Node2D"]
 
@@ -62,7 +61,6 @@ texture_normal = ExtResource("12_kjbsv")
 script = ExtResource("13_10kat")
 _secondTexture = ExtResource("14_ehshg")
 _isCorrectScene = ExtResource("14_r242f")
-_isWrongScene = ExtResource("15_out8e")
 
 [node name="Taso2Kuoppa" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = -268.0
@@ -72,4 +70,3 @@ offset_bottom = 252.0
 texture_normal = ExtResource("17_yggx1")
 script = ExtResource("13_10kat")
 _isCorrectScene = ExtResource("14_r242f")
-_isWrongScene = ExtResource("15_out8e")
