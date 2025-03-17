@@ -26,12 +26,14 @@ namespace escapetampere
 			if (TextureNormal == _originalTexture)
 			{
 				TextureNormal = _secondTexture;
+				//make it wait a second before switching scenes
 				manager.RemoveMistake();
 				IsCorrect();
 			}
 			else
 			{
 				manager.RemoveLife(1);
+				//need to implement to the whole game-area
 				IsWrong();
 			}
 		}
