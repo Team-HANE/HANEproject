@@ -77,6 +77,7 @@ _isWrongScene = ExtResource("16_15d0t")
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
 size = Vector2i(500, 180)
+visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="PopupPanel"]
@@ -92,6 +93,7 @@ Sinun täytyy selvittää,
 Klikkaa kohtia, jotka ovat väärin."
 horizontal_alignment = 1
 vertical_alignment = 1
+justification_flags = 162
 
 [node name="Weirdlight" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = 721.0
@@ -101,3 +103,5 @@ offset_bottom = 431.0
 texture_normal = ExtResource("3_dlbge")
 script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("16_ddtt4")
+_isCorrectScene = ExtResource("15_ii8pm")
+_isWrongScene = ExtResource("16_15d0t")

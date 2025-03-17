@@ -27,17 +27,20 @@ namespace escapetampere
 			{
 				TextureNormal = _secondTexture;
 				manager.RemoveMistake();
+				IsCorrect();
 			}
 			else
 			{
 				manager.RemoveLife(1);
+				IsWrong();
 			}
 		}
 
+
 		//Animation
-		public void IsCorrect ()
+		public void IsCorrect()
 		{
-			if (IsCorrect == null && _isCorrectScene != null)
+			if (_correct == null && _isCorrectScene != null)
 			{
 				_correct = _isCorrectScene.Instantiate<GpuParticles2D>();
 				AddChild(_correct);
@@ -49,7 +52,7 @@ namespace escapetampere
 
 		public void IsWrong()
 		{
-			if (IsWrong == null && _isWrongScene != null)
+			if (_wrong == null && _isWrongScene != null)
 			{
 				_wrong = _isWrongScene.Instantiate<GpuParticles2D>();
 				AddChild(_wrong);
