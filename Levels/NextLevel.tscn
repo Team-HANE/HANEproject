@@ -30,3 +30,8 @@ offset_right = 759.0
 offset_bottom = 653.0
 scale = Vector2(0.633886, 0.592437)
 texture_normal = ExtResource("3_rw5vg")
+script = ExtResource("3_2ydjv")
+_sceneToLoadPath = "res://Levels/LevelSelect.tscn"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(607, 342)

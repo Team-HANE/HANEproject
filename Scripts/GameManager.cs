@@ -6,16 +6,6 @@ namespace escapetampere
 	public partial class GameManager : Node
 
 	{
-		public enum SoundEffects
-		{
-			None = 0,
-			Options,
-			Music,
-		}
-//[Export] private AudioStreamPlayer2D _optionSound = null;
-[Export] private AudioStreamPlayer2D _music = null;
-
-
 		#region Player Life Management
 		private int _life = 5;
 
@@ -72,17 +62,6 @@ namespace escapetampere
 
 		#region Scene Management
 
-		private int _mistakes;
-		public int Mistakes
-		{
-			get
-			{
-				return _mistakes;
-			}
-
-			//readonly
-		}
-
 		public void ChangeScene(String newScenePath)
 		{
 			// poistetaan vanha skene
@@ -102,35 +81,99 @@ namespace escapetampere
 			AddChild(instance);
 			// resetoidaan elämät
 			SetLife(5);
+			// lasketaan kentän virheet (optimointimahdollisuus)
 			CountMistakes();
 		}
 
+		#endregion
+
+		#region Mistake Management
+
+		private int _mistakes;
+
+		public int Mistakes
+		{
+			get
+			{
+				return _mistakes;
+			}
+
+			//readonly
+		}
+
+		public void RemoveMistake()
+		{
+			_mistakes--;
+			CheckVictory();
+		}
+
+		
 		void CountMistakes()
 		{
-			foreach (Node child in GetChildren(true))
+			_mistakes = GetTree().GetNodeCountInGroup("Mistakes");
+		}
+
+		private void CheckVictory()
+		{
+			if (_mistakes == 0)
 			{
-				//TODO laske kaikki virheet
+				LevelsCompleted++;
+				ChangeScene("res://Levels/NextLevel.tscn");
 			}
 		}
 
 		#endregion
 
-		#region audio
+		#region Level Progression
+
+		int _levelsCompleted = 0;
+
+		public int LevelsCompleted
+		{
+			get 
+			{
+				return _levelsCompleted;
+			}
+			set
+			{
+				_levelsCompleted = value;
+			}
+		}
+
+		public void CompleteLevel()
+		{
+			_levelsCompleted++;
+		}
+
+		#endregion
+
+		#region Audio
+
+		public enum SoundEffects
+		{
+			None = 0,
+			Options,
+			Music,
+		}
+
+		//[Export] private AudioStreamPlayer2D _optionSound = null;
+		[Export] private AudioStreamPlayer2D _music = null;
 
 		public void PlayAudio(SoundEffects soundType)
 		{
 			switch(soundType)
 			{
 				case SoundEffects.Music:
-				if(_music != null)
-				{
-					_music.Play();
-				}
-				break;
+					if(_music != null)
+					{
+						_music.Play();
+					}
+					break;
 				default:
 				break;
 			}
 		}
+
 		#endregion
 
 		// Called when the node enters the scene tree for the first time.
