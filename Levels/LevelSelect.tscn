@@ -41,6 +41,7 @@ icon = ExtResource("6_nddn5")
 flat = true
 script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelTwo.tscn"
+levelNumber = 1
 
 [node name="BackButt" type="TextureButton" parent="Bigmap"]
 offset_left = -478.897

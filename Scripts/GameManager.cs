@@ -1,5 +1,7 @@
 using Godot;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 
 namespace escapetampere
@@ -80,6 +82,8 @@ namespace escapetampere
 			// luodaan uusi skene maailmaan ja asetetaan managerin lapseksi
 			Node instance = scene.Instantiate();
 			AddChild(instance);
+			// tallennetaan skenen path progressiota varten
+			_currentLevelPath = newScenePath;
 			// resetoidaan elämät
 			SetLife(5);
 			// lasketaan kentän virheet (optimointimahdollisuus)
@@ -118,8 +122,7 @@ namespace escapetampere
 		{
 			if (_mistakes == 0)
 			{
-				LevelsCompleted++;
-
+				CompleteLevel();
 				ChangeScene("res://Levels/NextLevel.tscn");
 			}
 		}
@@ -129,7 +132,8 @@ namespace escapetampere
 		#region Level Progression
 
 		int _levelsCompleted = 0;
-
+		string _currentLevelPath;
+		List<string> _completedLevelPaths = new List<string>();
 		public int LevelsCompleted
 		{
 			get
@@ -144,7 +148,11 @@ namespace escapetampere
 
 		public void CompleteLevel()
 		{
-			_levelsCompleted++;
+			if (!_completedLevelPaths.Contains(_currentLevelPath))
+			{
+				_completedLevelPaths.Add(_currentLevelPath);
+				_levelsCompleted++;
+			}
 		}
 
 		#endregion
