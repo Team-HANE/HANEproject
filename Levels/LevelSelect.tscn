@@ -1,16 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=10 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_3ugs4"]
 [ext_resource type="Texture2D" uid="uid://bvcn1hwyn4o65" path="res://Art/map/BetterMap.png" id="3_7xhu0"]
 [ext_resource type="PackedScene" uid="uid://6k8h5w7768cr" path="res://Levels/ButtonTesting.tscn" id="3_mqfek"]
-[ext_resource type="Texture2D" uid="uid://b17n28aj8fsgr" path="res://Art/map/youareheredot.png" id="4_ape4w"]
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_xnjox"]
+[ext_resource type="Texture2D" uid="uid://f65i28xw3xgk" path="res://Art/map/youarehere.png" id="4_yxksu"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_46hm5"]
+[ext_resource type="Texture2D" uid="uid://b0ji1edifq2lh" path="res://Art/map/incompletelevel.png" id="6_p321y"]
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="6_rb1d0"]
-[ext_resource type="Texture2D" uid="uid://ka73dhbmlivc" path="res://Art/map/incompleteleveldot.png" id="6_tolw2"]
 [ext_resource type="AudioStream" uid="uid://epv446p3y78f" path="res://Audio/gamemusic.mp3" id="8_mi48u"]
-[ext_resource type="Texture2D" uid="uid://0h6vetdv6i0u" path="res://Art/map/youarehereflag.png" id="9_mbm74"]
-[ext_resource type="Texture2D" uid="uid://dh8jn4y237iuk" path="res://Art/map/incompletelevelflag.png" id="10_knjck"]
 
 [node name="GameManager" type="Node2D"]
 script = ExtResource("1_3ugs4")
@@ -24,23 +22,24 @@ scale = Vector2(0.776, 0.8125)
 texture = ExtResource("3_7xhu0")
 
 [node name="Level1" type="Button" parent="Bigmap"]
-offset_left = -266.753
-offset_top = -203.077
-offset_right = -202.753
-offset_bottom = -139.077
-icon = ExtResource("4_ape4w")
+offset_left = -244.845
+offset_top = -251.077
+offset_right = -152.845
+offset_bottom = -138.077
+icon = ExtResource("4_yxksu")
 flat = true
 icon_alignment = 1
 script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelOne.tscn"
 
 [node name="Level2" type="Button" parent="Bigmap"]
-offset_left = 252.577
-offset_top = -222.769
-offset_right = 316.577
-offset_bottom = -158.769
-icon = ExtResource("6_tolw2")
+offset_left = 253.866
+offset_top = -288.0
+offset_right = 345.866
+offset_bottom = -175.0
+icon = ExtResource("6_p321y")
 flat = true
+icon_alignment = 1
 script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelTwo.tscn"
 levelNumber = 1
@@ -54,27 +53,7 @@ texture_normal = ExtResource("4_xnjox")
 script = ExtResource("5_46hm5")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
 
-[node name="Youarehereflag" type="Sprite2D" parent="Bigmap"]
-position = Vector2(-204.897, -210.462)
-texture = ExtResource("9_mbm74")
-
-[node name="Incompletelevelflag" type="Sprite2D" parent="Bigmap"]
-position = Vector2(307.99, -233.846)
-texture = ExtResource("10_knjck")
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_mi48u")
 volume_db = 9.905
 autoplay = true
-
-[node name="Incompleteleveldot" type="Sprite2D" parent="."]
-position = Vector2(835, 370)
-texture = ExtResource("6_tolw2")
-
-[node name="Incompleteleveldot2" type="Sprite2D" parent="."]
-position = Vector2(682, 525)
-texture = ExtResource("6_tolw2")
-
-[node name="Incompleteleveldot3" type="Sprite2D" parent="."]
-position = Vector2(408, 536)
-texture = ExtResource("6_tolw2")
