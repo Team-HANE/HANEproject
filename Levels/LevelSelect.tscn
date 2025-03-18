@@ -1,14 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=12 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_3ugs4"]
+[ext_resource type="Texture2D" uid="uid://bvcn1hwyn4o65" path="res://Art/map/BetterMap.png" id="3_7xhu0"]
 [ext_resource type="PackedScene" uid="uid://6k8h5w7768cr" path="res://Levels/ButtonTesting.tscn" id="3_mqfek"]
+[ext_resource type="Texture2D" uid="uid://b17n28aj8fsgr" path="res://Art/map/youareheredot.png" id="4_ape4w"]
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_xnjox"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_46hm5"]
-[ext_resource type="Texture2D" uid="uid://bosciqshxtfsq" path="res://Art/map/bigmap.png" id="5_yu014"]
-[ext_resource type="Texture2D" uid="uid://b1sx4o2llawet" path="res://Art/map/mapdot.png" id="6_nddn5"]
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="6_rb1d0"]
+[ext_resource type="Texture2D" uid="uid://ka73dhbmlivc" path="res://Art/map/incompleteleveldot.png" id="6_tolw2"]
 [ext_resource type="AudioStream" uid="uid://epv446p3y78f" path="res://Audio/gamemusic.mp3" id="8_mi48u"]
-[ext_resource type="Texture2D" uid="uid://bxyl3iox3duqg" path="res://Art/map/unfinishedlevelflag.png" id="9_6nenu"]
+[ext_resource type="Texture2D" uid="uid://0h6vetdv6i0u" path="res://Art/map/youarehereflag.png" id="9_mbm74"]
+[ext_resource type="Texture2D" uid="uid://dh8jn4y237iuk" path="res://Art/map/incompletelevelflag.png" id="10_knjck"]
 
 [node name="GameManager" type="Node2D"]
 script = ExtResource("1_3ugs4")
@@ -17,62 +19,62 @@ script = ExtResource("1_3ugs4")
 position = Vector2(580, 313)
 
 [node name="Bigmap" type="Sprite2D" parent="."]
-position = Vector2(587, 320)
-scale = Vector2(1.16333, 0.919271)
-texture = ExtResource("5_yu014")
+position = Vector2(585, 319)
+scale = Vector2(0.776, 0.8125)
+texture = ExtResource("3_7xhu0")
 
 [node name="Level1" type="Button" parent="Bigmap"]
-offset_left = -404.013
-offset_top = -149.031
-offset_right = -340.013
-offset_bottom = -85.0311
-icon = ExtResource("6_nddn5")
+offset_left = -266.753
+offset_top = -203.077
+offset_right = -202.753
+offset_bottom = -139.077
+icon = ExtResource("4_ape4w")
 flat = true
 icon_alignment = 1
 script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelOne.tscn"
 
 [node name="Level2" type="Button" parent="Bigmap"]
-offset_left = 12.894
-offset_top = -286.096
-offset_right = 76.894
-offset_bottom = -222.096
-icon = ExtResource("6_nddn5")
+offset_left = 252.577
+offset_top = -222.769
+offset_right = 316.577
+offset_bottom = -158.769
+icon = ExtResource("6_tolw2")
 flat = true
 script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelTwo.tscn"
 levelNumber = 1
 
 [node name="BackButt" type="TextureButton" parent="Bigmap"]
-offset_left = -478.897
-offset_top = -320.637
-offset_right = -422.897
-offset_bottom = -264.637
+offset_left = -739.691
+offset_top = -380.308
+offset_right = -683.691
+offset_bottom = -324.308
 texture_normal = ExtResource("4_xnjox")
 script = ExtResource("5_46hm5")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
+
+[node name="Youarehereflag" type="Sprite2D" parent="Bigmap"]
+position = Vector2(-204.897, -210.462)
+texture = ExtResource("9_mbm74")
+
+[node name="Incompletelevelflag" type="Sprite2D" parent="Bigmap"]
+position = Vector2(307.99, -233.846)
+texture = ExtResource("10_knjck")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_mi48u")
 volume_db = 9.905
 autoplay = true
 
-[node name="Unfinishedlevelflag" type="Sprite2D" parent="."]
-position = Vector2(420, 495)
-scale = Vector2(0.75, 0.72)
-texture = ExtResource("9_6nenu")
+[node name="Incompleteleveldot" type="Sprite2D" parent="."]
+position = Vector2(835, 370)
+texture = ExtResource("6_tolw2")
 
-[node name="Unfinishedlevelflag2" type="Sprite2D" parent="."]
-position = Vector2(754, 502)
-scale = Vector2(0.7875, 0.72)
-texture = ExtResource("9_6nenu")
+[node name="Incompleteleveldot2" type="Sprite2D" parent="."]
+position = Vector2(682, 525)
+texture = ExtResource("6_tolw2")
 
-[node name="Unfinishedlevelflag3" type="Sprite2D" parent="."]
-position = Vector2(846, 278)
-scale = Vector2(0.6625, 0.73)
-texture = ExtResource("9_6nenu")
-
-[node name="Unfinishedlevelflag4" type="Sprite2D" parent="."]
-position = Vector2(661.5, 51)
-scale = Vector2(0.6875, 0.7)
-texture = ExtResource("9_6nenu")
+[node name="Incompleteleveldot3" type="Sprite2D" parent="."]
+position = Vector2(408, 536)
+texture = ExtResource("6_tolw2")
