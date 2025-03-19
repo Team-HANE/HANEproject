@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://bdu37yryu36wg"]
+[gd_scene load_steps=20 format=3 uid="uid://bdu37yryu36wg"]
 
+[ext_resource type="Script" path="res://Levels/LanguageSwitchPanel.cs" id="1_dtkta"]
 [ext_resource type="Texture2D" uid="uid://c1jsrkqp6l8io" path="res://Art/background/Taso1.jpeg" id="1_p2aug"]
 [ext_resource type="Texture2D" uid="uid://dte0okwouqsm" path="res://Art/signs/otherdangertri.png" id="2_ii5xk"]
 [ext_resource type="Texture2D" uid="uid://1v4xgjr8juaa" path="res://Art/signs/weirdlight.png" id="3_dlbge"]
@@ -20,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://bx6f1kbyw0ak5" path="res://Art/buttons/0life.png" id="16_xs4i4"]
 
 [node name="LevelOne" type="Node2D"]
+script = ExtResource("1_dtkta")
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 2
@@ -97,12 +99,6 @@ offset_left = 4.0
 offset_top = 4.0
 offset_right = 496.0
 offset_bottom = 176.0
-text = "Tervetuloa peliin!
-
-Sinun täytyy selvittää,
- miten päästä tien yli turvallisesti.
-
-Klikkaa kohtia, jotka ovat väärin."
 horizontal_alignment = 1
 vertical_alignment = 1
 justification_flags = 162
