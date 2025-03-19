@@ -3,18 +3,16 @@ using System;
 
 public partial class LanguageSwitch : CanvasLayer
 {
-	// Called when the node enters the scene tree for the first time.
+	private LanguageData _languageData;
+
 	public override void _Ready()
 	{
-
+		_languageData = ResourceLoader.Load<LanguageData>("res://LanguageData.tres");
 		GetNode<Button>("Fi").Pressed += () => ChangeLanguage("fi");
 		GetNode<Button>("Eng").Pressed += () => ChangeLanguage("en");
 	}
 	private void ChangeLanguage(string locale)
 	{
-		// Set language
-		TranslationServer.SetLocale(locale);
-		GD.Print("Language switched to: " + locale);
-
+		_languageData.SetLanguage(locale);
 	}
 }

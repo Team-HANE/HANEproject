@@ -6,16 +6,13 @@ namespace escapetampere
 	public partial class LanguageSwitchPanel : Node2D
 	{
 		private Label popupLabel;
-		// Called when the node enters the scene tree for the first time.
+		private LanguageData _languageData;
 		public override void _Ready()
 		{
 			popupLabel = GetNode<Label>("PopupPanel/Label");
-			AddTranslation();
-			UpdateText();
-		}
 
-		private void AddTranslation()
-		{
+			_languageData = ResourceLoader.Load<LanguageData>("res://LanguageData.tres");
+
 			Translation fiTranslation = new Translation();
 			Translation engTranslation = new Translation();
 
@@ -27,20 +24,23 @@ namespace escapetampere
 			TranslationServer.AddTranslation(fiTranslation);
 			TranslationServer.AddTranslation(engTranslation);
 
+
+			//TranslationServer.SetLocale(_languageData.CurrentLocale);
+
+			UpdateText();
 		}
 
 		private void UpdateText()
 		{
-			if (popupLabel !=null)
+			if (popupLabel != null)
 			{
 				popupLabel.Text = Tr("POPUP_MESSAGE");
 			}
 		}
 		private void ChangeLanguage(string locale)
 		{
-			// Set language
+			_languageData.SetLanguage(locale);
 			TranslationServer.SetLocale(locale);
-			GD.Print("Language switched to: " + locale);
 			UpdateText();
 		}
 	}
