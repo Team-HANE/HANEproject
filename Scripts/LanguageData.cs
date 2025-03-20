@@ -4,7 +4,7 @@ using System;
 [GlobalClass]
 public partial class LanguageData : Resource
 {
-     [Export] public string CurrentLocale = "en"; // Default to English
+    [Export] public string CurrentLocale = "fi";
 
     public void SetLanguage(string locale)
     {

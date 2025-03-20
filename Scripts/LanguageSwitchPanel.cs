@@ -25,8 +25,6 @@ namespace escapetampere
 			TranslationServer.AddTranslation(engTranslation);
 
 
-			//TranslationServer.SetLocale(_languageData.CurrentLocale);
-
 			UpdateText();
 		}
 
