@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://b7k5b2jfsiy6x"]
+[gd_scene load_steps=14 format=3 uid="uid://b7k5b2jfsiy6x"]
 
 [ext_resource type="Script" path="res://Scripts/Settings.cs" id="1_fhfov"]
 [ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
 [ext_resource type="Texture2D" uid="uid://jkccmab4vdmp" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
+[ext_resource type="Script" path="res://Scripts/LanguageSwitch.cs" id="2_yaftv"]
 [ext_resource type="Texture2D" uid="uid://dr2o7rmqjv65k" path="res://Art/buttons/volumeon.png" id="3_5vwhq"]
 [ext_resource type="Texture2D" uid="uid://drrwi214m2x6h" path="res://Art/logo/hane_logo_chatgpt.png" id="4_7j0v8"]
 [ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_tdrrs"]
@@ -26,6 +27,7 @@ script = ExtResource("1_fhfov")
 layout_mode = 0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Control/Panel"]
+script = ExtResource("2_yaftv")
 
 [node name="Singlecolorbg" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
 position = Vector2(577, 322)
@@ -46,14 +48,22 @@ position = Vector2(919, 539)
 scale = Vector2(0.272727, 0.325784)
 texture = ExtResource("8_ge08d")
 
-[node name="Fi" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(941, 102)
-texture = ExtResource("9_i5234")
+[node name="Fi" type="Button" parent="Control/Panel/CanvasLayer"]
+offset_left = 925.0
+offset_top = 56.0
+offset_right = 1003.0
+offset_bottom = 134.0
+icon = ExtResource("9_i5234")
+flat = true
 
-[node name="Eng" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(1038, 102)
+[node name="Eng" type="Button" parent="Control/Panel/CanvasLayer"]
+offset_left = 1026.0
+offset_top = 50.0
+offset_right = 1107.0
+offset_bottom = 131.0
 scale = Vector2(1.05106, 1.03401)
-texture = ExtResource("10_jvy5k")
+icon = ExtResource("10_jvy5k")
+flat = true
 
 [node name="Backbutt" type="TextureButton" parent="Control/Panel/CanvasLayer"]
 anchors_preset = -1

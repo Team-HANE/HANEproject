@@ -1,5 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://bdu37yryu36wg"]
+[gd_scene load_steps=20 format=3 uid="uid://bdu37yryu36wg"]
 
+[ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="1_dtkta"]
 [ext_resource type="Texture2D" uid="uid://c1jsrkqp6l8io" path="res://Art/background/Taso1.jpeg" id="1_p2aug"]
 [ext_resource type="Texture2D" uid="uid://dte0okwouqsm" path="res://Art/signs/otherdangertri.png" id="2_ii5xk"]
 [ext_resource type="Texture2D" uid="uid://1v4xgjr8juaa" path="res://Art/signs/weirdlight.png" id="3_dlbge"]
@@ -15,10 +16,12 @@
 [ext_resource type="Texture2D" uid="uid://d31e4fnye1v5b" path="res://Art/buttons/1life.png" id="15_7o6ed"]
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="15_ii8pm"]
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="16_8qffq"]
+[ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="16_ce18k"]
 [ext_resource type="Texture2D" uid="uid://dnp0xd0tfm2uq" path="res://Art/signs/normallight.png" id="16_ddtt4"]
 [ext_resource type="Texture2D" uid="uid://bx6f1kbyw0ak5" path="res://Art/buttons/0life.png" id="16_xs4i4"]
 
 [node name="LevelOne" type="Node2D"]
+script = ExtResource("1_dtkta")
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 2
@@ -58,6 +61,18 @@ texture_normal = ExtResource("4_efu6g")
 script = ExtResource("5_uo0lq")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 
+[node name="Popup" type="Popup" parent="BackButt"]
+size = Vector2i(200, 100)
+
+[node name="Label" type="Label" parent="BackButt/Popup"]
+offset_right = 40.0
+offset_bottom = 20.0
+text = "Oletko varma, 
+että haluat poistua?
+Peli alkaa alusta"
+horizontal_alignment = 1
+justification_flags = 0
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(582, 322)
 
@@ -71,10 +86,12 @@ texture_normal = ExtResource("2_ii5xk")
 script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("7_ttcyo")
 _isCorrectScene = ExtResource("15_ii8pm")
+_isWrongScene = ExtResource("16_ce18k")
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
 size = Vector2i(500, 180)
+visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="PopupPanel"]
@@ -82,14 +99,9 @@ offset_left = 4.0
 offset_top = 4.0
 offset_right = 496.0
 offset_bottom = 176.0
-text = "Tervetuloa peliin!
-
-Sinun täytyy selvittää,
- miten päästä tien yli turvallisesti.
-
-Klikkaa kohtia, jotka ovat väärin."
 horizontal_alignment = 1
 vertical_alignment = 1
+justification_flags = 162
 
 [node name="Weirdlight" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = 721.0
@@ -99,3 +111,5 @@ offset_bottom = 431.0
 texture_normal = ExtResource("3_dlbge")
 script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("16_ddtt4")
+_isCorrectScene = ExtResource("15_ii8pm")
+_isWrongScene = ExtResource("16_ce18k")

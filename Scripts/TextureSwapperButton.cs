@@ -26,18 +26,23 @@ namespace escapetampere
 			if (TextureNormal == _originalTexture)
 			{
 				TextureNormal = _secondTexture;
+				//make it wait a second before switching scenes
 				manager.RemoveMistake();
+				IsCorrect();
 			}
 			else
 			{
 				manager.RemoveLife(1);
+				//need to implement to the whole game-area
+				IsWrong();
 			}
 		}
 
+
 		//Animation
-		public void IsCorrect ()
+		public void IsCorrect()
 		{
-			if (IsCorrect == null && _isCorrectScene != null)
+			if (_correct == null && _isCorrectScene != null)
 			{
 				_correct = _isCorrectScene.Instantiate<GpuParticles2D>();
 				AddChild(_correct);
@@ -49,7 +54,7 @@ namespace escapetampere
 
 		public void IsWrong()
 		{
-			if (IsWrong == null && _isWrongScene != null)
+			if (_wrong == null && _isWrongScene != null)
 			{
 				_wrong = _isWrongScene.Instantiate<GpuParticles2D>();
 				AddChild(_wrong);

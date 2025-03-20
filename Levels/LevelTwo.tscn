@@ -13,8 +13,8 @@
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="11_ku02v"]
 [ext_resource type="Texture2D" uid="uid://blgwp7cbvtt36" path="res://Art/background/Taso2Lapio.PNG" id="12_kjbsv"]
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="13_10kat"]
-[ext_resource type="Texture2D" uid="uid://dbr5l1iaco6hf" path="res://Art/background/lapiokorvaus.png" id="14_ehshg"]
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="14_r242f"]
+[ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="15_tpawv"]
 [ext_resource type="Texture2D" uid="uid://ff14hudiih8w" path="res://Art/background/Taso2 Kuoppa.PNG" id="17_yggx1"]
 
 [node name="LevelTwo" type="Node2D"]
@@ -59,8 +59,8 @@ offset_right = -447.0
 offset_bottom = 126.0
 texture_normal = ExtResource("12_kjbsv")
 script = ExtResource("13_10kat")
-_secondTexture = ExtResource("14_ehshg")
 _isCorrectScene = ExtResource("14_r242f")
+_isWrongScene = ExtResource("15_tpawv")
 
 [node name="Taso2Kuoppa" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = -268.0
