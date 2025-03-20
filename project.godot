@@ -10,10 +10,15 @@ config_version=5
 
 [application]
 
-config/name="PeliProjekti"
+config/name="Stop, Spot, Go!"
 run/main_scene="res://Levels/mainmenu.tscn"
 config/features=PackedStringArray("4.3", "C#", "Mobile")
 config/icon="res://Art/icon.svg"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=320
 
 [dotnet]
 
@@ -43,3 +48,4 @@ locale/translation_remaps={
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
