@@ -22,10 +22,10 @@ scale = Vector2(0.776, 0.8125)
 texture = ExtResource("3_7xhu0")
 
 [node name="Level1" type="Button" parent="Bigmap"]
-offset_left = -244.845
-offset_top = -251.077
-offset_right = -152.845
-offset_bottom = -138.077
+offset_left = -221.649
+offset_top = -253.538
+offset_right = -129.649
+offset_bottom = -140.538
 icon = ExtResource("4_yxksu")
 flat = true
 icon_alignment = 1
@@ -33,10 +33,10 @@ script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelOne.tscn"
 
 [node name="Level2" type="Button" parent="Bigmap"]
-offset_left = 253.866
-offset_top = -288.0
-offset_right = 345.866
-offset_bottom = -175.0
+offset_left = 250.0
+offset_top = -284.308
+offset_right = 342.0
+offset_bottom = -171.308
 icon = ExtResource("6_p321y")
 flat = true
 icon_alignment = 1
@@ -52,6 +52,18 @@ offset_bottom = -324.308
 texture_normal = ExtResource("4_xnjox")
 script = ExtResource("5_46hm5")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
+
+[node name="Incompletelevel" type="Sprite2D" parent="Bigmap"]
+position = Vector2(291.237, 16)
+texture = ExtResource("6_p321y")
+
+[node name="Incompletelevel2" type="Sprite2D" parent="Bigmap"]
+position = Vector2(186.856, 227.692)
+texture = ExtResource("6_p321y")
+
+[node name="Incompletelevel3" type="Sprite2D" parent="Bigmap"]
+position = Vector2(-216.495, 242.462)
+texture = ExtResource("6_p321y")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_mi48u")
