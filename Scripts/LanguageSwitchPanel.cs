@@ -14,15 +14,15 @@ namespace escapetampere
 			_languageData = ResourceLoader.Load<LanguageData>("res://LanguageData.tres");
 
 			Translation fiTranslation = new Translation();
-			Translation engTranslation = new Translation();
+			Translation enTranslation = new Translation();
 
 			fiTranslation.AddMessage("POPUP_MESSAGE", "Tervetuloa peliin! \n Sinun täytyy selvittää, miten päästä tien yli turvallisesti. \n Klikkaa kohtia, jotka ovat väärin.");
 
-			engTranslation.AddMessage("POPUP_MESSAGE", "Welcome to the game! \n You have to figure out, how to get to the other side safely. \n Click on the errors.");
+			enTranslation.AddMessage("POPUP_MESSAGE", "Welcome to the game! \n You have to figure out, how to get to the other side safely. \n Click on the errors.");
 
 
 			TranslationServer.AddTranslation(fiTranslation);
-			TranslationServer.AddTranslation(engTranslation);
+			TranslationServer.AddTranslation(enTranslation);
 
 
 			UpdateText();

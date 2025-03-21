@@ -45,6 +45,7 @@ locale/translation_remaps={
 "res://Art/background/nextstage.png": PackedStringArray("res://Art/background/nextstage.png:fi", "res://Art/background/nextstage_eng.png:en"),
 "res://Art/buttons/startbuttblue.png": PackedStringArray("res://Art/buttons/startbuttblue.png:fi", "res://Art/buttons/startbutteng.png:en")
 }
+locale/translations=PackedStringArray("res://Translations.en.translation", "res://Translations.fi.translation")
 
 [rendering]
 
