@@ -33,10 +33,10 @@ script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelOne.tscn"
 
 [node name="Level2" type="Button" parent="Bigmap"]
-offset_left = 250.0
-offset_top = -284.308
-offset_right = 342.0
-offset_bottom = -171.308
+offset_left = 229.381
+offset_top = -286.769
+offset_right = 321.381
+offset_bottom = -173.769
 icon = ExtResource("6_p321y")
 flat = true
 icon_alignment = 1
