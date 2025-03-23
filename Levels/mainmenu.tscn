@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://bxcg3s7q7h56v"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_1n8yq"]
-[ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_jcxl6"]
-[ext_resource type="Texture2D" uid="uid://cvwaq7g5kgujt" path="res://Art/buttons/startbuttblue.png" id="2_02dy2"]
-[ext_resource type="Texture2D" uid="uid://rjj60bmodeax" path="res://Art/buttons/settings.png" id="3_pdluq"]
-[ext_resource type="Texture2D" uid="uid://ckq2c52mcaeqg" path="res://Art/buttons/hane_logo_chatgpt.png" id="4_yd6r1"]
+[ext_resource type="Texture2D" uid="uid://dtdvqojwl0663" path="res://Art/background/singlecolorbg.png" id="1_jcxl6"]
+[ext_resource type="Texture2D" uid="uid://qsv428cql6g2" path="res://Art/buttons/startbuttblue.png" id="2_02dy2"]
+[ext_resource type="Texture2D" uid="uid://cr783c7av0nfw" path="res://Art/buttons/settings.png" id="3_pdluq"]
+[ext_resource type="Texture2D" uid="uid://reihdsnjws6p" path="res://Art/logo/hane_logo_chatgpt.png" id="5_q86u6"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="6_1ypeq"]
-[ext_resource type="Texture2D" uid="uid://c07q6071cw5jx" path="res://Art/logo/logo.png" id="7_o23rj"]
+[ext_resource type="Texture2D" uid="uid://6bfd3rvg28pf" path="res://Art/logo/logo.png" id="7_o23rj"]
 [ext_resource type="AudioStream" uid="uid://f6gmr3wuwjja" path="res://Audio/optionchose.mp3" id="8_h005v"]
 [ext_resource type="AudioStream" uid="uid://epv446p3y78f" path="res://Audio/gamemusic.mp3" id="9_ehwhh"]
 
@@ -16,47 +16,47 @@ script = ExtResource("1_1n8yq")
 
 [node name="Mainmenu" type="Node2D" parent="."]
 
-[node name="TileMap" type="TileMap" parent="Mainmenu"]
-format = 2
+[node name="Camera2D" type="Camera2D" parent="Mainmenu"]
+position = Vector2(611, 348)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="Mainmenu/TileMap"]
+[node name="Node2D" type="Node2D" parent="Mainmenu"]
 
-[node name="Singlecolorbg" type="Sprite2D" parent="Mainmenu/TileMap"]
-position = Vector2(597, 358)
+[node name="TileMapLayer" type="TileMapLayer" parent="Mainmenu/Node2D"]
+
+[node name="Singlecolorbg" type="Sprite2D" parent="Mainmenu/Node2D"]
+position = Vector2(647, 361)
 scale = Vector2(0.629101, 0.475741)
 texture = ExtResource("1_jcxl6")
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="Mainmenu/TileMap"]
+[node name="TileMapLayer2" type="TileMapLayer" parent="Mainmenu/Node2D"]
 
-[node name="Settings" type="TextureButton" parent="Mainmenu/TileMap"]
-offset_left = 1086.0
-offset_top = 68.0
-offset_right = 1146.0
-offset_bottom = 128.0
+[node name="Settings" type="TextureButton" parent="Mainmenu/Node2D"]
+offset_left = 846.0
+offset_top = 209.0
+offset_right = 906.0
+offset_bottom = 269.0
 texture_normal = ExtResource("3_pdluq")
 script = ExtResource("6_1ypeq")
-_sceneToLoadPath = "res://Levels/Settings.tscn"
+_sceneToLoadPath = "E:/Godot/Project/EscapeTampere/HANEproject/Levels/mainmenu.tscn"
 
-[node name="HaneLogoChatgpt" type="Sprite2D" parent="Mainmenu/TileMap"]
-position = Vector2(148, 149)
-texture = ExtResource("4_yd6r1")
+[node name="HaneLogoChatgpt" type="Sprite2D" parent="Mainmenu/Node2D"]
+position = Vector2(336, 236)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("5_q86u6")
 
-[node name="StartButtBlue" type="TextureButton" parent="Mainmenu/TileMap"]
-offset_left = 576.0
-offset_top = 524.0
-offset_right = 713.0
-offset_bottom = 601.0
+[node name="StartButtBlue" type="TextureButton" parent="Mainmenu/Node2D"]
+offset_left = 545.0
+offset_top = 415.0
+offset_right = 682.0
+offset_bottom = 492.0
 texture_normal = ExtResource("2_02dy2")
 script = ExtResource("6_1ypeq")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 
-[node name="Logo" type="Sprite2D" parent="Mainmenu/TileMap"]
-position = Vector2(633, 308.75)
-scale = Vector2(0.7, 0.71875)
+[node name="Logo" type="Sprite2D" parent="Mainmenu/Node2D"]
+position = Vector2(611, 283)
+scale = Vector2(0.405, 0.417)
 texture = ExtResource("7_o23rj")
-
-[node name="Camera2D" type="Camera2D" parent="Mainmenu"]
-position = Vector2(611, 348)
 
 [node name="Audio" type="Node" parent="."]
 
