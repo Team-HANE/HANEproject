@@ -15,6 +15,11 @@ run/main_scene="res://Levels/mainmenu.tscn"
 config/features=PackedStringArray("4.3", "C#", "Mobile")
 config/icon="res://Art/icon.svg"
 
+[debug]
+
+file_logging/enable_file_logging=true
+file_logging/log_path="C:\\Users\\Aaro\\Desktop\\godotlogstemp\\godot.log"
+
 [display]
 
 window/size/viewport_width=640
@@ -41,10 +46,12 @@ theme/custom_font="res://Art/font/junegull rg.otf"
 [internationalization]
 
 locale/translation_remaps={
+"res://Art/background/asetukset.png": PackedStringArray("res://Art/background/asetukset.png:fi", "res://Art/background/settings.png:en"),
 "res://Art/background/gameover.png": PackedStringArray("res://Art/background/gameover.png:fi", "res://Art/background/gameover_eng.png:en"),
 "res://Art/background/nextstage.png": PackedStringArray("res://Art/background/nextstage.png:fi", "res://Art/background/nextstage_eng.png:en"),
 "res://Art/buttons/startbuttblue.png": PackedStringArray("res://Art/buttons/startbuttblue.png:fi", "res://Art/buttons/startbutteng.png:en")
 }
+locale/translations=PackedStringArray("res://Translations.en.translation", "res://Translations.fi.translation")
 
 [rendering]
 
