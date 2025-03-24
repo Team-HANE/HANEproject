@@ -12,9 +12,10 @@ namespace escapetampere
         public override void _Ready()
         {
             // Hae AudioStreamPlayer ja Button-solmut
-            _audioPlayer = GetNode<AudioStreamPlayer>("AudioStreamPlayer");
-            _soundOnButton = GetNode<Button>("SoundOnButton");
-            _soundOffButton = GetNode<Button>("SoundOffButton");
+            _audioPlayer = GetNode<AudioStreamPlayer>("../AudioStreamPlayer");
+            _soundOnButton = GetNode<Button>("%SoundOnButton");
+            _soundOffButton = GetNode<Button>("%SoundOffButton");
+
 
             // Yhdistä signaalit nappeihin
             _soundOnButton.Pressed += OnSoundOnButtonPressed;

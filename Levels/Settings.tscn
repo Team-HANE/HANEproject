@@ -28,11 +28,13 @@ script = ExtResource("1_fhfov")
 layout_mode = 0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Control/Panel"]
+scale = Vector2(0.54, 0.54)
+transform = Transform2D(0.54, 0, 0, 0.54, 0, 0)
 script = ExtResource("2_yaftv")
 
 [node name="Singlecolorbg" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(577, 322)
-scale = Vector2(0.606349, 0.451129)
+position = Vector2(474.074, 290.741)
+scale = Vector2(0.961, 0.715)
 texture = ExtResource("1_q27jl")
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
@@ -78,19 +80,19 @@ metadata/_edit_use_anchors_ = true
 
 [node name="SoundOffButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
-offset_left = 520.0
-offset_top = 222.0
-offset_right = 590.0
-offset_bottom = 292.0
+offset_left = 620.755
+offset_top = 273.585
+offset_right = 690.755
+offset_bottom = 343.585
 icon = ExtResource("2_uldn3")
 
 [node name="SoundOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
 custom_minimum_size = Vector2(30, 30)
-offset_left = 412.0
-offset_top = 220.0
-offset_right = 488.0
-offset_bottom = 296.0
+offset_left = 439.623
+offset_top = 267.925
+offset_right = 515.623
+offset_bottom = 343.925
 icon = ExtResource("3_5vwhq")
 icon_alignment = 1
 
@@ -103,3 +105,6 @@ stream = ExtResource("12_7d4d5")
 volume_db = 9.905
 autoplay = true
 attenuation = 6.06286
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(321, 162)
