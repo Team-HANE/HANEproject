@@ -33,21 +33,21 @@ transform = Transform2D(0.54, 0, 0, 0.54, 0, 0)
 script = ExtResource("2_yaftv")
 
 [node name="Singlecolorbg" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(474.074, 290.741)
-scale = Vector2(0.961, 0.715)
+position = Vector2(598.148, 303.704)
+scale = Vector2(0.629042, 0.446954)
 texture = ExtResource("1_q27jl")
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(172, 529)
+position = Vector2(242.593, 488.889)
 texture = ExtResource("4_7j0v8")
 
 [node name="TikoLogoMustaFin" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(551, 534)
+position = Vector2(568.518, 496.296)
 scale = Vector2(0.302837, 0.330325)
 texture = ExtResource("7_ve4nn")
 
 [node name="Yhtalogo" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(919, 539)
+position = Vector2(905.556, 496.296)
 scale = Vector2(0.272727, 0.325784)
 texture = ExtResource("8_ge08d")
 

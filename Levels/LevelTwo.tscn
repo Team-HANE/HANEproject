@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://xgxeyu1d51fu"]
+[gd_scene load_steps=18 format=3 uid="uid://xgxeyu1d51fu"]
 
+[ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="1_0a5nk"]
 [ext_resource type="Texture2D" uid="uid://cvdvpa166opba" path="res://Art/background/Taso_2.PNG" id="1_4je1h"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_rbc1r"]
 [ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="3_cjcan"]
@@ -20,6 +21,7 @@
 [node name="LevelTwo" type="Node2D"]
 position = Vector2(303, 191)
 scale = Vector2(0.45, 0.45)
+script = ExtResource("1_0a5nk")
 
 [node name="Taso2Luonnos" type="Sprite2D" parent="."]
 position = Vector2(36.6666, -71.5279)
@@ -75,3 +77,19 @@ _isCorrectScene = ExtResource("14_r242f")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(37.7778, -68.8889)
+
+[node name="Level2PopupPanel" type="PopupPanel" parent="."]
+auto_translate_mode = 1
+initial_position = 2
+size = Vector2i(470, 115)
+visible = true
+borderless = false
+
+[node name="Label" type="Label" parent="Level2PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 466.0
+offset_bottom = 111.0
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 162
