@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://co0bo2mh6v38f"]
 
-[ext_resource type="Texture2D" uid="uid://grwt78idpphh" path="res://Art/buttons/cross.png" id="1_4rvhj"]
+[ext_resource type="Texture2D" uid="uid://bth12b45ilhlb" path="res://Art/buttons/cross.png" id="1_4rvhj"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_v25sc"]
 particle_flag_disable_z = true
