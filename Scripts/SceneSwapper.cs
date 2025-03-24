@@ -18,6 +18,14 @@ namespace escapetampere
 			{
 				Disabled = true;
 			}
+			else if (manager._completedLevelPaths.Contains(_sceneToLoadPath))
+			{
+				Icon = manager.CompletedLevelFlag;
+			}
+			else
+			{
+				Icon = manager.YouAreHereFlag;
+			}
 		}
 
         public override void _Pressed()
