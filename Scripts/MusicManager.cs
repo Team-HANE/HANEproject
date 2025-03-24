@@ -2,29 +2,27 @@ using Godot;
 
 public partial class MusicManager : Node
 {
-    private static MusicManager _instance;
+    public static MusicManager Instance { get; private set; }
     private AudioStreamPlayer _musicPlayer;
 
     public override void _Ready()
+{
+    if (Instance != null && Instance != this)
     {
-        if (_instance != null)
-        {
-            QueueFree();
-            return;
-        }
-
-        _instance = this;
-        _musicPlayer = new AudioStreamPlayer();
-        AddChild(_musicPlayer);
-
-        // Lataa MP3-tiedosto
-        _musicPlayer.Stream = ResourceLoader.Load<AudioStream>("res://Audio/gamemusic.mp3");
-        _musicPlayer.Play();
-        _musicPlayer.Bus = "Music";
-
-        // Lisää MusicManager juuritasolle
-        GetTree().Root.AddChild(this);
+        QueueFree();
+        return;
     }
+
+    Instance = this;
+    _musicPlayer = new AudioStreamPlayer();
+    AddChild(_musicPlayer);
+
+    _musicPlayer.Stream = ResourceLoader.Load<AudioStream>("res://Audio/gamemusic.mp3");
+    _musicPlayer.Autoplay = true; // Lisää tämä rivi
+    _musicPlayer.Play();
+    _musicPlayer.Bus = "Music";
+}
+
 
     public void ToggleMusic(bool play)
     {

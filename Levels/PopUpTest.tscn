@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://3fic7awwel03"]
 
-[ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_i0qbe"]
+[ext_resource type="Texture2D" uid="uid://dtdvqojwl0663" path="res://Art/background/singlecolorbg.png" id="1_i0qbe"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 

@@ -1,14 +1,14 @@
 using Godot;
 
-namespace escapetampere
+public partial class SettingsPanel : Panel
 {
-    public partial class Settings : Control
+    public override void _Ready()
     {
-public override void _Ready()
-    {
-        Button soundOnButton = GetNode<Button>("ButtonSoundOn");
-        Button soundOffButton = GetNode<Button>("ButtonSoundOff");
+        // Hae napit Panelin alla olevalta CanvasLayer-solmulta
+        Button soundOnButton = GetNode<Button>("CanvasLayer/SoundOnButton");
+        Button soundOffButton = GetNode<Button>("CanvasLayer/SoundOffButton");
 
+        // Liitä nappeihin signaalit koodissa
         soundOnButton.Pressed += OnSoundOnButtonPressed;
         soundOffButton.Pressed += OnSoundOffButtonPressed;
     }
@@ -23,7 +23,5 @@ public override void _Ready()
     {
         GD.Print("Musiikki pois!");
         MusicManager.Instance.ToggleMusic(false);
-    }
-
     }
 }
