@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b8tovcgbux22r"]
 
-[ext_resource type="Texture2D" uid="uid://bktb1pllkbyck" path="res://Art/buttons/checkmark.png" id="1_2w8ot"]
+[ext_resource type="Texture2D" uid="uid://b7ir1aa5md5p2" path="res://Art/buttons/checkmark.png" id="1_2w8ot"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_05qut"]
 particle_flag_disable_z = true

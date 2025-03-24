@@ -37,7 +37,7 @@ offset_right = 906.0
 offset_bottom = 269.0
 texture_normal = ExtResource("3_pdluq")
 script = ExtResource("6_1ypeq")
-_sceneToLoadPath = "E:/Godot/Project/EscapeTampere/HANEproject/Levels/mainmenu.tscn"
+_sceneToLoadPath = "E:/Godot/Project/EscapeTampere/HANEproject/Levels/Settings.tscn"
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Mainmenu/Node2D"]
 position = Vector2(336, 236)
