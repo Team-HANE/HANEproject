@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxcg3s7q7h56v"]
+[gd_scene load_steps=12 format=3 uid="uid://bxcg3s7q7h56v"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_1n8yq"]
 [ext_resource type="Texture2D" uid="uid://dtdvqojwl0663" path="res://Art/background/singlecolorbg.png" id="1_jcxl6"]
 [ext_resource type="Texture2D" uid="uid://qsv428cql6g2" path="res://Art/buttons/startbuttblue.png" id="2_02dy2"]
+[ext_resource type="Texture2D" uid="uid://cc2m3bcl4ir0a" path="res://Art/map/finishedlevel.png" id="2_a1kmc"]
+[ext_resource type="Texture2D" uid="uid://bh7fqox08w52y" path="res://Art/map/youarehere.png" id="3_1ondl"]
 [ext_resource type="Texture2D" uid="uid://cr783c7av0nfw" path="res://Art/buttons/settings.png" id="3_pdluq"]
 [ext_resource type="Texture2D" uid="uid://reihdsnjws6p" path="res://Art/logo/hane_logo_chatgpt.png" id="5_q86u6"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="6_1ypeq"]
@@ -13,6 +15,8 @@
 [node name="GameManager" type="Node2D"]
 position = Vector2(538, 420)
 script = ExtResource("1_1n8yq")
+CompletedLevelFlag = ExtResource("2_a1kmc")
+YouAreHereFlag = ExtResource("3_1ondl")
 
 [node name="Mainmenu" type="Node2D" parent="."]
 

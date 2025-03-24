@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=7 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Texture2D" uid="uid://c7am4sb5crekt" path="res://Art/map/BetterMap.png" id="3_7xhu0"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="4_xnjox"]
-[ext_resource type="Texture2D" uid="uid://bh7fqox08w52y" path="res://Art/map/youarehere.png" id="4_yxksu"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_46hm5"]
 [ext_resource type="Texture2D" uid="uid://bi0cjpmsdmwmn" path="res://Art/map/incompletelevel.png" id="6_p321y"]
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="6_rb1d0"]
@@ -18,7 +17,7 @@ offset_left = -221.649
 offset_top = -253.538
 offset_right = -129.649
 offset_bottom = -140.538
-icon = ExtResource("4_yxksu")
+icon = ExtResource("6_p321y")
 flat = true
 icon_alignment = 1
 script = ExtResource("6_rb1d0")

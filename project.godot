@@ -15,10 +15,6 @@ run/main_scene="res://Levels/mainmenu.tscn"
 config/features=PackedStringArray("4.3", "C#", "Mobile")
 config/icon="res://Art/icon.svg"
 
-[debug]
-
-file_logging/enable_file_logging=true
-
 [display]
 
 window/size/viewport_width=640

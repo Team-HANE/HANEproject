@@ -133,7 +133,9 @@ namespace escapetampere
 
 		int _levelsCompleted = 0;
 		string _currentLevelPath;
-		List<string> _completedLevelPaths = new List<string>();
+		public List<string> _completedLevelPaths = new List<string>();
+		[Export] public CompressedTexture2D CompletedLevelFlag;
+		[Export] public CompressedTexture2D YouAreHereFlag;
 		public int LevelsCompleted
 		{
 			get
