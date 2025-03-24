@@ -31,13 +31,13 @@ texture = ExtResource("1_jcxl6")
 [node name="TileMapLayer2" type="TileMapLayer" parent="Mainmenu/Node2D"]
 
 [node name="Settings" type="TextureButton" parent="Mainmenu/Node2D"]
-offset_left = 846.0
-offset_top = 209.0
-offset_right = 906.0
-offset_bottom = 269.0
+offset_left = 867.0
+offset_top = 187.0
+offset_right = 927.0
+offset_bottom = 247.0
 texture_normal = ExtResource("3_pdluq")
 script = ExtResource("6_1ypeq")
-_sceneToLoadPath = "E:/Godot/Project/EscapeTampere/HANEproject/Levels/mainmenu.tscn"
+_sceneToLoadPath = "res://Levels/Settings.tscn"
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Mainmenu/Node2D"]
 position = Vector2(336, 236)

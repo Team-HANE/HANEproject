@@ -1,19 +1,19 @@
 [gd_scene load_steps=15 format=3 uid="uid://b7k5b2jfsiy6x"]
 
 [ext_resource type="Script" path="res://Scripts/Settings.cs" id="1_fhfov"]
-[ext_resource type="Texture2D" uid="uid://dq2so5yix3d07" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
-[ext_resource type="Texture2D" uid="uid://jkccmab4vdmp" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
+[ext_resource type="Texture2D" uid="uid://dtdvqojwl0663" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
+[ext_resource type="Texture2D" uid="uid://dbu25ktj2lla2" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
 [ext_resource type="Script" path="res://Scripts/LanguageSwitch.cs" id="2_yaftv"]
-[ext_resource type="Texture2D" uid="uid://dr2o7rmqjv65k" path="res://Art/buttons/volumeon.png" id="3_5vwhq"]
-[ext_resource type="Texture2D" uid="uid://drrwi214m2x6h" path="res://Art/logo/hane_logo_chatgpt.png" id="4_7j0v8"]
-[ext_resource type="Texture2D" uid="uid://nfnp6kgr7jdk" path="res://Art/buttons/backbutt.png" id="4_tdrrs"]
+[ext_resource type="Texture2D" uid="uid://06shy7gxbp0c" path="res://Art/buttons/volumeon.png" id="3_5vwhq"]
+[ext_resource type="Texture2D" uid="uid://reihdsnjws6p" path="res://Art/logo/hane_logo_chatgpt.png" id="4_7j0v8"]
+[ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="4_tdrrs"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_8qehj"]
-[ext_resource type="Texture2D" uid="uid://b2uhdgcyvg8w2" path="res://Art/logo/tiko_logo_musta_fin.png" id="7_ve4nn"]
-[ext_resource type="Texture2D" uid="uid://bccmp52eprnkf" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
-[ext_resource type="Texture2D" uid="uid://ds5p4smob36lr" path="res://Art/buttons/fi.png" id="9_i5234"]
-[ext_resource type="Texture2D" uid="uid://ccdrm5r74jjtw" path="res://Art/buttons/eng.png" id="10_jvy5k"]
+[ext_resource type="Texture2D" uid="uid://yb1sgxfexb1w" path="res://Art/logo/tiko_logo_musta_fin.png" id="7_ve4nn"]
+[ext_resource type="Texture2D" uid="uid://bvnxw53q30p83" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
+[ext_resource type="Texture2D" uid="uid://dmdujhaxtgk4y" path="res://Art/buttons/fi.png" id="9_i5234"]
+[ext_resource type="Texture2D" uid="uid://sqqggnyq2y2y" path="res://Art/buttons/eng.png" id="10_jvy5k"]
 [ext_resource type="AudioStream" uid="uid://epv446p3y78f" path="res://Audio/gamemusic.mp3" id="12_7d4d5"]
-[ext_resource type="Texture2D" uid="uid://bhksdybyfrsrt" path="res://Art/background/asetukset.png" id="13_ma42d"]
+[ext_resource type="Texture2D" uid="uid://choev52k2bfpf" path="res://Art/background/asetukset.png" id="13_ma42d"]
 
 [node name="Settings" type="Node2D"]
 
@@ -28,11 +28,13 @@ script = ExtResource("1_fhfov")
 layout_mode = 0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Control/Panel"]
+scale = Vector2(0.54, 0.54)
+transform = Transform2D(0.54, 0, 0, 0.54, 0, 0)
 script = ExtResource("2_yaftv")
 
 [node name="Singlecolorbg" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(577, 322)
-scale = Vector2(0.606349, 0.451129)
+position = Vector2(474.074, 290.741)
+scale = Vector2(0.961, 0.715)
 texture = ExtResource("1_q27jl")
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
@@ -78,19 +80,19 @@ metadata/_edit_use_anchors_ = true
 
 [node name="SoundOffButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
-offset_left = 520.0
-offset_top = 222.0
-offset_right = 590.0
-offset_bottom = 292.0
+offset_left = 620.755
+offset_top = 273.585
+offset_right = 690.755
+offset_bottom = 343.585
 icon = ExtResource("2_uldn3")
 
 [node name="SoundOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
 custom_minimum_size = Vector2(30, 30)
-offset_left = 412.0
-offset_top = 220.0
-offset_right = 488.0
-offset_bottom = 296.0
+offset_left = 439.623
+offset_top = 267.925
+offset_right = 515.623
+offset_bottom = 343.925
 icon = ExtResource("3_5vwhq")
 icon_alignment = 1
 
@@ -103,3 +105,6 @@ stream = ExtResource("12_7d4d5")
 volume_db = 9.905
 autoplay = true
 attenuation = 6.06286
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(321, 162)
