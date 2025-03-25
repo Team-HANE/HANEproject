@@ -30,8 +30,8 @@ format = 2
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 
 [node name="Level1Bg" type="Sprite2D" parent="TileMap"]
-position = Vector2(593.518, 300.926)
-scale = Vector2(0.677767, 0.601472)
+position = Vector2(588.889, 293.518)
+scale = Vector2(0.685238, 0.616651)
 texture = ExtResource("1_p2aug")
 
 [node name="5Life" type="Sprite2D" parent="."]
@@ -46,10 +46,10 @@ lives1 = ExtResource("15_7o6ed")
 lives0 = ExtResource("16_xs4i4")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-offset_left = -180.0
-offset_top = -107.0
-offset_right = 187.0
-offset_bottom = 61.0
+offset_left = -163.607
+offset_top = -144.791
+offset_right = 203.393
+offset_bottom = 23.2086
 mouse_filter = 1
 script = ExtResource("6_08203")
 
@@ -93,7 +93,6 @@ _isWrongScene = ExtResource("17_tqio1")
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
 size = Vector2i(470, 115)
-visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="PopupPanel"]

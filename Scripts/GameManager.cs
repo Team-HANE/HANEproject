@@ -1,11 +1,11 @@
 using Godot;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
+
 
 namespace escapetampere
 {
+
 	public partial class GameManager : Node
 
 	{
@@ -121,11 +121,64 @@ namespace escapetampere
 			_mistakes = GetTree().GetNodeCountInGroup("Mistakes");
 		}
 
+		#endregion
+
+
+		#region animation
 		public void AnimationFinished()
 		{
 			_correctAnimation--;
 			CheckVictory();
 		}
+
+		/* [Export] private PackedScene _isWrongScene = null;
+		private GpuParticles2D _wrongEffect = null;
+
+		public override void _Input(InputEvent @event)
+		{
+			if (@event is InputEventMouseButton mouseEvent && mouseEvent.Pressed)
+			{
+				Vector2 clickPosition = GetViewport().GetMousePosition();
+				Node clickedNode = GetClickedNode(clickPosition);
+
+				if (!(clickedNode is TextureSwapperButton))
+				{
+					PlayIsWrongAnimation(clickPosition);
+					RemoveLife(1); // Deduct life for a wrong click
+				}
+			}
+		}
+
+		        private Node GetClickedNode(Vector2 position)
+        {
+            // Get the root of the scene and iterate over all Control nodes
+            var rootNode = GetTree().CurrentScene;
+            foreach (Node child in rootNode.GetChildren())
+            {
+                if (child is Control control && control.GetRect().HasPoint(position))
+                {
+                    return control; // We found a Control node (e.g., TextureSwapperButton) clicked
+                }
+            }
+
+            return null; // Return null if no control node was clicked
+        }
+
+		private void PlayIsWrongAnimation(Vector2 position)
+		{
+			if (_wrongEffect == null && _isWrongScene != null)
+			{
+				_wrongEffect = _isWrongScene.Instantiate<GpuParticles2D>();
+				AddChild(_wrongEffect);
+			}
+
+			_wrongEffect.Position = position;
+			_wrongEffect.Restart();
+			_wrongEffect.OneShot = true;
+		}
+*/
+
+		#endregion
 
 		private void CheckVictory()
 		{
@@ -135,8 +188,6 @@ namespace escapetampere
 				ChangeScene("res://Levels/NextLevel.tscn");
 			}
 		}
-
-		#endregion
 
 		#region Level Progression
 
