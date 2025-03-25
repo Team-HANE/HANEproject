@@ -22,7 +22,7 @@ offset_bottom = 273.052
 scale = Vector2(0.327732, 0.315126)
 texture_normal = ExtResource("2_7wevq")
 script = ExtResource("3_2ydjv")
-_sceneToLoadPath = "res://Levels/LevelSelect.tscn"
+_sceneToLoadPath = "res://Levels/mainmenu.tscn"
 
 [node name="Next" type="TextureButton" parent="."]
 offset_left = 548.0

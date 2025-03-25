@@ -29,7 +29,7 @@ scale = Vector2(0.695529, 0.463506)
 texture = ExtResource("1_4je1h")
 
 [node name="5Life" type="Sprite2D" parent="."]
-position = Vector2(675.556, -353.333)
+position = Vector2(640, -320)
 scale = Vector2(0.624147, 0.684513)
 texture = ExtResource("2_rbc1r")
 script = ExtResource("3_cjcan")
@@ -40,10 +40,10 @@ lives1 = ExtResource("7_qijy6")
 lives0 = ExtResource("8_7m3n6")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-offset_left = -2275.0
-offset_top = -182.0
-offset_right = 335.0
-offset_bottom = 1117.0
+offset_left = -373.844
+offset_top = -87.6541
+offset_right = 75.1555
+offset_bottom = 45.3459
 mouse_filter = 1
 script = ExtResource("9_2yxc0")
 
@@ -74,6 +74,7 @@ offset_bottom = 218.0
 texture_normal = ExtResource("17_yggx1")
 script = ExtResource("13_10kat")
 _isCorrectScene = ExtResource("14_r242f")
+_isWrongScene = ExtResource("15_tpawv")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(37.7778, -68.8889)

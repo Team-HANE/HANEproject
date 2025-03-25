@@ -26,7 +26,6 @@ namespace escapetampere
 			if (TextureNormal == _originalTexture)
 			{
 				TextureNormal = _secondTexture;
-				//make it wait a second before switching scenes
 				manager.RemoveMistake();
 				IsCorrect();
 			}
@@ -40,7 +39,7 @@ namespace escapetampere
 
 
 		//Animation
-		public void IsCorrect()
+		public async void IsCorrect()
 		{
 			if (_correct == null && _isCorrectScene != null)
 			{
@@ -50,6 +49,9 @@ namespace escapetampere
 
 			_correct.Restart();
 			_correct.OneShot = true;
+
+			await ToSignal(_correct, "finished");
+			manager.AnimationFinished();
 		}
 
 		public void IsWrong()

@@ -9,6 +9,7 @@ namespace escapetampere
 	public partial class GameManager : Node
 
 	{
+		private int _correctAnimation = 0;
 		#region Player Life Management
 		private int _life = 5;
 
@@ -90,6 +91,7 @@ namespace escapetampere
 			CountMistakes();
 		}
 
+
 		#endregion
 
 		#region Mistake Management
@@ -109,6 +111,7 @@ namespace escapetampere
 		public void RemoveMistake()
 		{
 			_mistakes--;
+			_correctAnimation++;
 			CheckVictory();
 		}
 
@@ -118,9 +121,15 @@ namespace escapetampere
 			_mistakes = GetTree().GetNodeCountInGroup("Mistakes");
 		}
 
+		public void AnimationFinished()
+		{
+			_correctAnimation--;
+			CheckVictory();
+		}
+
 		private void CheckVictory()
 		{
-			if (_mistakes == 0)
+			if (_mistakes == 0 && _correctAnimation == 0)
 			{
 				CompleteLevel();
 				ChangeScene("res://Levels/NextLevel.tscn");
@@ -173,16 +182,16 @@ namespace escapetampere
 
 		public void PlayAudio(SoundEffects soundType)
 		{
-			switch(soundType)
+			switch (soundType)
 			{
 				case SoundEffects.Music:
-					if(_music != null)
+					if (_music != null)
 					{
 						_music.Play();
 					}
 					break;
 				default:
-				break;
+					break;
 			}
 		}
 

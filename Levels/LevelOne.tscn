@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bdu37yryu36wg"]
+[gd_scene load_steps=20 format=3 uid="uid://bdu37yryu36wg"]
 
 [ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="1_dtkta"]
 [ext_resource type="Texture2D" uid="uid://d4mlwxppm1ve6" path="res://Art/background/Taso1.jpeg" id="1_p2aug"]
@@ -18,6 +18,7 @@
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="16_8qffq"]
 [ext_resource type="Texture2D" uid="uid://tvustw16d1kj" path="res://Art/signs/normallight.png" id="16_ddtt4"]
 [ext_resource type="Texture2D" uid="uid://ha02wwur6msj" path="res://Art/buttons/0life.png" id="16_xs4i4"]
+[ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="17_tqio1"]
 
 [node name="LevelOne" type="Node2D"]
 scale = Vector2(0.54, 0.54)
@@ -29,8 +30,8 @@ format = 2
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 
 [node name="Level1Bg" type="Sprite2D" parent="TileMap"]
-position = Vector2(584, 299.272)
-scale = Vector2(0.575317, 0.403304)
+position = Vector2(593.518, 300.926)
+scale = Vector2(0.677767, 0.601472)
 texture = ExtResource("1_p2aug")
 
 [node name="5Life" type="Sprite2D" parent="."]
@@ -45,10 +46,10 @@ lives1 = ExtResource("15_7o6ed")
 lives0 = ExtResource("16_xs4i4")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-offset_left = -1925.0
-offset_top = -164.0
-offset_right = 368.0
-offset_bottom = 910.0
+offset_left = -179.71
+offset_top = -166.846
+offset_right = 432.29
+offset_bottom = 61.1543
 mouse_filter = 1
 script = ExtResource("6_08203")
 
@@ -77,16 +78,17 @@ justification_flags = 0
 position = Vector2(583.333, 296.296)
 
 [node name="SignButton" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = 703.704
-offset_top = 150.0
-offset_right = 809.704
-offset_bottom = 256.0
+offset_left = 787.037
+offset_top = 200.0
+offset_right = 893.037
+offset_bottom = 306.0
 scale = Vector2(0.83, 0.83)
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_ii5xk")
 script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("7_ttcyo")
 _isCorrectScene = ExtResource("15_ii8pm")
+_isWrongScene = ExtResource("17_tqio1")
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
@@ -104,12 +106,13 @@ vertical_alignment = 1
 justification_flags = 162
 
 [node name="Weirdlight" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = 727.778
-offset_top = 257.407
-offset_right = 780.778
-offset_bottom = 337.407
+offset_left = 811.111
+offset_top = 322.222
+offset_right = 864.111
+offset_bottom = 402.222
 scale = Vector2(0.75, 0.75)
 texture_normal = ExtResource("3_dlbge")
 script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("16_ddtt4")
 _isCorrectScene = ExtResource("15_ii8pm")
+_isWrongScene = ExtResource("17_tqio1")
