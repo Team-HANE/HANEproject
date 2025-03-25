@@ -86,15 +86,17 @@ offset_top = 273.585
 offset_right = 690.755
 offset_bottom = 343.585
 icon = ExtResource("2_uldn3")
+flat = true
 
 [node name="SoundOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
 custom_minimum_size = Vector2(30, 30)
-offset_left = 439.623
-offset_top = 267.925
-offset_right = 515.623
-offset_bottom = 343.925
+offset_left = 498.148
+offset_top = 270.37
+offset_right = 574.148
+offset_bottom = 346.37
 icon = ExtResource("3_5vwhq")
+flat = true
 icon_alignment = 1
 
 [node name="Asetukset" type="Sprite2D" parent="Control/Panel/CanvasLayer"]

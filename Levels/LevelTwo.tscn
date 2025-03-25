@@ -50,7 +50,7 @@ script = ExtResource("9_2yxc0")
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = -657.778
 offset_top = -404.444
-offset_right = -599.778
+offset_right = -601.778
 offset_bottom = -348.444
 texture_normal = ExtResource("10_7rjkb")
 script = ExtResource("11_ku02v")
