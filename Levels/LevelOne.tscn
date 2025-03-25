@@ -35,8 +35,8 @@ scale = Vector2(0.677767, 0.601472)
 texture = ExtResource("1_p2aug")
 
 [node name="5Life" type="Sprite2D" parent="."]
-position = Vector2(1070, 60)
-scale = Vector2(0.575, 0.659292)
+position = Vector2(1070, 71.0071)
+scale = Vector2(0.575, 0.541569)
 texture = ExtResource("12_teamr")
 script = ExtResource("11_qd2gs")
 lives4 = ExtResource("12_7kmq3")
@@ -46,10 +46,10 @@ lives1 = ExtResource("15_7o6ed")
 lives0 = ExtResource("16_xs4i4")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-offset_left = -179.71
-offset_top = -166.846
-offset_right = 432.29
-offset_bottom = 61.1543
+offset_left = -180.0
+offset_top = -107.0
+offset_right = 187.0
+offset_bottom = 61.0
 mouse_filter = 1
 script = ExtResource("6_08203")
 

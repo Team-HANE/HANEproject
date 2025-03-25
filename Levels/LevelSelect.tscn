@@ -34,6 +34,18 @@ script = ExtResource("6_rb1d0")
 _sceneToLoadPath = "res://Levels/LevelTwo.tscn"
 levelNumber = 1
 
+[node name="Level3" type="Button" parent="."]
+offset_left = 257.411
+offset_top = -56.9307
+offset_right = 349.411
+offset_bottom = 56.0693
+icon = ExtResource("6_p321y")
+flat = true
+icon_alignment = 1
+script = ExtResource("6_rb1d0")
+_sceneToLoadPath = "res://Levels/LevelThree.tscn"
+levelNumber = 2
+
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = -739.691
 offset_top = -380.308
@@ -42,10 +54,6 @@ offset_bottom = -324.308
 texture_normal = ExtResource("4_xnjox")
 script = ExtResource("5_46hm5")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
-
-[node name="Incompletelevel" type="Sprite2D" parent="."]
-position = Vector2(291.237, 16)
-texture = ExtResource("6_p321y")
 
 [node name="Incompletelevel2" type="Sprite2D" parent="."]
 position = Vector2(186.856, 227.692)

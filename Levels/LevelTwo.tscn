@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://xgxeyu1d51fu"]
 
 [ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="1_0a5nk"]
-[ext_resource type="Texture2D" uid="uid://cvdvpa166opba" path="res://Art/background/Taso_2.PNG" id="1_4je1h"]
+[ext_resource type="Texture2D" uid="uid://sw5gobtafiyl" path="res://Art/background/Taso_2valmis.PNG" id="2_elfwk"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_rbc1r"]
 [ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="3_cjcan"]
 [ext_resource type="Texture2D" uid="uid://rpov7vloe5vb" path="res://Art/buttons/4life.png" id="4_qvc6y"]
@@ -24,13 +24,13 @@ scale = Vector2(0.45, 0.45)
 script = ExtResource("1_0a5nk")
 
 [node name="Taso2Luonnos" type="Sprite2D" parent="."]
-position = Vector2(36.6666, -71.5279)
-scale = Vector2(0.695529, 0.463506)
-texture = ExtResource("1_4je1h")
+position = Vector2(36.6666, -63.7503)
+scale = Vector2(0.695529, 0.473633)
+texture = ExtResource("2_elfwk")
 
 [node name="5Life" type="Sprite2D" parent="."]
-position = Vector2(640, -320)
-scale = Vector2(0.624147, 0.684513)
+position = Vector2(640, -315.777)
+scale = Vector2(0.624147, 0.639345)
 texture = ExtResource("2_rbc1r")
 script = ExtResource("3_cjcan")
 lives4 = ExtResource("4_qvc6y")
@@ -67,10 +67,10 @@ _isCorrectScene = ExtResource("14_r242f")
 _isWrongScene = ExtResource("15_tpawv")
 
 [node name="Taso2Kuoppa" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = -262.222
-offset_top = -20.0
-offset_right = 159.778
-offset_bottom = 218.0
+offset_left = -280.0
+offset_top = -15.5555
+offset_right = 142.0
+offset_bottom = 222.444
 texture_normal = ExtResource("17_yggx1")
 script = ExtResource("13_10kat")
 _isCorrectScene = ExtResource("14_r242f")
@@ -83,7 +83,6 @@ position = Vector2(37.7778, -68.8889)
 auto_translate_mode = 1
 initial_position = 2
 size = Vector2i(470, 115)
-visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="Level2PopupPanel"]
