@@ -39,7 +39,7 @@ offset_right = 927.0
 offset_bottom = 247.0
 texture_normal = ExtResource("3_pdluq")
 script = ExtResource("6_1ypeq")
-_sceneToLoadPath = "C:/Users/ellen/tamk/course/peliprojekti/HANEproject/Levels/Settings.tscn"
+_sceneToLoadPath = "res://Levels/Settings.tscn"
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Mainmenu/Node2D"]
 position = Vector2(336, 236)
