@@ -11,4 +11,7 @@ still need:
 
 - popup are you sure you want to exit?
 
+
+-x nappi alotukseen
+
 viewport w 1152 h 648
