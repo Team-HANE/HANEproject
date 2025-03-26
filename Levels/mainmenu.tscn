@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://6bfd3rvg28pf" path="res://Art/logo/logo.png" id="7_o23rj"]
 
 [node name="GameManager" type="Node2D"]
-process_mode = 3
 position = Vector2(538, 420)
 script = ExtResource("1_1n8yq")
 CompletedLevelFlag = ExtResource("3_i7j38")

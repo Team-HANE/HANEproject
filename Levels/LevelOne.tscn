@@ -46,10 +46,10 @@ lives1 = ExtResource("15_7o6ed")
 lives0 = ExtResource("16_xs4i4")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-offset_left = -163.607
-offset_top = -144.791
-offset_right = 203.393
-offset_bottom = 23.2086
+offset_left = -1861.0
+offset_top = -145.0
+offset_right = 183.0
+offset_bottom = 956.0
 mouse_filter = 1
 script = ExtResource("6_08203")
 
@@ -63,12 +63,15 @@ script = ExtResource("5_uo0lq")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 
 [node name="Popup" type="Popup" parent="BackButt"]
-size = Vector2i(200, 100)
+size = Vector2i(400, 300)
 
 [node name="Label" type="Label" parent="BackButt/Popup"]
-offset_right = 40.0
-offset_bottom = 20.0
-text = "Oletko varma, 
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 66.0
+grow_horizontal = 2
+text = "
+Oletko varma, 
 että haluat poistua?
 Peli alkaa alusta"
 horizontal_alignment = 1
@@ -93,6 +96,7 @@ _isWrongScene = ExtResource("17_tqio1")
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
 size = Vector2i(470, 115)
+visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="PopupPanel"]
