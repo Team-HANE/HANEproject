@@ -1,0 +1,7 @@
+-Need clearer youarehere -> diff color/arrow?
+
+-Buttons onpressed show which is chosen
+
+-Second level instructions (already is, not in build)
+
+-Backbutt bigger

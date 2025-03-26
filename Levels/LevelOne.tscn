@@ -64,17 +64,17 @@ script = ExtResource("5_uo0lq")
 _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 
 [node name="Popup" type="PopupPanel" parent="BackButt"]
+position = Vector2i(0, 36)
 size = Vector2i(400, 300)
-visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="BackButt/Popup"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -196.0
+offset_left = 4.0
 offset_top = 4.0
-offset_right = 196.0
+offset_right = 396.0
 offset_bottom = 296.0
 grow_horizontal = 2
 text = "
@@ -85,10 +85,10 @@ horizontal_alignment = 1
 justification_flags = 0
 
 [node name="Back" type="Button" parent="BackButt/Popup"]
-offset_left = 120.0
-offset_top = 5.0
-offset_right = 512.0
-offset_bottom = 297.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 396.0
+offset_bottom = 296.0
 icon = ExtResource("4_efu6g")
 flat = true
 
@@ -98,10 +98,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -205.0
-offset_top = -35.0
-offset_right = -104.0
-offset_bottom = 66.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 396.0
+offset_bottom = 296.0
 grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(0.6, 0.6)
