@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b7k5b2jfsiy6x"]
+[gd_scene load_steps=17 format=3 uid="uid://b7k5b2jfsiy6x"]
 
 [ext_resource type="Script" path="res://Scripts/Settings.cs" id="1_fhfov"]
 [ext_resource type="Texture2D" uid="uid://dtdvqojwl0663" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://dmdujhaxtgk4y" path="res://Art/buttons/fi.png" id="9_i5234"]
 [ext_resource type="Texture2D" uid="uid://sqqggnyq2y2y" path="res://Art/buttons/eng.png" id="10_jvy5k"]
 [ext_resource type="Texture2D" uid="uid://choev52k2bfpf" path="res://Art/background/asetukset.png" id="13_ma42d"]
+[ext_resource type="Texture2D" uid="uid://bjysrl55b6j8x" path="res://Art/background/kieli.png" id="15_q55ld"]
+[ext_resource type="Texture2D" uid="uid://d1638pmca04il" path="res://Art/background/aanet.png" id="16_hi6v4"]
 
 [node name="Settings" type="Node2D"]
 
@@ -34,37 +36,38 @@ transform = Transform2D(0.54, 0, 0, 0.54, 0, 0)
 script = ExtResource("2_yaftv")
 
 [node name="Singlecolorbg" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(598.148, 303.704)
-scale = Vector2(0.629042, 0.446954)
+position = Vector2(597.222, 294.444)
+scale = Vector2(0.628062, 0.433885)
 texture = ExtResource("1_q27jl")
 
 [node name="HaneLogoChatgpt" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(242.593, 488.889)
+position = Vector2(536.37, 536.778)
+scale = Vector2(0.854031, 0.785948)
 texture = ExtResource("4_7j0v8")
 
 [node name="TikoLogoMustaFin" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(568.518, 496.296)
-scale = Vector2(0.302837, 0.330325)
+position = Vector2(752.449, 530.282)
+scale = Vector2(0.290636, 0.29887)
 texture = ExtResource("7_ve4nn")
 
 [node name="Yhtalogo" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(905.556, 496.296)
-scale = Vector2(0.272727, 0.325784)
+position = Vector2(1008.67, 532.634)
+scale = Vector2(0.280664, 0.291941)
 texture = ExtResource("8_ge08d")
 
 [node name="Fi" type="Button" parent="Control/Panel/CanvasLayer"]
-offset_left = 927.0
-offset_top = 56.0
-offset_right = 1005.0
-offset_bottom = 134.0
+offset_left = 511.111
+offset_top = 143.0
+offset_right = 589.111
+offset_bottom = 221.0
 icon = ExtResource("9_i5234")
 flat = true
 
 [node name="Eng" type="Button" parent="Control/Panel/CanvasLayer"]
-offset_left = 1026.0
-offset_top = 50.0
-offset_right = 1107.0
-offset_bottom = 131.0
+offset_left = 609.259
+offset_top = 140.741
+offset_right = 690.259
+offset_bottom = 221.741
 scale = Vector2(1.05106, 1.03401)
 icon = ExtResource("10_jvy5k")
 flat = true
@@ -81,27 +84,35 @@ metadata/_edit_use_anchors_ = true
 
 [node name="SoundOffButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
-offset_left = 620.755
-offset_top = 273.585
-offset_right = 690.755
-offset_bottom = 343.585
+offset_left = 612.963
+offset_top = 307.407
+offset_right = 696.963
+offset_bottom = 391.407
 icon = ExtResource("2_uldn3")
 flat = true
 
 [node name="SoundOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
 custom_minimum_size = Vector2(30, 30)
-offset_left = 498.148
-offset_top = 270.37
-offset_right = 574.148
-offset_bottom = 346.37
+offset_left = 509.259
+offset_top = 309.259
+offset_right = 585.259
+offset_bottom = 385.259
 icon = ExtResource("3_5vwhq")
 flat = true
 icon_alignment = 1
 
 [node name="Asetukset" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(564, 98)
+position = Vector2(577.778, 55.5556)
 texture = ExtResource("13_ma42d")
+
+[node name="Kieli" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(351.852, 187.037)
+texture = ExtResource("15_q55ld")
+
+[node name="Aanet" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
+position = Vector2(335.185, 346.296)
+texture = ExtResource("16_hi6v4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(321, 162)
