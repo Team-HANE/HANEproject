@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bdu37yryu36wg"]
+[gd_scene load_steps=21 format=3 uid="uid://bdu37yryu36wg"]
 
 [ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="1_dtkta"]
 [ext_resource type="Texture2D" uid="uid://d4mlwxppm1ve6" path="res://Art/background/Taso1.jpeg" id="1_p2aug"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="11_qd2gs"]
 [ext_resource type="Texture2D" uid="uid://rpov7vloe5vb" path="res://Art/buttons/4life.png" id="12_7kmq3"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="12_teamr"]
+[ext_resource type="Texture2D" uid="uid://ded002w2du1b8" path="res://Art/buttons/home.png" id="13_lvcuj"]
 [ext_resource type="Texture2D" uid="uid://cwdluow5vttob" path="res://Art/buttons/3life.png" id="13_or235"]
 [ext_resource type="Texture2D" uid="uid://dtj0ngobj6xg2" path="res://Art/buttons/2life.png" id="14_7vxiy"]
 [ext_resource type="Texture2D" uid="uid://dbanmnysbpesq" path="res://Art/buttons/1life.png" id="15_7o6ed"]
@@ -66,16 +67,24 @@ _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 size = Vector2i(400, 300)
 
 [node name="Label" type="Label" parent="BackButt/Popup"]
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 66.0
-grow_horizontal = 2
+offset_right = 176.0
+offset_bottom = 89.0
 text = "
 Oletko varma, 
 että haluat poistua?
 Peli alkaa alusta"
 horizontal_alignment = 1
 justification_flags = 0
+
+[node name="Button" type="Button" parent="BackButt/Popup"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -132.0
+offset_bottom = 132.0
+grow_horizontal = 0
+icon = ExtResource("13_lvcuj")
+flat = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(583.333, 296.296)

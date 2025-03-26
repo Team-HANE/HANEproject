@@ -27,11 +27,10 @@ _sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 position = Vector2(574, 322)
 
 [node name="Home" type="TextureButton" parent="."]
-offset_left = 1083.0
-offset_top = 33.0
-offset_right = 1321.0
-offset_bottom = 271.0
-scale = Vector2(0.327732, 0.315126)
+offset_left = 1044.86
+offset_top = 26.1682
+offset_right = 1168.86
+offset_bottom = 150.168
 texture_normal = ExtResource("4_pru0h")
 script = ExtResource("3_q0pq0")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
