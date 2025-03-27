@@ -56,19 +56,18 @@ scale = Vector2(0.280664, 0.291941)
 texture = ExtResource("8_ge08d")
 
 [node name="Fi" type="Button" parent="Control/Panel/CanvasLayer"]
-offset_left = 511.111
-offset_top = 143.0
-offset_right = 589.111
-offset_bottom = 221.0
+offset_left = 503.704
+offset_top = 142.593
+offset_right = 591.704
+offset_bottom = 230.593
 icon = ExtResource("9_i5234")
 flat = true
 
 [node name="Eng" type="Button" parent="Control/Panel/CanvasLayer"]
-offset_left = 609.259
-offset_top = 140.741
-offset_right = 690.259
-offset_bottom = 221.741
-scale = Vector2(1.05106, 1.03401)
+offset_left = 653.704
+offset_top = 142.593
+offset_right = 741.704
+offset_bottom = 229.593
 icon = ExtResource("10_jvy5k")
 flat = true
 
@@ -84,20 +83,20 @@ metadata/_edit_use_anchors_ = true
 
 [node name="SoundOffButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
-offset_left = 612.963
-offset_top = 307.407
-offset_right = 696.963
-offset_bottom = 391.407
+offset_left = 655.556
+offset_top = 298.148
+offset_right = 759.556
+offset_bottom = 402.148
 icon = ExtResource("2_uldn3")
 flat = true
 
 [node name="SoundOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
 custom_minimum_size = Vector2(30, 30)
-offset_left = 509.259
-offset_top = 309.259
-offset_right = 585.259
-offset_bottom = 385.259
+offset_left = 477.778
+offset_top = 283.333
+offset_right = 615.778
+offset_bottom = 421.333
 icon = ExtResource("3_5vwhq")
 flat = true
 icon_alignment = 1
