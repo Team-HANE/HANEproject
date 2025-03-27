@@ -93,18 +93,49 @@ Lightgreen: #b2ff9e
 Own css
 */
 
+/* Yleiset asetukset bodylle ja teksteille */
  body, h1, h2, p {
   text-align: center;
   margin: 0px 0px 0px 0px;
   padding:0;
 }
 
-/*images*/
-img {
-  margin-left: 10px;
-  width: 80%;
-  height: 80%;
-  border-radius: 30px;
+/* Keskittää koko .game-lohkon */
+.game {
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+/* Kuvarivit – kuvat vierekkäin ja keskitetty */
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* Kuvaelementit kuvariveillä */
+.image-row img {
+  width: 45%;
+  height: auto;
+  border-radius: 15px;
+
+  /* Alla lisätyt efektit: */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover-efekti kuville */
+.image-row img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
  /*navbar*/
@@ -112,9 +143,27 @@ img {
   background-color: #1dd3b0;
 }
 
+/* Tyylit navbarin brändille (logo + teksti vasemmassa yläkulmassa) */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* Tyylit logokuvalle navbarissa */
+.navbar-logo {
+  height: 50px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
 /*team*/
 #team {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -143,9 +192,62 @@ img {
 }
 
 .person h2 {
-    margin-top: 10px;
-    color: #fff;
-    font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  background-color: rgba(76, 181, 167, 0.3);
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #team {
+    gap: 10px;
+  }
+
+  .person {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .person img {
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
+}
+
+.modal {
+  display: none; /* Piilossa oletuksena */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: black;
 }
 
 footer {
@@ -155,12 +257,6 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
-
-/*game*/
-.game {
-  display: inline-block;
-}
-
 
 *,
 *::before,

@@ -17,7 +17,10 @@
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg" id ="navbar">
         <div class="container">
-            <a class="navbar-brand" > HANE PROJEKTI</a>
+            <a class="navbar-brand" href="#">
+                <img src="assets/hane_logo.png" alt="Logo" class="navbar-logo">
+                PELIPROJEKTI HANE
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -30,7 +33,17 @@
                             data-bs-toggle="dropdown" aria-expanded="false">Yhteistyössä</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="https://www.tamk.fi" target="_blank">Tamk</a></li>
-                            <li><a class="dropdown-item" href="https://projects.tuni.fi/yhta/" target="_blank">Yhtä</a></li>
+                            <li><a href="#" id="yhtaLinkki">Yhtä</a></li>
+                            <!-- Modaalin rakenne -->
+                            <div id="yhtaModal" class="modal">
+                                <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Yhtä Oy</h2>
+                                <p>Yhtä tarjoaa moderneja digipalveluita ja web-kehitystä.</p>
+                                <a href="https://www.yhta.fi" target="_blank">Linkki Yhtä sivuille</a>
+                                <a href="https://www.yhta.fi" target="_blank">Linkki Yhtä Playbook:n</a>
+                                </div>
+                            </div>
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
@@ -50,15 +63,24 @@
         </div>
     </div>
 
+    <div class="game">
+        <h1>STOP, SPOT, GO!</h1>
+        <p>Ensimmäinen tekstikappale...</p>
 
-    <div class = "game">
-        <h1>Peli</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum unde minima cumque officiis commodi ducimus, eius laborum accusamus officia doloremque aliquid distinctio doloribus hic eveniet eos. Eos nihil nemo earum!</p>
-        <img src ="" alt ="pelikuvia">
-        <br>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum unde minima cumque officiis commodi ducimus, eius laborum accusamus officia doloremque aliquid distinctio doloribus hic eveniet eos. Eos nihil nemo earum!</p>
-        <img src ="" alt ="pelikuvia">
-    </div>
+        <!-- Ensimmäinen kuvarivi -->
+        <div class="image-row">
+        <img src="assets/aloitus.png" alt="aloitusnäkymä">
+        <img src="assets/kartta.png" alt="tasovalikko">
+        </div>
+
+        <p>Toinen tekstikappale...</p>
+
+        <!-- Toinen kuvarivi -->
+        <div class="image-row">
+        <img src="assets/taso1.png" alt="ensimmäinen taso">
+        <img src="assets/voitto.png" alt="voittonäkymä">
+        </div>
+        </div>
 
     <div class = "trailer">
         <h1>Traileri</h1>
@@ -70,19 +92,19 @@
         <section id="team">
 
             <div class="person">
-                <h2>Aaro</h2>
+                <h2>Aaro Nieminen</h2>
                 <img src="assets/aaro.jpg" alt="person1">
             </div>
             <div class="person">
-                <h2>Helmi</h2>
+                <h2>Helmi Haapasaari</h2>
                 <img src="assets/persian.jpg" alt="person2">
             </div>
             <div class="person">
-                <h2>Niina</h2>
+                <h2>Niina Tarvaala</h2>
                 <img src="assets/niina.jpg" alt="person3">
             </div>
             <div class="person">
-                <h2>Ellen</h2>
+                <h2>Ellen<br />Leino</h2>
                 <img src="assets/ellen.jpg" alt="person4">
             </div>
 
@@ -100,5 +122,27 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
+
+<script>
+    const modal = document.getElementById("yhtaModal");
+    const linkki = document.getElementById("yhtaLinkki");
+    const closeBtn = document.querySelector(".close");
+
+    linkki.addEventListener("click", function(event) {
+      event.preventDefault(); // estää suoran navigoinnin
+      modal.style.display = "block";
+    });
+
+    closeBtn.addEventListener("click", function() {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+
 
 </html>
