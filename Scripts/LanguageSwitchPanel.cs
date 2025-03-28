@@ -7,11 +7,13 @@ namespace escapetampere
 	{
 		private Label popupLabel;
 		private Label levelTwoPopup;
+		private Label confirmationPop;
 		private LanguageData _languageData;
 		public override void _Ready()
 		{
 			popupLabel = GetNode<Label>("PopupPanel/Label");
 			levelTwoPopup = GetNode<Label>("Level2PopupPanel/Label");
+			confirmationPop = GetNode<Label>("ConfirmationPopup/VBoxContainer/Label");
 
 			_languageData = ResourceLoader.Load<LanguageData>("res://LanguageData.tres");
 
@@ -24,6 +26,9 @@ namespace escapetampere
 
 			fiTranslation.AddMessage("LEVEL2_POPUP","Voi ei! Tiellä on kuoppa. \n Korjaa ongelma jatkaaksesi matkaa! \n Järjestyksellä on väliä.");
 			enTranslation.AddMessage("LEVEL2_POPUP", "Oh no! The road is blocked by a pothole. \n Fix the problem to continue your journey. \n Order matters.");
+
+			fiTranslation.AddMessage("CONFIRMATION_POP","Oletko varma, \n että haluat poistua? \n Palaa takaisin tasolle/kotiin");
+			enTranslation.AddMessage("CONFIRMATION_POP", "Are you sure you want to leave? \n Back to level/home");
 
 
 			TranslationServer.AddTranslation(fiTranslation);
@@ -42,6 +47,10 @@ namespace escapetampere
 			if (levelTwoPopup != null)
 			{
 				levelTwoPopup.Text = Tr("LEVEL2_POPUP");
+			}
+			if (confirmationPop != null)
+			{
+				confirmationPop.Text = Tr("CONFIRMATION_POP");
 			}
 		}
 		private void ChangeLanguage(string locale)

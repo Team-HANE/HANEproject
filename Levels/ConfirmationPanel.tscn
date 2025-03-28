@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://tioo6jmcf3eh"]
+
+[ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="1_6ftbo"]
+[ext_resource type="Script" path="res://Scripts/ConfirmationPanel.cs" id="1_roj57"]
+[ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="2_8nyj3"]
+[ext_resource type="Texture2D" uid="uid://dirlrj3wnpoy8" path="res://Art/buttons/greenhome.png" id="2_us0lo"]
+
+[node name="ConfirmationPanel" type="Control" node_paths=PackedStringArray("backToLevel", "goHome")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_roj57")
+backToLevel = NodePath("Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer/Back")
+goHome = NodePath("Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer/Home")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("2_8nyj3")
+
+[node name="ConfirmationPopup" type="PopupPanel" parent="Node2D"]
+auto_translate_mode = 1
+position = Vector2i(0, 36)
+size = Vector2i(393, 225)
+visible = true
+borderless = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Node2D/ConfirmationPopup"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 389.0
+offset_bottom = 221.0
+
+[node name="Label" type="Label" parent="Node2D/ConfirmationPopup/VBoxContainer"]
+layout_mode = 2
+text = "
+Oletko varma, 
+että haluat poistua?
+Palaa takaisin tasolle/kotiin
+
+"
+horizontal_alignment = 1
+justification_flags = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Node2D/ConfirmationPopup/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Back" type="Button" parent="Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("1_6ftbo")
+flat = true
+icon_alignment = 1
+
+[node name="Home" type="Button" parent="Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("2_us0lo")
+flat = true
+icon_alignment = 2

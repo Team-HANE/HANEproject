@@ -5,14 +5,14 @@
 [ext_resource type="Texture2D" uid="uid://di5n3qn77xv6e" path="res://Art/signs/otherdangertri.png" id="2_ii5xk"]
 [ext_resource type="Texture2D" uid="uid://mppcx4lpe31e" path="res://Art/signs/weirdlight.png" id="3_dlbge"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="4_efu6g"]
-[ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_uo0lq"]
 [ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="6_08203"]
 [ext_resource type="Texture2D" uid="uid://co5jaldhta3rc" path="res://Art/signs/crossing.png" id="7_ttcyo"]
 [ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="11_qd2gs"]
 [ext_resource type="Texture2D" uid="uid://rpov7vloe5vb" path="res://Art/buttons/4life.png" id="12_7kmq3"]
+[ext_resource type="Script" path="res://Scripts/BackButton.cs" id="12_h1q5u"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="12_teamr"]
+[ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/ConfirmationPanel.tscn" id="13_ntedq"]
 [ext_resource type="Texture2D" uid="uid://cwdluow5vttob" path="res://Art/buttons/3life.png" id="13_or235"]
-[ext_resource type="Texture2D" uid="uid://dirlrj3wnpoy8" path="res://Art/buttons/greenhome.png" id="13_svkoc"]
 [ext_resource type="Texture2D" uid="uid://dtj0ngobj6xg2" path="res://Art/buttons/2life.png" id="14_7vxiy"]
 [ext_resource type="Texture2D" uid="uid://dbanmnysbpesq" path="res://Art/buttons/1life.png" id="15_7o6ed"]
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="15_ii8pm"]
@@ -60,54 +60,8 @@ offset_top = 20.3704
 offset_right = 130.778
 offset_bottom = 123.37
 texture_normal = ExtResource("4_efu6g")
-script = ExtResource("5_uo0lq")
-_sceneToLoadPath = "res://Levels/LevelSelect.tscn"
-
-[node name="Popup" type="PopupPanel" parent="BackButt"]
-position = Vector2i(0, 36)
-size = Vector2i(400, 300)
-borderless = false
-
-[node name="Label" type="Label" parent="BackButt/Popup"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 396.0
-offset_bottom = 296.0
-grow_horizontal = 2
-text = "
-Oletko varma, 
-että haluat poistua?
-Palaa takaisin/kotiin"
-horizontal_alignment = 1
-justification_flags = 0
-
-[node name="Back" type="Button" parent="BackButt/Popup"]
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 396.0
-offset_bottom = 296.0
-icon = ExtResource("4_efu6g")
-flat = true
-
-[node name="Button" type="Button" parent="BackButt/Popup"]
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 396.0
-offset_bottom = 296.0
-grow_horizontal = 0
-grow_vertical = 2
-scale = Vector2(0.6, 0.6)
-icon = ExtResource("13_svkoc")
-flat = true
-icon_alignment = 2
+script = ExtResource("12_h1q5u")
+confirmationScene = ExtResource("13_ntedq")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(583.333, 296.296)
