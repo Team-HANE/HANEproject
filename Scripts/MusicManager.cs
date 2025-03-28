@@ -35,4 +35,8 @@ public partial class MusicManager : Node
             _musicPlayer.Stop();
         }
     }
+    public bool IsMusicPlaying()
+{
+    return !AudioServer.IsBusMute(AudioServer.GetBusIndex("Master"));
+}
 }
