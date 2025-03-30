@@ -7,6 +7,7 @@ namespace escapetampere
 	{
 
 		[Export] private PackedScene schoolInfoScene = null;
+
 		private SchoolInfo schoolInfo;
 
 		public override void _Ready()

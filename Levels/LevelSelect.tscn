@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=10 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Texture2D" uid="uid://c7am4sb5crekt" path="res://Art/map/BetterMap.png" id="3_7xhu0"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="4_xnjox"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="6_rb1d0"]
 [ext_resource type="Script" path="res://Scripts/ShowInfoButton.cs" id="7_jfjql"]
 [ext_resource type="PackedScene" uid="uid://di7k1yw8pwssr" path="res://Levels/InfoPanel.tscn" id="8_t63y7"]
+[ext_resource type="Script" path="res://Scripts/ShowLibraryInfo.cs" id="9_ywgbx"]
 
 [node name="Bigmap" type="Sprite2D"]
 position = Vector2(319, 159)
@@ -85,3 +86,22 @@ icon_alignment = 1
 vertical_icon_alignment = 2
 script = ExtResource("7_jfjql")
 schoolInfoScene = ExtResource("8_t63y7")
+
+[node name="ShowInfoButton2" type="Button" parent="."]
+offset_left = 393.0
+offset_top = -366.0
+offset_right = 574.0
+offset_bottom = -237.0
+icon = ExtResource("6_4ofhy")
+flat = true
+icon_alignment = 1
+
+[node name="ShowLibraryButton" type="Button" parent="."]
+offset_left = -25.7411
+offset_top = -66.8317
+offset_right = 175.259
+offset_bottom = 82.1683
+icon = ExtResource("6_4ofhy")
+flat = true
+vertical_icon_alignment = 0
+script = ExtResource("9_ywgbx")
