@@ -44,7 +44,7 @@ public partial class SchoolInfo : Control
             JsonElement school = features[index];
             if (school.TryGetProperty("properties", out JsonElement properties))
             {
-                nameLabel.Text = Tr("Name: " + properties.GetProperty("NIMI").GetString());
+                nameLabel.Text = Tr(properties.GetProperty("NIMI").GetString());
                 addressLabel.Text = "Address: " + properties.GetProperty("OSOITE").GetString();
             }
         }

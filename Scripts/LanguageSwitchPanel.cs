@@ -27,8 +27,8 @@ namespace escapetampere
 			fiTranslation.AddMessage("LEVEL2_POPUP","Voi ei! Tiellä on kuoppa. \n Korjaa ongelma jatkaaksesi matkaa! \n Järjestyksellä on väliä.");
 			enTranslation.AddMessage("LEVEL2_POPUP", "Oh no! The road is blocked by a pothole. \n Fix the problem to continue your journey. \n Order matters.");
 
-			fiTranslation.AddMessage("CONFIRMATION_POP","Oletko varma, \n että haluat poistua? \n Palaa takaisin tasolle/kotiin");
-			enTranslation.AddMessage("CONFIRMATION_POP", "Are you sure you want to leave? \n Back to level/home");
+			fiTranslation.AddMessage("CONFIRMATION_POP","Oletko varma, \n että haluat poistua? \n Poistu/Palaa takaisin peliin");
+			enTranslation.AddMessage("CONFIRMATION_POP", "Are you sure you want to leave? \n Leave/Back to game");
 
 
 			TranslationServer.AddTranslation(fiTranslation);

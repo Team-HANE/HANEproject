@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://ha02wwur6msj" path="res://Art/buttons/0life.png" id="8_7m3n6"]
 [ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="9_2yxc0"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="10_7rjkb"]
-[ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="11_ku02v"]
 [ext_resource type="Texture2D" uid="uid://bjxm8lxw2l0fu" path="res://Art/background/Taso2Lapio.PNG" id="12_kjbsv"]
+[ext_resource type="Script" path="res://Scripts/BackButton.cs" id="12_xd2y4"]
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="13_10kat"]
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="14_r242f"]
 [ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="15_tpawv"]
@@ -54,8 +54,7 @@ offset_top = -404.444
 offset_right = -601.778
 offset_bottom = -348.444
 texture_normal = ExtResource("10_7rjkb")
-script = ExtResource("11_ku02v")
-_sceneToLoadPath = "res://Levels/LevelSelect.tscn"
+script = ExtResource("12_xd2y4")
 
 [node name="Taso2Lapio" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = -631.111

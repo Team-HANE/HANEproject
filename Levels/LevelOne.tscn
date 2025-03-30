@@ -67,10 +67,10 @@ confirmationScene = ExtResource("13_ntedq")
 position = Vector2(583.333, 296.296)
 
 [node name="SignButton" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = 787.037
-offset_top = 200.0
-offset_right = 893.037
-offset_bottom = 306.0
+offset_left = 787.0
+offset_top = 187.0
+offset_right = 912.0
+offset_bottom = 309.0
 scale = Vector2(0.83, 0.83)
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_ii5xk")
@@ -95,10 +95,10 @@ vertical_alignment = 1
 justification_flags = 162
 
 [node name="Weirdlight" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = 798.148
-offset_top = 309.259
-offset_right = 894.148
-offset_bottom = 444.259
+offset_left = 796.296
+offset_top = 294.444
+offset_right = 892.296
+offset_bottom = 429.444
 scale = Vector2(0.75, 0.75)
 texture_normal = ExtResource("3_dlbge")
 script = ExtResource("16_8qffq")
