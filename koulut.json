@@ -1,0 +1,1354 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f1a",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24486701.0023397, 6820819.0049657]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Wivi Lönnin koulu, Aleksanterin koulutalo",
+          "OSOITE": "Hallituskatu 26",
+          "POSTINUMERO": "33200",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/wivi-lonnin-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/wivi-lonnin-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 463,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 309
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f19",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24494507.0022802, 6817220.9978338]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Annalan koulu",
+          "OSOITE": "Juvankatu 53",
+          "POSTINUMERO": "33710",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/annalankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/annalankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 247,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 368
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f18",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24495112.0027469, 6817063.9969777]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Annalan koulu, Karosen koulutalo",
+          "OSOITE": "Juvankatu 71",
+          "POSTINUMERO": "33710",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/annalankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/annalankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 274,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 369
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f17",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24495549.0011478, 6822103.9975108]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Atalan koulu",
+          "OSOITE": "Pulkkakatu 3",
+          "POSTINUMERO": "33580",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/atalankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/atalankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 340,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 312
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f16",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24492018.6778218, 6814913.4467263]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Etelä-Hervannan koulu",
+          "OSOITE": "Mekaniikanpolku 9",
+          "POSTINUMERO": "33720",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/etelahervannankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/etelahervannankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 805,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 315
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f15",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24481743.002851, 6821589.9964919]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Raholan koulu, Harjun koulutalo",
+          "OSOITE": "Nokiantie 22",
+          "POSTINUMERO": "33270",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/raholan-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/raholan-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 226,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 370
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f14",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24477456.0127876, 6820811.1341415]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Tesoman koulu, Kalkun koulutalo",
+          "OSOITE": "Kalkunkatu 34",
+          "POSTINUMERO": "33330",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/tesomankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/tesomankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-4",
+          "OPPILASMAARA": 61,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 371
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f13",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24488419.2736312, 6818045.2104491]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Hatanpään koulu",
+          "OSOITE": "Koivistontie 31",
+          "POSTINUMERO": "33900",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/hatanpaankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/hatanpaankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Ei",
+          "LUOKAT": "7-9",
+          "OPPILASMAARA": 489,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 372
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f12",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24487384.4739266, 6818485.0383118]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Hatanpään koulu, Härmälän koulutalo",
+          "OSOITE": "Haapakuja 2",
+          "POSTINUMERO": "33900",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/hatanpaankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/hatanpaankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 391,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 373
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f11",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24487887.0667818, 6821479.437949]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Juhannuskylän koulu, Johanneksen koulutalo",
+          "OSOITE": "Erkkilänkatu 10",
+          "POSTINUMERO": "33100",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/juhannuskylankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/juhannuskylankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 295,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 374
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f10",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24487807.3508048, 6821607.747912]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Juhannuskylän koulu, Tammerkosken koulutalo",
+          "OSOITE": "Rautatienkatu 3",
+          "POSTINUMERO": "33100",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/juhannuskylankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/juhannuskylankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Ei",
+          "LUOKAT": "7-9",
+          "OPPILASMAARA": 554,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 375
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f0f",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24482583.77031, 6822044.5477861]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Kaarilan koulu",
+          "OSOITE": "Vallerinkatu 11",
+          "POSTINUMERO": "33270",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/kaarilankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/kaarilankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Ei",
+          "LUOKAT": "5-9",
+          "OPPILASMAARA": 479,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 376
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f0e",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24491358.9969611, 6816229.0028728]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Ahvenisjärven koulu, Kanjonin koulutalo",
+          "OSOITE": "Ruovedenkatu 7",
+          "POSTINUMERO": "33720",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/ahvenisjarven-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/ahvenisjarven-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 223,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 377
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f0d",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24491411.997711, 6817135.0009325]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Ahvenisjärven koulu, Hallilan koulutalo",
+          "OSOITE": "Havumetsänkatu 1",
+          "POSTINUMERO": "33820",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/ahvenisjarven-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/ahvenisjarven-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-4",
+          "OPPILASMAARA": 89,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 378
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f0c",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24493180.0037381, 6818014.0036867]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Kaukajärven koulu",
+          "OSOITE": "Juvankatu 13",
+          "POSTINUMERO": "33710",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/kaukajarvenkoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/kaukajarvenkoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 774,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 379
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f0b",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24489875.4617088, 6821462.9214537]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Kissanmaan koulu (remontissa)",
+          "OSOITE": "Teiskontie 28",
+          "POSTINUMERO": "33500",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/kissanmaankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/kissanmaankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 258,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 380
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f0a",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24490202.9619275, 6821672.7827623]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Puistokoulu, Koivikkopuiston koulutalo (sairaalaopetus)",
+          "OSOITE": "Vieritie 10",
+          "POSTINUMERO": "33520",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/puistokoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/puistokoulu\u003C/a\u003E",
+          "ESIOPETUS": "Ei",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": null,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 381
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f09",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24489092.9983628, 6817994.9999518]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Koiviston koulu",
+          "OSOITE": "Lehvänkatu 9",
+          "POSTINUMERO": "33820",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/koiviston-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/koiviston-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 327,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 382
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f08",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24496792.1706533, 6825123.2361492]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Kristillinen koulu",
+          "OSOITE": "Ketarantie 4",
+          "POSTINUMERO": "33680",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.takriko.fi/ target=\"_blank\"\u003Ehttps://www.takriko.fi/\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": null,
+          "TUOTTAJA": "Adventtikirkko",
+          "MI_PRINX": 383
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f07",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24491358.8526369, 6835506.8414775]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Kämmenniemen koulu",
+          "OSOITE": "Paavolantie 4",
+          "POSTINUMERO": "34240",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/kammenniemenkoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/kammenniemenkoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 345,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 384
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f06",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24494865.8460175, 6844362.8038969]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Kämmenniemen koulu, Terälahden koulutalo",
+          "OSOITE": "Niemikyläntie 14",
+          "POSTINUMERO": "34260",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/kammenniemenkoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/kammenniemenkoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 60,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 385
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f05",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24480034.0029507, 6823489.9999078]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Lamminpään koulu (4-6 luokat väistössä Pyynikintie 2:ssa)",
+          "OSOITE": "Kortesuontie 27",
+          "POSTINUMERO": "33420",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/lamminpaankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/lamminpaankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 335,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 415
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f04",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24495320.6569215, 6820586.9610406]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Leinolan koulu",
+          "OSOITE": "Sammalladonkatu 1",
+          "POSTINUMERO": "33580",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/leinolankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/leinolankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 357,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 388
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f03",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24484023.1623952, 6824187.8701685]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Lentävänniemen koulu",
+          "OSOITE": "Lentävänniemenkatu 3",
+          "POSTINUMERO": "33410",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/lentavanniemenkoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/lentavanniemenkoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 371,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 387
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f02",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24482492.4518363, 6823685.8233132]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Lielahden koulu",
+          "OSOITE": "Lielahdenkatu 15",
+          "POSTINUMERO": "33400",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/lielahden-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/lielahden-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 741,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 389
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f01",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24494378.002167, 6820297.0023742]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Linnainmaan koulu",
+          "OSOITE": "Linnainmaankatu 12",
+          "POSTINUMERO": "33580",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/linnainmaan-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/linnainmaan-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 768,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 334
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7f00",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24491685.0031302, 6819710.9972041]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Messukylän koulu",
+          "OSOITE": "Messukylänkatu 35",
+          "POSTINUMERO": "33700",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/messukylan-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/messukylan-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 346,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 335
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7eff",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24497124.3653126, 6823575.1830419]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Olkahisen koulu",
+          "OSOITE": "Jenseninkatu 5",
+          "POSTINUMERO": "33610",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/olkahisenkoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/olkahisenkoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 248,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 353
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7efe",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24496198.7477384, 6827373.0604931]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Olkahisten koulu, Sorilan koulutalo",
+          "OSOITE": "Sorilanraitti 5",
+          "POSTINUMERO": "33680",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/olkahisenkoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/olkahisenkoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 70,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 390
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7efd",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24486702.6566231, 6816197.571971]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Peltolammin koulu",
+          "OSOITE": "Säästäjänkatu 16",
+          "POSTINUMERO": "33840",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/peltolammin-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/peltolammin-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 283,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 391
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7efc",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24483461.738057, 6821974.1138064]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Kaarilan koulu, Hyhkyn koulutalo",
+          "OSOITE": "Mallastehtaankatu 14",
+          "POSTINUMERO": "33270",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/kaarilan-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/kaarilan-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-4",
+          "OPPILASMAARA": 155,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 392
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7efb",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24492482.2838541, 6815531.1130478]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Ahvenisjärven koulu",
+          "OSOITE": "Korkeakoulunkatu 6",
+          "POSTINUMERO": "33720",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/ahvenisjarven-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/ahvenisjarven-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 613,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 405
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7efa",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24489869.575148, 6813600.6772818]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Puistokoulu, Kalevanpuiston koulutalo (väistössä)",
+          "OSOITE": "Vuoreksen puistokatu 91",
+          "POSTINUMERO": "33870",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/puistokoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/puistokoulu\u003C/a\u003E",
+          "ESIOPETUS": "Ei",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 76,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 393
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef9",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24488460.2301166, 6820478.0742375]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Sammon koulu, Sairaalakadun toimipiste",
+          "OSOITE": "Sairaalakatu 6",
+          "POSTINUMERO": "33100",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/sammon-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/sammon-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": 43,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 340
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef8",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24486803.0030047, 6820612.0042829]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Wivi Lönnin koulu, Pyynikin koulutalo",
+          "OSOITE": "Hämeenpuisto 34",
+          "POSTINUMERO": "33200",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/wivi-lonnin-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/wivi-lonnin-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Ei",
+          "LUOKAT": "7-9",
+          "OPPILASMAARA": 421,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 394
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef7",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24480487.1309142, 6821192.7880316]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Raholan koulu",
+          "OSOITE": "Metsäkylänkatu 7",
+          "POSTINUMERO": "33300",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/raholan-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/raholan-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 312,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 395
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef6",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24489205.9294018, 6821283.1510055]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Sammon koulu - Teiskontien toimipiste",
+          "OSOITE": "Teiskontie 16",
+          "POSTINUMERO": "33540",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/sammon-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/sammon-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 839,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 343
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef5",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24489228.7421783, 6821077.99888]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Sammon koulu, B-talo / Kissanmaan koulu (väistötilat)",
+          "OSOITE": "Kaupinkatu 29",
+          "POSTINUMERO": "33540",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/sammon-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/sammon-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Tuntematon",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 121,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 356
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef4",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24486524.5241744, 6820570.6212109]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Svenska samskolan i Tammerfors",
+          "OSOITE": "Koulukatu 14",
+          "POSTINUMERO": "33200",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=http://www.samskolan.fi/ target=\"_blank\"\u003Ehttp://www.samskolan.fi/\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": null,
+          "TUOTTAJA": "Föreningen för Svenska samskolans i Tammerfors upp",
+          "MI_PRINX": 396
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef3",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24492440.9959278, 6820219.9972401]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Takahuhdin koulu -B-talo, vl 1-4",
+          "OSOITE": "Hintsankatu 4",
+          "POSTINUMERO": "33560",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/takahuhdin-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/takahuhdin-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-4",
+          "OPPILASMAARA": 423,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 397
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef2",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24492113.9998615, 6820230.9994024]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Takahuhdin koulu -A-talo, vl 5-9",
+          "OSOITE": "Hanhenmäenkatu 2",
+          "POSTINUMERO": "33560",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/takahuhdin-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/takahuhdin-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Ei",
+          "LUOKAT": "5-9",
+          "OPPILASMAARA": 781,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 398
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef1",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24488541.7205932, 6821398.6299723]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Tammelan koulu",
+          "OSOITE": "Ilmarinkatu 17",
+          "POSTINUMERO": "33500",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/tammelan-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/tammelan-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 472,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 347
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ef0",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24486128.4012886, 6821223.9100226]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Tampereen kansainvälinen koulu FISTA",
+          "OSOITE": "Satakunnankatu 60",
+          "POSTINUMERO": "33230",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/fista target=\"_blank\"\u003Ehttps://www.tampere.fi/fista\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "0-9",
+          "OPPILASMAARA": 977,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 399
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7eef",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24489101.9981789, 6819188.0044181]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Tampereen normaalikoulu",
+          "OSOITE": "Kuokkamaantie 16",
+          "POSTINUMERO": "33800",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tuni.fi/norssi/ target=\"_blank\"\u003Ehttps://www.tuni.fi/norssi/\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": null,
+          "TUOTTAJA": "Tampereen yliopisto",
+          "MI_PRINX": 400
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7eee",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24484684.099718, 6821617.6800917]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Pispalan koulu",
+          "OSOITE": "Pispalanharju 47",
+          "POSTINUMERO": "33250",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/pispalankoulu target=\"_blank\"\u003Ehttps://www.tampere.fi/pispalankoulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 225,
+          "TUOTTAJA": "Tampeen kaupunki",
+          "MI_PRINX": 404
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7eed",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24490655.9966643, 6818869.0017231]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Tampereen Rudolf Steiner-koulu",
+          "OSOITE": "Muotialantie 81",
+          "POSTINUMERO": "33800",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://tampereensteinerkoulu.fi/ target=\"_blank\"\u003Ehttps://tampereensteinerkoulu.fi/\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": null,
+          "TUOTTAJA": "Steiner-kouluyhdistys ry.",
+          "MI_PRINX": 401
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7eec",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24478891.7193739, 6822130.1332615]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Tesoman koulu, Ikurin koulutalo (0-2 lk)",
+          "OSOITE": "Virontörmänkatu 7",
+          "POSTINUMERO": "33310",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/tesoman-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/tesoman-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": 90,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 402
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7eeb",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24480320.8739621, 6822048.6427849]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Tesoman koulu ",
+          "OSOITE": "Kohmankaari 11",
+          "POSTINUMERO": "33310",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/tesoman-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/tesoman-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 1290,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 403
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7eea",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24495760.9958983, 6818556.0002076]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Vehmaisten koulu",
+          "OSOITE": "Sarvannankatu 7",
+          "POSTINUMERO": "33730",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/vehmaisten-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/vehmaisten-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-6",
+          "OPPILASMAARA": 288,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 358
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee9",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24490204.0013196, 6813544.9953732]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Vuoreksen koulu",
+          "OSOITE": "Rautiolanrinne 2",
+          "POSTINUMERO": "33870",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/vuoreksen-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/vuoreksen-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": 881,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 359
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee8",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24491997.2377718, 6820898.8929867]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Takahuhdin koulu, Irjalan koulutalo (0-2 lk)",
+          "OSOITE": " Irjalankuja 4",
+          "POSTINUMERO": "33560",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/takahuhdin-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/takahuhdin-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": 81,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 407
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee7",
+        "geometry": null,
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Lamminpään koulu, Piiriniityn koulutalo",
+          "OSOITE": "Piiriniitynkatu 2",
+          "POSTINUMERO": "33340",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/lamminpaan-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/lamminpaan-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": null,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 406
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee6",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24486716.2137612, 6817711.5742489]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Hatanpään koulu, Talvitien päiväkoti ja koulu (0-2 lk)",
+          "OSOITE": "Talvitie 24",
+          "POSTINUMERO": "33900",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/hatanpaan-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/hatanpaan-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": 65,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 408
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee5",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24478727.9194211, 6821173.1320372]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Tesoman koulu, Kalkunvuoren koulutalo (0-2 lk)",
+          "OSOITE": "Kalkunvuorenkatu 10",
+          "POSTINUMERO": "33330",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/tesoman-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/tesoman-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": 39,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 409
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee4",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24494941.6744225, 6816984.6113758]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Annalan koulu, Metsäniityn päiväkoti ja koulu (0-2 lk)",
+          "OSOITE": "Ruskontie 2",
+          "POSTINUMERO": "33710",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/annalan-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/annalan-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": 72,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 410
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee3",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24486650.8920331, 6820247.5067444]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Wivi Lönnin koulu, Eteläpuiston päiväkoti ja koulu (0-2 lk)",
+          "OSOITE": "Koulukatu 23",
+          "POSTINUMERO": "33200",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/wivi-lonnin-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/wivi-lonnin-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": 101,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 421
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee2",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24497303.4515231, 6820656.9209562]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Lamminrahkan koulu",
+          "OSOITE": "Mossin puistokatu 33",
+          "POSTINUMERO": "36100",
+          "POSTITOIMIPAIKKA": "Kangasala",
+          "URL": "\u003Ca href=https://www.kangasala.fi/varhaiskasvatus-ja-opetus/perusopetus/koulut/lamminrahka-0-6/ target=\"_blank\"\u003Ehttps://www.kangasala.fi/varhaiskasvatus-ja-opetus/perusopetus/koulut/lamminrahka-0-6/\u003C/a\u003E",
+          "ESIOPETUS": "Tuntematon",
+          "LUOKAT": "3-6",
+          "OPPILASMAARA": null,
+          "TUOTTAJA": "Kangasalan kaupunki",
+          "MI_PRINX": 413
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee1",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24497581.003094, 6822013.579768]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Ojalan koulu ",
+          "OSOITE": "Mossinkaari 2",
+          "POSTINUMERO": "33610",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href= target=\"_blank\"\u003E\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": null,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 417
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ee0",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24489620.9759136, 6814746.9075726]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Vuoreksen koulu, Isokuusen koulutalo (0-2 lk)",
+          "OSOITE": "Sydänpuunkatu 9",
+          "POSTINUMERO": "33720",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/vuoreksen-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/vuoreksen-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Kyllä",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": 96,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 411
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7edf",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24490129.8785078, 6820794.6616196]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Sammon koulu, Pellervon toimipiste (0-2 lk)",
+          "OSOITE": "Sämpsykkä 1",
+          "POSTINUMERO": "33540",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href=https://www.tampere.fi/sammon-koulu target=\"_blank\"\u003Ehttps://www.tampere.fi/sammon-koulu\u003C/a\u003E",
+          "ESIOPETUS": "Tuntematon",
+          "LUOKAT": "1-2",
+          "OPPILASMAARA": 53,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 418
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "KOULUT_GSVIEW.fid-4031b39b_195e5e1c845_-7ede",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [24486356.2143682, 6820638.2952512]
+        },
+        "geometry_name": "GEOLOC",
+        "properties": {
+          "PALVELU": "Perusopetus",
+          "NIMI": "Perusopetuksen pysyvä väistötila (Lamminpää 4-6 lk) ja lukio",
+          "OSOITE": "Pyynikintie 2 ",
+          "POSTINUMERO": "33230",
+          "POSTITOIMIPAIKKA": "Tampere",
+          "URL": "\u003Ca href= target=\"_blank\"\u003E\u003C/a\u003E",
+          "ESIOPETUS": "Ei",
+          "LUOKAT": "1-9",
+          "OPPILASMAARA": null,
+          "TUOTTAJA": "Tampereen kaupunki",
+          "MI_PRINX": 419
+        }
+      }
+    ],
+    "totalFeatures": 61,
+    "numberMatched": 61,
+    "numberReturned": 61,
+    "timeStamp": "2025-03-30T07:10:18.819Z",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:EPSG::3878"
+      }
+    }
+  }
