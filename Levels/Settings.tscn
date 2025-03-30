@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://b7k5b2jfsiy6x"]
+[gd_scene load_steps=17 format=3 uid="uid://b7k5b2jfsiy6x"]
 
 [ext_resource type="Script" path="res://Scripts/Settings.cs" id="1_fhfov"]
 [ext_resource type="Texture2D" uid="uid://dtdvqojwl0663" path="res://Art/background/singlecolorbg.png" id="1_q27jl"]
@@ -6,16 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://dbu25ktj2lla2" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
 [ext_resource type="Script" path="res://Scripts/LanguageSwitch.cs" id="2_yaftv"]
 [ext_resource type="Texture2D" uid="uid://06shy7gxbp0c" path="res://Art/buttons/volumeon.png" id="3_5vwhq"]
-[ext_resource type="Texture2D" uid="uid://hp2m7vcywdpt" path="res://Art/buttons/volumeon_pressed.png" id="3_jxbrq"]
 [ext_resource type="Texture2D" uid="uid://reihdsnjws6p" path="res://Art/logo/hane_logo_chatgpt.png" id="4_7j0v8"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="4_tdrrs"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_8qehj"]
-[ext_resource type="Texture2D" uid="uid://bxf4dh6oo0633" path="res://Art/buttons/volumeoff_pressed.png" id="5_ivt2t"]
 [ext_resource type="Texture2D" uid="uid://yb1sgxfexb1w" path="res://Art/logo/tiko_logo_musta_fin.png" id="7_ve4nn"]
 [ext_resource type="Texture2D" uid="uid://bvnxw53q30p83" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
-[ext_resource type="Texture2D" uid="uid://b22yh8sssyt2t" path="res://Art/buttons/fi_chosen.png" id="8_sjdto"]
 [ext_resource type="Texture2D" uid="uid://dmdujhaxtgk4y" path="res://Art/buttons/fi.png" id="9_i5234"]
-[ext_resource type="Texture2D" uid="uid://b7313gpuuocrm" path="res://Art/buttons/eng_chosen.png" id="10_gulut"]
 [ext_resource type="Texture2D" uid="uid://sqqggnyq2y2y" path="res://Art/buttons/eng.png" id="10_jvy5k"]
 [ext_resource type="Texture2D" uid="uid://choev52k2bfpf" path="res://Art/background/asetukset.png" id="13_ma42d"]
 [ext_resource type="Texture2D" uid="uid://bjysrl55b6j8x" path="res://Art/background/kieli.png" id="15_q55ld"]
@@ -29,10 +25,6 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_fhfov")
-soundOnIcon = ExtResource("3_5vwhq")
-soundOnPressed = ExtResource("3_jxbrq")
-soundOffIcon = ExtResource("2_uldn3")
-soundOffPressed = ExtResource("5_ivt2t")
 
 [node name="Panel" type="Panel" parent="Control"]
 layout_mode = 0
@@ -42,10 +34,6 @@ script = ExtResource("2_b73ns")
 scale = Vector2(0.54, 0.54)
 transform = Transform2D(0.54, 0, 0, 0.54, 0, 0)
 script = ExtResource("2_yaftv")
-fiActive = ExtResource("8_sjdto")
-fiInactive = ExtResource("9_i5234")
-engActive = ExtResource("10_gulut")
-engInactive = ExtResource("10_jvy5k")
 
 [node name="Singlecolorbg" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
 position = Vector2(597.222, 294.444)
