@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dml7ugbu8mntn"]
+[gd_scene load_steps=23 format=3 uid="uid://dml7ugbu8mntn"]
 
 [ext_resource type="Texture2D" uid="uid://7d8iba81qprl" path="res://Art/background/Taso_3luonnos.PNG" id="1_yy7ij"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_j1f85"]
@@ -18,8 +18,10 @@
 [ext_resource type="Texture2D" uid="uid://b7ikrvc5x884t" path="res://Art/signs/60limit.png" id="16_r5e2e"]
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="17_itwpw"]
 [ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="18_45y6b"]
+[ext_resource type="Texture2D" uid="uid://cij626isv4ihy" path="res://Art/background/Taso_2_bussivaarin.png" id="19_brice"]
 [ext_resource type="Texture2D" uid="uid://b85rvy4uc1xcj" path="res://Art/signs/poro.png" id="19_pm4xp"]
 [ext_resource type="Texture2D" uid="uid://b63soahwq1yv4" path="res://Art/signs/ostrichlight.png" id="20_r81o6"]
+[ext_resource type="Texture2D" uid="uid://ceugntd4rtdoo" path="res://Art/background/Taso_2_bussi.PNG" id="20_wh415"]
 
 [node name="LevelThree" type="Node2D"]
 
@@ -34,7 +36,7 @@ scale = Vector2(0.448951, 0.421435)
 texture = ExtResource("2_uu82m")
 
 [node name="Puu" type="Sprite2D" parent="Taso3Luonnos"]
-position = Vector2(502.427, -85.0784)
+position = Vector2(506.477, -105.045)
 scale = Vector2(0.421148, 0.598015)
 texture = ExtResource("3_4br5q")
 
@@ -86,7 +88,7 @@ justification_flags = 0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="1000Limit" type="TextureButton" parent="."]
+[node name="1000Limit" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = 225.0
 offset_top = -81.0
 offset_right = 327.0
@@ -98,14 +100,17 @@ _secondTexture = ExtResource("16_r5e2e")
 _isCorrectScene = ExtResource("17_itwpw")
 _isWrongScene = ExtResource("18_45y6b")
 
-[node name="Nysse2" type="TextureButton" parent="."]
-offset_left = -283.0
-offset_top = 26.0
-offset_right = 795.0
-offset_bottom = 634.0
+[node name="Nysse2" type="TextureButton" parent="." groups=["Mistakes"]]
+offset_left = -282.0
+offset_top = -17.0
+offset_right = 1285.0
+offset_bottom = 864.0
 scale = Vector2(0.264398, 0.215802)
-texture_normal = ExtResource("2_uu82m")
+texture_normal = ExtResource("19_brice")
 script = ExtResource("15_m8u4j")
+_secondTexture = ExtResource("20_wh415")
+_isCorrectScene = ExtResource("17_itwpw")
+_isWrongScene = ExtResource("18_45y6b")
 
 [node name="Poro" type="Sprite2D" parent="."]
 position = Vector2(15, -32)

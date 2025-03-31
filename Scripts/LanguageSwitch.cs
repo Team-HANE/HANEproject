@@ -21,7 +21,9 @@ public partial class LanguageSwitch : CanvasLayer
 		fi.Pressed += () => ChangeLanguage("fi");
 		en.Pressed += () => ChangeLanguage("en");
 
-		UpdateButtonIcons (_languageData.CurrentLocale);
+		String CurrentLocal = "en";
+
+		UpdateButtonIcons (CurrentLocal);
 	}
 	private void ChangeLanguage(string locale)
 	{
