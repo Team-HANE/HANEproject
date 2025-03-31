@@ -6,12 +6,15 @@ public partial class SchoolInfo : Control
     private JsonElement jsonData;
     private Label nameLabel;
     private Label addressLabel;
+    private Label lkmLabel;
     private Panel infoPanel;
 
     public override void _Ready()
     {
         nameLabel = GetNode<Label>("Node2D/InfoPanel/VBoxContainer/NameLabel");
         addressLabel = GetNode<Label>("Node2D/InfoPanel/VBoxContainer/AddressLabel");
+
+        lkmLabel = GetNode<Label>("Node2D/InfoPanel/VBoxContainer/lkmLabel");
 
         LoadJson("res://koulut.json");
     }
@@ -44,8 +47,12 @@ public partial class SchoolInfo : Control
             JsonElement school = features[index];
             if (school.TryGetProperty("properties", out JsonElement properties))
             {
+
+                int studentLkm = properties.GetProperty("OPPILASMAARA").GetInt32();
                 nameLabel.Text = Tr(properties.GetProperty("NIMI").GetString());
-                addressLabel.Text = "Address: " + properties.GetProperty("OSOITE").GetString();
+                addressLabel.Text = "Address: " + properties.GetProperty("OSOITE").GetString() + ", " + properties.GetProperty("POSTINUMERO").GetString();
+
+                lkmLabel.Text = $"Student amount: {studentLkm}";
             }
         }
     }
