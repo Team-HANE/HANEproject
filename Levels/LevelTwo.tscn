@@ -47,6 +47,7 @@ offset_right = 253.0
 offset_bottom = 991.0
 mouse_filter = 1
 script = ExtResource("9_2yxc0")
+_isWrongScene = ExtResource("15_tpawv")
 
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = -657.778

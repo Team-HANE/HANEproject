@@ -8,6 +8,8 @@ namespace escapetampere
 		Texture2D _originalTexture;
 		[Export] Texture2D _secondTexture;
 		GameManager manager;
+		[Export] bool OrderMatters = false;
+		[Export] int OrderNumber = 0;
 
 		//Animation
 		[Export] private PackedScene _isCorrectScene = null;
@@ -32,7 +34,6 @@ namespace escapetampere
 			else
 			{
 				manager.RemoveLife(1);
-				//need to implement to the whole game-area
 				IsWrong();
 			}
 		}
@@ -46,7 +47,7 @@ namespace escapetampere
 				_correct = _isCorrectScene.Instantiate<GpuParticles2D>();
 				AddChild(_correct);
 			}
-
+			_correct.Position = GetLocalMousePosition();
 			_correct.Restart();
 			_correct.OneShot = true;
 
@@ -61,6 +62,7 @@ namespace escapetampere
 				_wrong = _isWrongScene.Instantiate<GpuParticles2D>();
 				AddChild(_wrong);
 			}
+			_wrong.Position = GetLocalMousePosition();
 			_wrong.Restart();
 			_wrong.OneShot = true;
 		}
