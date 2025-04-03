@@ -8,6 +8,7 @@ namespace escapetampere
 	{
 		[Export] private PackedScene libraryInfoScene = null;
 
+
 		// Called when the node enters the scene tree for the first time.
 		public override void _Ready()
 		{
@@ -19,6 +20,7 @@ namespace escapetampere
 			LibraryInfo libraryInstance = (LibraryInfo)libraryInfoScene.Instantiate();
 			GetTree().CurrentScene.AddChild(libraryInstance);
 
+			libraryInstance.ShowLibraryInfo(0);
 		}
 	}
 }

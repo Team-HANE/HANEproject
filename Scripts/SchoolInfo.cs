@@ -19,7 +19,7 @@ public partial class SchoolInfo : Control
         LoadJson("res://koulut.json");
     }
 
-    private void LoadJson(string filePath)
+    public void LoadJson(string filePath)
     {
         if (!FileAccess.FileExists(filePath))
         {
