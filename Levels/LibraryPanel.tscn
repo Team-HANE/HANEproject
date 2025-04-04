@@ -12,14 +12,14 @@ script = ExtResource("1_0b4ui")
 [node name="LibraryPanel" type="PopupPanel" parent="Node2D"]
 auto_translate_mode = 1
 position = Vector2i(90, 100)
-size = Vector2i(192, 148)
+size = Vector2i(192, 171)
 visible = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Node2D/LibraryPanel"]
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 188.0
-offset_bottom = 144.0
+offset_bottom = 167.0
 
 [node name="Label" type="Label" parent="Node2D/LibraryPanel/VBoxContainer"]
 layout_mode = 2
@@ -35,6 +35,8 @@ text = "Address: Pirkankatu 2"
 
 [node name="SchoolInfoLabel" type="Label" parent="Node2D/LibraryPanel/VBoxContainer"]
 layout_mode = 2
+text = "
+Nearest school:"
 
 [node name="SchoolNameLabel" type="Label" parent="Node2D/LibraryPanel/VBoxContainer"]
 layout_mode = 2

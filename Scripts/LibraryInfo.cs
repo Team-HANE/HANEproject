@@ -52,7 +52,7 @@ public partial class LibraryInfo : Control
             if (school.TryGetProperty("properties", out JsonElement properties))
             {
                 //int studentLkm = properties.GetProperty("OPPILASMAARA").GetInt32();
-                schoolNameLabel.Text = "Nearest school: " + (properties.GetProperty("NIMI").GetString());
+                schoolNameLabel.Text = (properties.GetProperty("NIMI").GetString());
                schoolAddressLabel.Text = "Address: " + properties.GetProperty("OSOITE").GetString() + ", " + properties.GetProperty("POSTINUMERO").GetString();
                 //lkmLabel.Text = $"Student amount: {studentLkm}";
             }

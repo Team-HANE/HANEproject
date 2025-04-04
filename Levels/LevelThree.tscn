@@ -1,9 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://dml7ugbu8mntn"]
+[gd_scene load_steps=25 format=3 uid="uid://dml7ugbu8mntn"]
 
 [ext_resource type="Texture2D" uid="uid://cpssh0d73w3py" path="res://Art/background/Taso_3 valmis.PNG" id="1_aj08v"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_j1f85"]
-[ext_resource type="Texture2D" uid="uid://dwd5k33w3dfn7" path="res://Art/map/nysse.png" id="2_uu82m"]
-[ext_resource type="Texture2D" uid="uid://dwg4feb304rf3" path="res://Art/map/puu.PNG" id="3_4br5q"]
 [ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="3_k61eg"]
 [ext_resource type="Texture2D" uid="uid://rpov7vloe5vb" path="res://Art/buttons/4life.png" id="4_ddpbm"]
 [ext_resource type="Texture2D" uid="uid://cwdluow5vttob" path="res://Art/buttons/3life.png" id="5_rtxuw"]
@@ -12,7 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://ha02wwur6msj" path="res://Art/buttons/0life.png" id="8_vs7xq"]
 [ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="9_l50v5"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="10_mlcj4"]
-[ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="11_yn1xu"]
+[ext_resource type="Script" path="res://Scripts/BackButton.cs" id="11_7hltw"]
+[ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/ConfirmationPanel.tscn" id="12_b5efa"]
 [ext_resource type="Texture2D" uid="uid://rqqwnf4e1abi" path="res://Art/signs/1000limit.png" id="14_1lldg"]
 [ext_resource type="Texture2D" uid="uid://07s883jy1n2g" path="res://Art/background/Taso_3_tolppa.PNG" id="14_dt20v"]
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="15_m8u4j"]
@@ -23,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://b85rvy4uc1xcj" path="res://Art/signs/poro.png" id="19_pm4xp"]
 [ext_resource type="Texture2D" uid="uid://b63soahwq1yv4" path="res://Art/signs/ostrichlight.png" id="20_r81o6"]
 [ext_resource type="Texture2D" uid="uid://ceugntd4rtdoo" path="res://Art/background/Taso_2_bussi.PNG" id="20_wh415"]
+[ext_resource type="Texture2D" uid="uid://tvustw16d1kj" path="res://Art/signs/normallight.png" id="21_1htep"]
+[ext_resource type="Texture2D" uid="uid://bgd2o0eqr2f8c" path="res://Art/signs/twowaytri.png" id="23_6e7u3"]
 
 [node name="LevelThree" type="Node2D"]
 
@@ -30,21 +31,6 @@
 position = Vector2(-1.5, -0.500015)
 scale = Vector2(0.316895, 0.214193)
 texture = ExtResource("1_aj08v")
-
-[node name="Nysse" type="Sprite2D" parent="Taso3Luonnos"]
-position = Vector2(-755.771, 119.052)
-scale = Vector2(0.448951, 0.421435)
-texture = ExtResource("2_uu82m")
-
-[node name="Puu" type="Sprite2D" parent="Taso3Luonnos"]
-position = Vector2(506.477, -105.045)
-scale = Vector2(0.421148, 0.598015)
-texture = ExtResource("3_4br5q")
-
-[node name="Nysse3" type="Sprite2D" parent="Taso3Luonnos"]
-position = Vector2(-523.286, 94.7245)
-scale = Vector2(0.361296, 0.485916)
-texture = ExtResource("2_uu82m")
 
 [node name="5Life" type="Sprite2D" parent="."]
 position = Vector2(236, -124)
@@ -58,48 +44,53 @@ lives1 = ExtResource("7_kfj83")
 lives0 = ExtResource("8_vs7xq")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-offset_left = -1504.47
-offset_top = -146.608
-offset_right = -982.47
-offset_bottom = 81.3922
+offset_left = -1502.0
+offset_top = -141.0
+offset_right = -998.0
+offset_bottom = 87.0
 scale = Vector2(3.44111, 4.47072)
 mouse_filter = 1
 script = ExtResource("9_l50v5")
 
 [node name="BackButt" type="TextureButton" parent="."]
-offset_left = -308.0
-offset_top = -147.0
-offset_right = -216.0
-offset_bottom = -55.0
+offset_left = -307.0
+offset_top = -153.0
+offset_right = -215.0
+offset_bottom = -61.0
+scale = Vector2(0.7, 0.7)
 texture_normal = ExtResource("10_mlcj4")
-script = ExtResource("11_yn1xu")
-_sceneToLoadPath = "res://Levels/LevelSelect.tscn"
-
-[node name="Popup" type="Popup" parent="BackButt"]
-auto_translate_mode = 1
-size = Vector2i(200, 100)
-
-[node name="Label" type="Label" parent="BackButt/Popup"]
-offset_right = 40.0
-offset_bottom = 20.0
-text = "Oletko varma, 
-että haluat poistua?
-Peli alkaa alusta"
-horizontal_alignment = 1
-justification_flags = 0
+script = ExtResource("11_7hltw")
+confirmationScene = ExtResource("12_b5efa")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Taso3Tolppa" type="Sprite2D" parent="."]
-position = Vector2(256, 51)
-scale = Vector2(0.425439, 0.521663)
+position = Vector2(256, 59.1875)
+scale = Vector2(0.425439, 0.483314)
 texture = ExtResource("14_dt20v")
+
+[node name="Taso2Bussi" type="Sprite2D" parent="."]
+position = Vector2(217, -31)
+scale = Vector2(0.434486, 0.509259)
+texture = ExtResource("20_wh415")
+
+[node name="Nysse3" type="TextureButton" parent="." groups=["Mistakes"]]
+offset_left = -126.0
+offset_top = -87.0
+offset_right = 324.0
+offset_bottom = 70.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("19_brice")
+script = ExtResource("15_m8u4j")
+_secondTexture = ExtResource("20_wh415")
+_isCorrectScene = ExtResource("17_itwpw")
+_isWrongScene = ExtResource("18_45y6b")
 
 [node name="1000Limit" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = 212.0
-offset_top = -70.0
+offset_top = -78.0
 offset_right = 314.0
-offset_bottom = 32.0
+offset_bottom = 24.0
 scale = Vector2(0.737458, 0.706328)
 texture_normal = ExtResource("14_1lldg")
 script = ExtResource("15_m8u4j")
@@ -108,23 +99,41 @@ _isCorrectScene = ExtResource("17_itwpw")
 _isWrongScene = ExtResource("18_45y6b")
 
 [node name="Nysse2" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = -282.0
-offset_top = -17.0
-offset_right = 1285.0
-offset_bottom = 864.0
-scale = Vector2(0.264398, 0.215802)
+offset_left = -316.0
+offset_top = 2.0
+offset_right = 113.0
+offset_bottom = 144.0
 texture_normal = ExtResource("19_brice")
 script = ExtResource("15_m8u4j")
 _secondTexture = ExtResource("20_wh415")
 _isCorrectScene = ExtResource("17_itwpw")
 _isWrongScene = ExtResource("18_45y6b")
 
-[node name="Poro" type="Sprite2D" parent="."]
-position = Vector2(-36, -93)
-scale = Vector2(0.519608, 0.558824)
-texture = ExtResource("19_pm4xp")
+[node name="Ostrichlight" type="TextureButton" parent="." groups=["Mistakes"]]
+offset_left = 224.0
+offset_top = 32.0
+offset_right = 302.0
+offset_bottom = 142.0
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("20_r81o6")
+script = ExtResource("15_m8u4j")
+_secondTexture = ExtResource("21_1htep")
+_isCorrectScene = ExtResource("17_itwpw")
+_isWrongScene = ExtResource("18_45y6b")
 
-[node name="Ostrichlight" type="Sprite2D" parent="."]
-position = Vector2(249, 80)
-scale = Vector2(0.923077, 1)
-texture = ExtResource("20_r81o6")
+[node name="Taso3Tolppa2" type="Sprite2D" parent="."]
+position = Vector2(105, -39)
+scale = Vector2(0.190351, 0.171546)
+texture = ExtResource("14_dt20v")
+
+[node name="Poro" type="TextureButton" parent="." groups=["Mistakes"]]
+offset_left = 76.0
+offset_top = -113.0
+offset_right = 178.0
+offset_bottom = -11.0
+scale = Vector2(0.519608, 0.558824)
+texture_normal = ExtResource("19_pm4xp")
+script = ExtResource("15_m8u4j")
+_secondTexture = ExtResource("23_6e7u3")
+_isCorrectScene = ExtResource("17_itwpw")
+_isWrongScene = ExtResource("18_45y6b")

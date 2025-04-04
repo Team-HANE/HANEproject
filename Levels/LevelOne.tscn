@@ -58,8 +58,8 @@ _isWrongScene = ExtResource("17_tqio1")
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = 27.7778
 offset_top = 20.3704
-offset_right = 130.778
-offset_bottom = 123.37
+offset_right = 119.778
+offset_bottom = 112.37
 texture_normal = ExtResource("4_efu6g")
 script = ExtResource("12_h1q5u")
 confirmationScene = ExtResource("13_ntedq")
@@ -83,7 +83,6 @@ _isWrongScene = ExtResource("17_tqio1")
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
 size = Vector2i(470, 115)
-visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="PopupPanel"]
@@ -96,10 +95,10 @@ vertical_alignment = 1
 justification_flags = 162
 
 [node name="Weirdlight" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = 796.296
-offset_top = 294.444
-offset_right = 892.296
-offset_bottom = 429.444
+offset_left = 804.0
+offset_top = 309.0
+offset_right = 875.0
+offset_bottom = 419.0
 scale = Vector2(0.75, 0.75)
 texture_normal = ExtResource("3_dlbge")
 script = ExtResource("16_8qffq")
