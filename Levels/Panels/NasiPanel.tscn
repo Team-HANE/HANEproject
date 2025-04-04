@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://cowau3fhmuku8"]
+
+[ext_resource type="Script" path="res://Scripts/NasiInfo.cs" id="1_0ranf"]
+
+[node name="NasiInfo" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_0ranf")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="NasiPanel" type="PopupPanel" parent="Node2D"]
+auto_translate_mode = 1
+position = Vector2i(90, 62)
+size = Vector2i(231, 171)
+visible = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Node2D/NasiPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 227.0
+offset_bottom = 167.0
+
+[node name="Label" type="Label" parent="Node2D/NasiPanel/VBoxContainer"]
+layout_mode = 2
+text = "What is this?"
+
+[node name="NameLabel" type="Label" parent="Node2D/NasiPanel/VBoxContainer"]
+layout_mode = 2
+text = "Näsikallion  suihkukaivo"
+
+[node name="AddressLabel" type="Label" parent="Node2D/NasiPanel/VBoxContainer"]
+layout_mode = 2
+text = "Address: Näsijärvenkatu 5"
+
+[node name="SchoolInfoLabel" type="Label" parent="Node2D/NasiPanel/VBoxContainer"]
+layout_mode = 2
+text = "
+Nearest school:"
+
+[node name="SchoolNameLabel" type="Label" parent="Node2D/NasiPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="SchoolAddressLabel" type="Label" parent="Node2D/NasiPanel/VBoxContainer"]
+layout_mode = 2

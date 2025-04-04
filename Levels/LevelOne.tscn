@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://rpov7vloe5vb" path="res://Art/buttons/4life.png" id="12_7kmq3"]
 [ext_resource type="Script" path="res://Scripts/BackButton.cs" id="12_h1q5u"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="12_teamr"]
-[ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/ConfirmationPanel.tscn" id="13_ntedq"]
+[ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/Panels/ConfirmationPanel.tscn" id="13_ntedq"]
 [ext_resource type="Texture2D" uid="uid://cwdluow5vttob" path="res://Art/buttons/3life.png" id="13_or235"]
 [ext_resource type="Texture2D" uid="uid://dtj0ngobj6xg2" path="res://Art/buttons/2life.png" id="14_7vxiy"]
 [ext_resource type="Texture2D" uid="uid://dbanmnysbpesq" path="res://Art/buttons/1life.png" id="15_7o6ed"]

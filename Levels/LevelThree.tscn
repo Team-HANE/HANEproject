@@ -11,7 +11,7 @@
 [ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="9_l50v5"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="10_mlcj4"]
 [ext_resource type="Script" path="res://Scripts/BackButton.cs" id="11_7hltw"]
-[ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/ConfirmationPanel.tscn" id="12_b5efa"]
+[ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/Panels/ConfirmationPanel.tscn" id="12_b5efa"]
 [ext_resource type="Texture2D" uid="uid://rqqwnf4e1abi" path="res://Art/signs/1000limit.png" id="14_1lldg"]
 [ext_resource type="Texture2D" uid="uid://07s883jy1n2g" path="res://Art/background/Taso_3_tolppa.PNG" id="14_dt20v"]
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="15_m8u4j"]

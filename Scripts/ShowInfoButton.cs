@@ -12,7 +12,7 @@ namespace escapetampere
 
 		public override void _Ready()
 		{
-			schoolInfoScene = (PackedScene)ResourceLoader.Load("res://Levels/InfoPanel.tscn");
+			schoolInfoScene = (PackedScene)ResourceLoader.Load("res://Levels/Panels/InfoPanel.tscn");
 			this.Pressed += OnShowInfoButtonPressed;
 		}
 

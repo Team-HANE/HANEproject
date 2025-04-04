@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=15 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Texture2D" uid="uid://c7am4sb5crekt" path="res://Art/map/BetterMap.png" id="3_7xhu0"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="4_xnjox"]
@@ -7,10 +7,13 @@
 [ext_resource type="Texture2D" uid="uid://bi0cjpmsdmwmn" path="res://Art/map/incompletelevel.png" id="6_p321y"]
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="6_rb1d0"]
 [ext_resource type="Script" path="res://Scripts/ShowInfoButton.cs" id="7_jfjql"]
-[ext_resource type="PackedScene" uid="uid://di7k1yw8pwssr" path="res://Levels/InfoPanel.tscn" id="8_t63y7"]
+[ext_resource type="PackedScene" uid="uid://di7k1yw8pwssr" path="res://Levels/Panels/InfoPanel.tscn" id="8_t63y7"]
+[ext_resource type="Script" path="res://Scripts/ShowNasiButton.cs" id="9_6bfe0"]
 [ext_resource type="Script" path="res://Scripts/ShowLibraryInfo.cs" id="9_ywgbx"]
-[ext_resource type="PackedScene" uid="uid://crx1xwiwvqmfd" path="res://Levels/LibraryPanel.tscn" id="10_gvty8"]
+[ext_resource type="PackedScene" uid="uid://crx1xwiwvqmfd" path="res://Levels/Panels/LibraryPanel.tscn" id="10_gvty8"]
 [ext_resource type="Texture2D" uid="uid://3tjv4voyhs4r" path="res://Art/background/aloitatasta.png" id="10_wwowo"]
+[ext_resource type="Script" path="res://Scripts/ShowChurchButton.cs" id="13_nw1k3"]
+[ext_resource type="PackedScene" uid="uid://dt8yp2cl082ku" path="res://Levels/Panels/ChurchPanel.tscn" id="14_s22qw"]
 
 [node name="Bigmap" type="Sprite2D"]
 position = Vector2(319, 159)
@@ -75,13 +78,18 @@ texture = ExtResource("6_p321y")
 position = Vector2(-216.495, 242.462)
 texture = ExtResource("6_p321y")
 
+[node name="Aloitatasta" type="Sprite2D" parent="."]
+position = Vector2(-292.512, -158.416)
+scale = Vector2(0.38296, 0.325008)
+texture = ExtResource("10_wwowo")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="ShowInfoButton" type="Button" parent="."]
-offset_left = -622.0
-offset_top = -369.0
-offset_right = -301.0
-offset_bottom = -173.0
+offset_left = -615.445
+offset_top = -366.337
+offset_right = -294.445
+offset_bottom = -170.337
 icon = ExtResource("6_4ofhy")
 flat = true
 icon_alignment = 1
@@ -89,7 +97,7 @@ vertical_icon_alignment = 2
 script = ExtResource("7_jfjql")
 schoolInfoScene = ExtResource("8_t63y7")
 
-[node name="ShowInfoButton2" type="Button" parent="."]
+[node name="ShowNasiButton" type="Button" parent="."]
 offset_left = 433.0
 offset_top = -366.0
 offset_right = 574.0
@@ -97,6 +105,7 @@ offset_bottom = -250.0
 icon = ExtResource("6_4ofhy")
 flat = true
 icon_alignment = 1
+script = ExtResource("9_6bfe0")
 
 [node name="ShowLibraryButton" type="Button" parent="."]
 offset_left = -25.7411
@@ -109,7 +118,14 @@ vertical_icon_alignment = 0
 script = ExtResource("9_ywgbx")
 libraryInfoScene = ExtResource("10_gvty8")
 
-[node name="Aloitatasta" type="Sprite2D" parent="."]
-position = Vector2(-292.512, -158.416)
-scale = Vector2(0.38296, 0.325008)
-texture = ExtResource("10_wwowo")
+[node name="ShowChurchButton" type="Button" parent="."]
+offset_left = 283.152
+offset_top = 148.515
+offset_right = 456.152
+offset_bottom = 371.515
+icon = ExtResource("6_4ofhy")
+flat = true
+icon_alignment = 2
+vertical_icon_alignment = 2
+script = ExtResource("13_nw1k3")
+ChurchInfoScene = ExtResource("14_s22qw")

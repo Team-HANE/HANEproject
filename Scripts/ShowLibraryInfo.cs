@@ -12,7 +12,7 @@ namespace escapetampere
 		// Called when the node enters the scene tree for the first time.
 		public override void _Ready()
 		{
-			libraryInfoScene = (PackedScene)ResourceLoader.Load("res://Levels/LibraryPanel.tscn");
+			libraryInfoScene = (PackedScene)ResourceLoader.Load("res://Levels/Panels/LibraryPanel.tscn");
 			this.Pressed += OnShowLibraryButton;
 		}
 		private void OnShowLibraryButton()
@@ -20,7 +20,7 @@ namespace escapetampere
 			LibraryInfo libraryInstance = (LibraryInfo)libraryInfoScene.Instantiate();
 			GetTree().CurrentScene.AddChild(libraryInstance);
 
-			libraryInstance.ShowLibraryInfo(0);
+			libraryInstance.ShowLibraryInfo(34);
 		}
 	}
 }
