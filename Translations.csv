@@ -12,4 +12,10 @@ WHAT;"Mikä tämä on?";"What is it?"
 
 STUDENTAMT;"Oppilasmäärä: ";"Student amount: "
 
-NEAREST;"Lähin koulu: "; "Nearest school: "
+NEAREST;"\n Lähin koulu: "; "\n Nearest school: "
+
+NASI; "Näsikallion suihkukaivo";"Näsikallio water fountain"
+
+CHURCH;"Aleksanterin kirkko";"Alexander church"
+
+LIB;"Pääkirjasto Metso";"Main Library Metso"

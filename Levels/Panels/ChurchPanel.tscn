@@ -23,19 +23,15 @@ offset_bottom = 167.0
 
 [node name="Label" type="Label" parent="Node2D/ChurchPanel/VBoxContainer"]
 layout_mode = 2
-text = "What is this?"
 
 [node name="NameLabel" type="Label" parent="Node2D/ChurchPanel/VBoxContainer"]
 layout_mode = 2
-text = "Aleksanterin kirkko"
 
 [node name="AddressLabel" type="Label" parent="Node2D/ChurchPanel/VBoxContainer"]
 layout_mode = 2
 
 [node name="SchoolInfoLabel" type="Label" parent="Node2D/ChurchPanel/VBoxContainer"]
 layout_mode = 2
-text = "
-Nearest school:"
 
 [node name="SchoolNameLabel" type="Label" parent="Node2D/ChurchPanel/VBoxContainer"]
 layout_mode = 2

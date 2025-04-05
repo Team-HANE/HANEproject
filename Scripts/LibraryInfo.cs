@@ -5,6 +5,7 @@ public partial class LibraryInfo : Control
 {
     private JsonElement jsonData;
     private Label WhatIsIt;
+    private Label NameLabel;
     private Label addressLabel;
     private Label schoolInfoLabel;
     private Label schoolNameLabel;
@@ -17,6 +18,7 @@ public partial class LibraryInfo : Control
         WhatIsIt = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/Label");
         schoolInfoLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/SchoolInfoLabel");
         addressLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/AddressLabel");
+        NameLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/NameLabel");
 
 
         LoadJson("res://koulut.json");
@@ -46,6 +48,7 @@ public partial class LibraryInfo : Control
     public void ShowLibraryInfo(int index)
     {
         WhatIsIt.Text = Tr("WHAT");
+        NameLabel.Text = Tr("LIB");
         addressLabel.Text = Tr("ADDRESS") + "Pirkankatu 2";
         schoolInfoLabel.Text = Tr("NEAREST");
         if (jsonData.TryGetProperty("features", out JsonElement features) && features.GetArrayLength() > index)

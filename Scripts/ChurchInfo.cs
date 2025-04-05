@@ -8,6 +8,7 @@ namespace escapetampere
 	{
 		private JsonElement jsonData;
 		private Label WhatIsIt;
+		private Label NameLabel;
 		private Label addressLabel;
 		private Label schoolInfoLabel;
 		private Label schoolNameLabel;
@@ -17,6 +18,7 @@ namespace escapetampere
 			schoolNameLabel = GetNode<Label>("Node2D/ChurchPanel/VBoxContainer/SchoolNameLabel");
 			schoolAddressLabel = GetNode<Label>("Node2D/ChurchPanel/VBoxContainer/SchoolAddressLabel");
 			WhatIsIt = GetNode<Label>("Node2D/ChurchPanel/VBoxContainer/Label");
+			NameLabel = GetNode<Label>("Node2D/ChurchPanel/VBoxContainer/NameLabel");
 			schoolInfoLabel = GetNode<Label>("Node2D/ChurchPanel/VBoxContainer/SchoolInfoLabel");
 			addressLabel = GetNode<Label>("Node2D/ChurchPanel/VBoxContainer/AddressLabel");
 			LoadJson("res://koulut.json");
@@ -45,7 +47,8 @@ namespace escapetampere
 		public void ShowChurchInfo(int index)
 		{
 			WhatIsIt.Text = Tr("WHAT");
-			addressLabel.Text = Tr("ADDRESS") + "Pirkankatu";
+			NameLabel.Text = Tr("CHURCH");
+			addressLabel.Text = Tr("ADDRESS") + "Pyynikin kirkkopuisto";
 			schoolInfoLabel.Text = Tr("NEAREST");
 			if (jsonData.TryGetProperty("features", out JsonElement features) && features.GetArrayLength() > index)
 			{

@@ -15,8 +15,6 @@ namespace escapetampere
 			levelTwoPopup = GetNode<Label>("Level2PopupPanel/Label");
 			confirmationPop = GetNode<Label>("ConfirmationPopup/VBoxContainer/Label");
 
-			_languageData = ResourceLoader.Load<LanguageData>("res://LanguageData.tres");
-
 			Translation fiTranslation = new Translation();
 			Translation enTranslation = new Translation();
 

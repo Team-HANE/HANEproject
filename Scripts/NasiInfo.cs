@@ -8,6 +8,7 @@ namespace escapetampere
 	{
 		private JsonElement jsonData;
 		private Label WhatIsIt;
+		private Label NameLabel;
 		private Label addressLabel;
 		private Label schoolInfoLabel;
 		private Label schoolNameLabel;
@@ -17,6 +18,7 @@ namespace escapetampere
 			schoolNameLabel = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/SchoolNameLabel");
 			schoolAddressLabel = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/SchoolAddressLabel");
 			WhatIsIt = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/Label");
+			NameLabel = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/NameLabel");
 			schoolInfoLabel = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/SchoolInfoLabel");
 			addressLabel = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/AddressLabel");
 
@@ -47,6 +49,7 @@ namespace escapetampere
 		public void ShowNasiInfo(int index)
 		{
 			WhatIsIt.Text = Tr("WHAT");
+			NameLabel.Text = Tr("NASI");
 			addressLabel.Text = Tr("ADDRESS") + "Näsijärvenkatu 5";
 			schoolInfoLabel.Text = Tr("NEAREST");
 			if (jsonData.TryGetProperty("features", out JsonElement features) && features.GetArrayLength() > index)
