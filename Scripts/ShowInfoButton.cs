@@ -18,10 +18,11 @@ namespace escapetampere
 
 		private void OnShowInfoButtonPressed()
 		{
+			int FistaIndex = 42;
 			SchoolInfo infoInstance = (SchoolInfo)schoolInfoScene.Instantiate();
 			GetTree().CurrentScene.AddChild(infoInstance);
 
-			infoInstance.ShowSchoolInfo(42);
+			infoInstance.ShowSchoolInfo(FistaIndex);
 		}
 	}
 }

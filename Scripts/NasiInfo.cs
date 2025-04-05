@@ -7,13 +7,19 @@ namespace escapetampere
 	public partial class NasiInfo : Control
 	{
 		private JsonElement jsonData;
+		private Label WhatIsIt;
+		private Label addressLabel;
+		private Label schoolInfoLabel;
 		private Label schoolNameLabel;
 		private Label schoolAddressLabel;
 		public override void _Ready()
 		{
 			schoolNameLabel = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/SchoolNameLabel");
 			schoolAddressLabel = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/SchoolAddressLabel");
-			//schoolInfoLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/SchoolInfoLabel");
+			WhatIsIt = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/Label");
+			schoolInfoLabel = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/SchoolInfoLabel");
+			addressLabel = GetNode<Label>("Node2D/NasiPanel/VBoxContainer/AddressLabel");
+
 
 			LoadJson("res://koulut.json");
 		}
@@ -40,15 +46,16 @@ namespace escapetampere
 
 		public void ShowNasiInfo(int index)
 		{
+			WhatIsIt.Text = Tr("WHAT");
+			addressLabel.Text = Tr("ADDRESS") + "Näsijärvenkatu 5";
+			schoolInfoLabel.Text = Tr("NEAREST");
 			if (jsonData.TryGetProperty("features", out JsonElement features) && features.GetArrayLength() > index)
 			{
-				JsonElement school = features[index]; // Selecting another school from the JSON
+				JsonElement school = features[index];
 				if (school.TryGetProperty("properties", out JsonElement properties))
 				{
-					//int studentLkm = properties.GetProperty("OPPILASMAARA").GetInt32();
-					schoolNameLabel.Text = (properties.GetProperty("NIMI").GetString());
-					schoolAddressLabel.Text = "Address: " + properties.GetProperty("OSOITE").GetString() + ", " + properties.GetProperty("POSTINUMERO").GetString();
-					//lkmLabel.Text = $"Student amount: {studentLkm}";
+					schoolNameLabel.Text = properties.GetProperty("NIMI").GetString();
+					schoolAddressLabel.Text = Tr("ADDRESS") + properties.GetProperty("OSOITE").GetString() + ", " + properties.GetProperty("POSTINUMERO").GetString();
 				}
 			}
 			else

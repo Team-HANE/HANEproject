@@ -4,6 +4,7 @@ using System.Text.Json;
 public partial class SchoolInfo : Control
 {
     private JsonElement jsonData;
+    private Label WhatIsIt;
     private Label nameLabel;
     private Label addressLabel;
     private Label lkmLabel;
@@ -13,8 +14,8 @@ public partial class SchoolInfo : Control
     {
         nameLabel = GetNode<Label>("Node2D/InfoPanel/VBoxContainer/NameLabel");
         addressLabel = GetNode<Label>("Node2D/InfoPanel/VBoxContainer/AddressLabel");
-
         lkmLabel = GetNode<Label>("Node2D/InfoPanel/VBoxContainer/lkmLabel");
+        WhatIsIt = GetNode<Label>("Node2D/InfoPanel/VBoxContainer/Label");
 
         LoadJson("res://koulut.json");
     }
@@ -42,6 +43,7 @@ public partial class SchoolInfo : Control
 
     public void ShowSchoolInfo(int index)
     {
+        WhatIsIt.Text = Tr("WHAT");
         if (jsonData.TryGetProperty("features", out JsonElement features) && features.GetArrayLength() > index)
         {
             JsonElement school = features[index];
@@ -50,10 +52,11 @@ public partial class SchoolInfo : Control
 
                 int studentLkm = properties.GetProperty("OPPILASMAARA").GetInt32();
                 nameLabel.Text = Tr(properties.GetProperty("NIMI").GetString());
-                addressLabel.Text = "Address: " + properties.GetProperty("OSOITE").GetString() + ", " + properties.GetProperty("POSTINUMERO").GetString();
+                addressLabel.Text = Tr("ADDRESS") + properties.GetProperty("OSOITE").GetString() + ", " + properties.GetProperty("POSTINUMERO").GetString();
 
-                lkmLabel.Text = $"Student amount: {studentLkm}";
+                lkmLabel.Text = Tr("STUDENTAMT") + studentLkm;
             }
+
         }
     }
 }

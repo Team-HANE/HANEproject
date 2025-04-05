@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=17 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Texture2D" uid="uid://c7am4sb5crekt" path="res://Art/map/BetterMap.png" id="3_7xhu0"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="4_xnjox"]
@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://3tjv4voyhs4r" path="res://Art/background/aloitatasta.png" id="10_wwowo"]
 [ext_resource type="Script" path="res://Scripts/ShowChurchButton.cs" id="13_nw1k3"]
 [ext_resource type="PackedScene" uid="uid://dt8yp2cl082ku" path="res://Levels/Panels/ChurchPanel.tscn" id="14_s22qw"]
+[ext_resource type="Script" path="res://Scripts/ShowToriButton.cs" id="15_586xv"]
+[ext_resource type="PackedScene" uid="uid://ci6vcaoxswxj5" path="res://Levels/Panels/ToriPanel.tscn" id="16_bpho1"]
 
 [node name="Bigmap" type="Sprite2D"]
 position = Vector2(319, 159)
@@ -129,3 +131,15 @@ icon_alignment = 2
 vertical_icon_alignment = 2
 script = ExtResource("13_nw1k3")
 ChurchInfoScene = ExtResource("14_s22qw")
+
+[node name="ShowToriButton" type="Button" parent="."]
+offset_left = -746.0
+offset_top = 248.0
+offset_right = -318.0
+offset_bottom = 399.0
+icon = ExtResource("6_4ofhy")
+flat = true
+icon_alignment = 2
+vertical_icon_alignment = 2
+script = ExtResource("15_586xv")
+ToriInfoScene = ExtResource("16_bpho1")

@@ -1,6 +1,15 @@
 keys;fi;en
+
 POPUP_MESSAGE;"Tervetuloa peliin! \n Sinun täytyy selvittää, miten päästä tien yli turvallisesti. \n Klikkaa kohtia, jotka ovat väärin.";"Welcome to the game! \n You have to figure out, how to get to the other side safely. \n Click on the errors."
 
 LEVEL2_POPUP;"Voi ei! Tiellä on kuoppa. \n Korjaa ongelma jatkaaksesi matkaa! \n Järjestyksellä on väliä.";"Oh no! The road is blocked by a pothole. \n Fix the problem to continue your journey. \n Order matters."
 
-CONFIRMATION_POP;""Oletko varma, \n että haluat poistua? \n Palaa takaisin tasolle/kotiin";"Are you sure you want to leave? \n Back to level/home"
+CONFIRMATION_POP;"Oletko varma, \n että haluat poistua? \n Palaa takaisin tasolle/kotiin";"Are you sure you want to leave? \n Back to level/home"
+
+ADDRESS;"Osoite: ";"Address: "
+
+WHAT;"Mikä tämä on?";"What is it?"
+
+STUDENTAMT;"Oppilasmäärä: ";"Student amount: "
+
+NEAREST;"Lähin koulu: "; "Nearest school: "

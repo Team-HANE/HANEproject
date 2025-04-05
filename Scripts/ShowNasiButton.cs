@@ -8,8 +8,6 @@ namespace escapetampere
 	{
 		[Export] private PackedScene NasiInfoScene = null;
 
-
-		// Called when the node enters the scene tree for the first time.
 		public override void _Ready()
 		{
 			NasiInfoScene = (PackedScene)ResourceLoader.Load("res://Levels/Panels/NasiPanel.tscn");
@@ -17,10 +15,11 @@ namespace escapetampere
 		}
 		private void OnShowNasiButton()
 		{
+			int NasiIndex = 0;
 			NasiInfo nasiInstance = (NasiInfo)NasiInfoScene.Instantiate();
 			GetTree().CurrentScene.AddChild(nasiInstance);
 
-			nasiInstance.ShowNasiInfo(0);
+			nasiInstance.ShowNasiInfo(NasiIndex);
 		}
 	}
 }

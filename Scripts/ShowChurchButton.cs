@@ -18,10 +18,11 @@ namespace escapetampere
 		}
 		private void OnShowChurchButton()
 		{
+			int ChurchIndex = 38;
 			ChurchInfo churchInstance = (ChurchInfo)ChurchInfoScene.Instantiate();
 			GetTree().CurrentScene.AddChild(churchInstance);
 
-			churchInstance.ShowChurchInfo(38);
+			churchInstance.ShowChurchInfo(ChurchIndex);
 		}
 	}
 }

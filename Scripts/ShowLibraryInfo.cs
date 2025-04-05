@@ -17,10 +17,11 @@ namespace escapetampere
 		}
 		private void OnShowLibraryButton()
 		{
+			int LibraryIndex = 34;
 			LibraryInfo libraryInstance = (LibraryInfo)libraryInfoScene.Instantiate();
 			GetTree().CurrentScene.AddChild(libraryInstance);
 
-			libraryInstance.ShowLibraryInfo(34);
+			libraryInstance.ShowLibraryInfo(LibraryIndex);
 		}
 	}
 }
