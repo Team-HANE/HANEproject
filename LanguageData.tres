@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="LanguageData" load_steps=2 format=3 uid="uid://bj7yeaoysvofp"]
+[gd_resource type="Resource" script_class="LanguageData" load_steps=2 format=3]
 
 [ext_resource type="Script" path="res://Scripts/LanguageData.cs" id="1_hl2at"]
 
 [resource]
 script = ExtResource("1_hl2at")
-CurrentLocale = "en"
+CurrentLocale = "fi"

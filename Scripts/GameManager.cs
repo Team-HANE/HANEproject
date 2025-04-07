@@ -133,8 +133,8 @@ namespace escapetampere
 			{
 				CompleteLevel();
 				ChangeScene("res://Levels/NextLevel.tscn");
-				_audioPlayer.Stream = _correctSound;
-				_audioPlayer.Play();
+				//_audioPlayer.Stream = _correctSound;
+				//_audioPlayer.Play();
 			}
 		}
 

@@ -88,6 +88,7 @@ _wrongSound = ExtResource("20_a8ha7")
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
 size = Vector2i(470, 115)
+visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="PopupPanel"]
