@@ -60,11 +60,6 @@ namespace escapetampere
 		private void GameOver()
 		{
 			ChangeScene("res://Levels/GameOver.tscn");
-			if (_wrongSound != null)
-			{
-				_audioPlayer.Stream = _wrongSound;
-				_audioPlayer.Play();
-			}
 		}
 
 		#endregion
@@ -133,8 +128,6 @@ namespace escapetampere
 			{
 				CompleteLevel();
 				ChangeScene("res://Levels/NextLevel.tscn");
-				//_audioPlayer.Stream = _correctSound;
-				//_audioPlayer.Play();
 			}
 		}
 
@@ -174,15 +167,6 @@ namespace escapetampere
 
 		#endregion
 
-		#region Audio
-
-		[Export] private AudioStreamPlayer2D _music = null;
-		[Export] private AudioStream _correctSound;
-		[Export] private AudioStream _wrongSound;
-		private AudioStreamPlayer _audioPlayer;
-
-
-		#endregion
 
 		// Called when the node enters the scene tree for the first time.
 		public override void _Ready()

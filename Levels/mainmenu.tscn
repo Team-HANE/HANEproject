@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bxcg3s7q7h56v"]
+[gd_scene load_steps=10 format=3 uid="uid://bxcg3s7q7h56v"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_1n8yq"]
 [ext_resource type="Texture2D" uid="uid://dtdvqojwl0663" path="res://Art/background/singlecolorbg.png" id="1_jcxl6"]
@@ -6,8 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cc2m3bcl4ir0a" path="res://Art/map/finishedlevel.png" id="3_i7j38"]
 [ext_resource type="Texture2D" uid="uid://cr783c7av0nfw" path="res://Art/buttons/settings.png" id="3_pdluq"]
 [ext_resource type="Texture2D" uid="uid://bh7fqox08w52y" path="res://Art/map/youarehere.png" id="4_k2wbp"]
-[ext_resource type="AudioStream" uid="uid://dm6wuisi8lxa5" path="res://Audio/correctsound.mp3" id="4_k14id"]
-[ext_resource type="AudioStream" uid="uid://bqgid35ue1nom" path="res://Audio/wrongsound.mp3" id="5_odyv4"]
 [ext_resource type="Texture2D" uid="uid://reihdsnjws6p" path="res://Art/logo/hane_logo_chatgpt.png" id="5_q86u6"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="6_1ypeq"]
 [ext_resource type="Texture2D" uid="uid://6bfd3rvg28pf" path="res://Art/logo/logo.png" id="7_o23rj"]
@@ -17,8 +15,6 @@ position = Vector2(538, 420)
 script = ExtResource("1_1n8yq")
 CompletedLevelFlag = ExtResource("3_i7j38")
 YouAreHereFlag = ExtResource("4_k2wbp")
-_correctSound = ExtResource("4_k14id")
-_wrongSound = ExtResource("5_odyv4")
 
 [node name="Mainmenu" type="Node2D" parent="."]
 
