@@ -60,6 +60,11 @@ namespace escapetampere
 		private void GameOver()
 		{
 			ChangeScene("res://Levels/GameOver.tscn");
+			if (_wrongSound != null)
+			{
+				_audioPlayer.Stream = _wrongSound;
+				_audioPlayer.Play();
+			}
 		}
 
 		#endregion
@@ -123,10 +128,13 @@ namespace escapetampere
 
 		private void CheckVictory()
 		{
+
 			if (_mistakes == 0 && _correctAnimation == 0)
 			{
 				CompleteLevel();
 				ChangeScene("res://Levels/NextLevel.tscn");
+				_audioPlayer.Stream = _correctSound;
+				_audioPlayer.Play();
 			}
 		}
 
@@ -168,30 +176,11 @@ namespace escapetampere
 
 		#region Audio
 
-		public enum SoundEffects
-		{
-			None = 0,
-			Options,
-			Music,
-		}
-
-		//[Export] private AudioStreamPlayer2D _optionSound = null;
 		[Export] private AudioStreamPlayer2D _music = null;
+		[Export] private AudioStream _correctSound;
+		[Export] private AudioStream _wrongSound;
+		private AudioStreamPlayer _audioPlayer;
 
-		public void PlayAudio(SoundEffects soundType)
-		{
-			switch (soundType)
-			{
-				case SoundEffects.Music:
-					if (_music != null)
-					{
-						_music.Play();
-					}
-					break;
-				default:
-					break;
-			}
-		}
 
 		#endregion
 

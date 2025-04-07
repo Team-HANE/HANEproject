@@ -17,10 +17,18 @@ namespace escapetampere
 		[Export] private PackedScene _isWrongScene = null;
 		private GpuParticles2D _wrong = null;
 
+		//Audio
+		[Export] private AudioStream _correctSound;
+		[Export] private AudioStream _wrongSound;
+		private AudioStreamPlayer _audioPlayer;
+
 		public override void _Ready()
 		{
 			_originalTexture = TextureNormal;
 			manager = GetNode<GameManager>("/root/GameManager");
+
+			_audioPlayer = new AudioStreamPlayer();
+			AddChild(_audioPlayer);
 		}
 
 		public override void _Pressed()
@@ -51,6 +59,12 @@ namespace escapetampere
 			_correct.Restart();
 			_correct.OneShot = true;
 
+			if (_correctSound != null)
+			{
+				_audioPlayer.Stream = _correctSound;
+				_audioPlayer.Play();
+			}
+
 			await ToSignal(_correct, "finished");
 			manager.AnimationFinished();
 		}
@@ -65,6 +79,12 @@ namespace escapetampere
 			_wrong.Position = GetLocalMousePosition();
 			_wrong.Restart();
 			_wrong.OneShot = true;
+
+			if (_wrongSound != null)
+			{
+				_audioPlayer.Stream = _wrongSound;
+				_audioPlayer.Play();
+			}
 		}
 	}
 }
