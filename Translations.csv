@@ -4,7 +4,7 @@ POPUP_MESSAGE;"Tervetuloa peliin! \n Sinun täytyy selvittää, miten päästä 
 
 LEVEL2_POPUP;"Voi ei! Tiellä on kuoppa. \n Korjaa ongelma jatkaaksesi matkaa! \n Järjestyksellä on väliä.";"Oh no! The road is blocked by a pothole. \n Fix the problem to continue your journey. \n Order matters."
 
-CONFIRMATION_POP;"Oletko varma, \n että haluat poistua? \n Palaa takaisin tasolle/kotiin";"Are you sure you want to leave? \n Back to level/home"
+CONFIRMATION_POP;"Oletko varma, \n että haluat poistua? \n Palaa takaisin tasolle/kotiin";"Are you sure you want to leave? \n Home/Back to level"
 
 ADDRESS;"Osoite: ";"Address: "
 
