@@ -10,7 +10,7 @@ namespace escapetampere
 		// Called when the node enters the scene tree for the first time.
 		public override void _Ready()
 		{
-			confirmationScene = (PackedScene)ResourceLoader.Load("res://Levels/ConfirmationPanel.tscn");
+			confirmationScene = (PackedScene)ResourceLoader.Load("res://Levels/Panels/ConfirmationPanel.tscn");
 			this.Pressed += OnBackButtonPressed;
 		}
 

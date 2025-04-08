@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://xgxeyu1d51fu"]
+[gd_scene load_steps=22 format=3 uid="uid://xgxeyu1d51fu"]
 
 [ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="1_0a5nk"]
 [ext_resource type="Texture2D" uid="uid://sw5gobtafiyl" path="res://Art/background/Taso_2valmis.PNG" id="2_elfwk"]
@@ -11,11 +11,14 @@
 [ext_resource type="Texture2D" uid="uid://ha02wwur6msj" path="res://Art/buttons/0life.png" id="8_7m3n6"]
 [ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="9_2yxc0"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="10_7rjkb"]
+[ext_resource type="AudioStream" uid="uid://bqgid35ue1nom" path="res://Audio/wrongsound.mp3" id="12_7djdt"]
 [ext_resource type="Texture2D" uid="uid://bjxm8lxw2l0fu" path="res://Art/background/Taso2Lapio.PNG" id="12_kjbsv"]
 [ext_resource type="Script" path="res://Scripts/BackButton.cs" id="12_xd2y4"]
 [ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="13_10kat"]
+[ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/Panels/ConfirmationPanel.tscn" id="14_2hen5"]
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="14_r242f"]
 [ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="15_tpawv"]
+[ext_resource type="AudioStream" uid="uid://dm6wuisi8lxa5" path="res://Audio/correctsound.mp3" id="16_sucpe"]
 [ext_resource type="Texture2D" uid="uid://dnyjfpqxt8v7h" path="res://Art/background/Taso2 Kuoppa.PNG" id="17_yggx1"]
 [ext_resource type="Texture2D" uid="uid://c04he2osev7cs" path="res://Art/background/maa.png" id="18_54dv7"]
 
@@ -47,14 +50,8 @@ offset_right = 253.0
 offset_bottom = 991.0
 mouse_filter = 1
 script = ExtResource("9_2yxc0")
-
-[node name="BackButt" type="TextureButton" parent="."]
-offset_left = -657.778
-offset_top = -404.444
-offset_right = -601.778
-offset_bottom = -348.444
-texture_normal = ExtResource("10_7rjkb")
-script = ExtResource("12_xd2y4")
+_isWrongScene = ExtResource("15_tpawv")
+_wrongSound = ExtResource("12_7djdt")
 
 [node name="Taso2Lapio" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = -631.111
@@ -63,8 +60,20 @@ offset_right = -523.111
 offset_bottom = 184.333
 texture_normal = ExtResource("12_kjbsv")
 script = ExtResource("13_10kat")
+OrderMatters = true
 _isCorrectScene = ExtResource("14_r242f")
 _isWrongScene = ExtResource("15_tpawv")
+_correctSound = ExtResource("16_sucpe")
+_wrongSound = ExtResource("12_7djdt")
+
+[node name="BackButt" type="TextureButton" parent="."]
+offset_left = -657.778
+offset_top = -404.444
+offset_right = -601.778
+offset_bottom = -348.444
+texture_normal = ExtResource("10_7rjkb")
+script = ExtResource("12_xd2y4")
+confirmationScene = ExtResource("14_2hen5")
 
 [node name="Taso2Kuoppa" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = -262.222
@@ -73,8 +82,12 @@ offset_right = 98.7778
 offset_bottom = 247.444
 texture_normal = ExtResource("17_yggx1")
 script = ExtResource("13_10kat")
+OrderMatters = true
+OrderNumber = 2
 _isCorrectScene = ExtResource("14_r242f")
 _isWrongScene = ExtResource("15_tpawv")
+_correctSound = ExtResource("16_sucpe")
+_wrongSound = ExtResource("12_7djdt")
 
 [node name="Maa2" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = 517.778
@@ -84,6 +97,8 @@ offset_bottom = 246.667
 scale = Vector2(0.996527, 1.07118)
 texture_normal = ExtResource("18_54dv7")
 script = ExtResource("13_10kat")
+OrderMatters = true
+OrderNumber = 1
 _isCorrectScene = ExtResource("14_r242f")
 _isWrongScene = ExtResource("15_tpawv")
 

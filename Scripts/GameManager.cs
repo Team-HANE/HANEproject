@@ -123,6 +123,7 @@ namespace escapetampere
 
 		private void CheckVictory()
 		{
+
 			if (_mistakes == 0 && _correctAnimation == 0)
 			{
 				CompleteLevel();
@@ -166,34 +167,6 @@ namespace escapetampere
 
 		#endregion
 
-		#region Audio
-
-		public enum SoundEffects
-		{
-			None = 0,
-			Options,
-			Music,
-		}
-
-		//[Export] private AudioStreamPlayer2D _optionSound = null;
-		[Export] private AudioStreamPlayer2D _music = null;
-
-		public void PlayAudio(SoundEffects soundType)
-		{
-			switch (soundType)
-			{
-				case SoundEffects.Music:
-					if (_music != null)
-					{
-						_music.Play();
-					}
-					break;
-				default:
-					break;
-			}
-		}
-
-		#endregion
 
 		// Called when the node enters the scene tree for the first time.
 		public override void _Ready()

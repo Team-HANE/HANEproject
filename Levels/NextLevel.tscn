@@ -1,13 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://ckj6jihomkuoj"]
+[gd_scene load_steps=7 format=3 uid="uid://ckj6jihomkuoj"]
 
 [ext_resource type="Texture2D" uid="uid://txjcwivkeipy" path="res://Art/background/nextstage.png" id="1_06k4v"]
+[ext_resource type="Script" path="res://Scripts/NextLevel.cs" id="1_mcjuu"]
 [ext_resource type="Texture2D" uid="uid://ded002w2du1b8" path="res://Art/buttons/home.png" id="2_7wevq"]
+[ext_resource type="AudioStream" uid="uid://dm6wuisi8lxa5" path="res://Audio/correctsound.mp3" id="2_wdyax"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="3_2ydjv"]
 [ext_resource type="Texture2D" uid="uid://6ahuyomkteic" path="res://Art/buttons/next.png" id="3_rw5vg"]
 
 [node name="NextLevel" type="Node2D"]
 position = Vector2(-28, -17)
 scale = Vector2(0.485, 0.485)
+script = ExtResource("1_mcjuu")
+_correctSound = ExtResource("2_wdyax")
 
 [node name="Nextstage" type="Sprite2D" parent="."]
 position = Vector2(609.278, 341.237)

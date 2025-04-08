@@ -6,17 +6,17 @@
 [ext_resource type="Texture2D" uid="uid://dbu25ktj2lla2" path="res://Art/buttons/volumeoff.png" id="2_uldn3"]
 [ext_resource type="Script" path="res://Scripts/LanguageSwitch.cs" id="2_yaftv"]
 [ext_resource type="Texture2D" uid="uid://06shy7gxbp0c" path="res://Art/buttons/volumeon.png" id="3_5vwhq"]
-[ext_resource type="Texture2D" uid="uid://hp2m7vcywdpt" path="res://Art/buttons/volumeon_pressed.png" id="3_78p1o"]
+[ext_resource type="Texture2D" uid="uid://hp2m7vcywdpt" path="res://Art/buttons/volumeon_pressed.png" id="3_7rp6a"]
 [ext_resource type="Texture2D" uid="uid://reihdsnjws6p" path="res://Art/logo/hane_logo_chatgpt.png" id="4_7j0v8"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="4_tdrrs"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="5_8qehj"]
-[ext_resource type="Texture2D" uid="uid://bxf4dh6oo0633" path="res://Art/buttons/volumeoff_pressed.png" id="5_o0lfg"]
+[ext_resource type="Texture2D" uid="uid://bxf4dh6oo0633" path="res://Art/buttons/volumeoff_pressed.png" id="5_d2t0a"]
 [ext_resource type="Texture2D" uid="uid://yb1sgxfexb1w" path="res://Art/logo/tiko_logo_musta_fin.png" id="7_ve4nn"]
 [ext_resource type="Texture2D" uid="uid://bvnxw53q30p83" path="res://Art/logo/yhtalogo.PNG" id="8_ge08d"]
-[ext_resource type="Texture2D" uid="uid://b22yh8sssyt2t" path="res://Art/buttons/fi_chosen.png" id="8_nfulx"]
+[ext_resource type="Texture2D" uid="uid://b22yh8sssyt2t" path="res://Art/buttons/fi_chosen.png" id="8_ghgv7"]
 [ext_resource type="Texture2D" uid="uid://dmdujhaxtgk4y" path="res://Art/buttons/fi.png" id="9_i5234"]
-[ext_resource type="Texture2D" uid="uid://b7313gpuuocrm" path="res://Art/buttons/eng_chosen.png" id="10_316w5"]
 [ext_resource type="Texture2D" uid="uid://sqqggnyq2y2y" path="res://Art/buttons/eng.png" id="10_jvy5k"]
+[ext_resource type="Texture2D" uid="uid://b7313gpuuocrm" path="res://Art/buttons/eng_chosen.png" id="10_pfhtb"]
 [ext_resource type="Texture2D" uid="uid://choev52k2bfpf" path="res://Art/background/asetukset.png" id="13_ma42d"]
 [ext_resource type="Texture2D" uid="uid://bjysrl55b6j8x" path="res://Art/background/kieli.png" id="15_q55ld"]
 [ext_resource type="Texture2D" uid="uid://d1638pmca04il" path="res://Art/background/aanet.png" id="16_hi6v4"]
@@ -30,9 +30,9 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_fhfov")
 soundOnIcon = ExtResource("3_5vwhq")
-soundOnPressed = ExtResource("3_78p1o")
+soundOnPressed = ExtResource("3_7rp6a")
 soundOffIcon = ExtResource("2_uldn3")
-soundOffPressed = ExtResource("5_o0lfg")
+soundOffPressed = ExtResource("5_d2t0a")
 
 [node name="Panel" type="Panel" parent="Control"]
 layout_mode = 0
@@ -42,9 +42,9 @@ script = ExtResource("2_b73ns")
 scale = Vector2(0.54, 0.54)
 transform = Transform2D(0.54, 0, 0, 0.54, 0, 0)
 script = ExtResource("2_yaftv")
-fiActive = ExtResource("8_nfulx")
+fiActive = ExtResource("8_ghgv7")
 fiInactive = ExtResource("9_i5234")
-engActive = ExtResource("10_316w5")
+engActive = ExtResource("10_pfhtb")
 engInactive = ExtResource("10_jvy5k")
 
 [node name="Singlecolorbg" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
@@ -95,23 +95,41 @@ metadata/_edit_use_anchors_ = true
 
 [node name="SoundOffButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
-offset_left = 655.556
-offset_top = 298.148
-offset_right = 759.556
-offset_bottom = 402.148
+offset_left = 640.741
+offset_top = 307.407
+offset_right = 744.741
+offset_bottom = 411.407
 icon = ExtResource("2_uldn3")
 flat = true
 
 [node name="SoundOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
 clip_contents = true
 custom_minimum_size = Vector2(30, 30)
-offset_left = 477.778
-offset_top = 283.333
-offset_right = 615.778
-offset_bottom = 421.333
+offset_left = 468.518
+offset_top = 288.889
+offset_right = 606.518
+offset_bottom = 426.889
 icon = ExtResource("3_5vwhq")
 flat = true
 icon_alignment = 1
+
+[node name="SfxOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
+visible = false
+offset_left = 477.778
+offset_top = 348.148
+offset_right = 589.778
+offset_bottom = 472.148
+icon = ExtResource("3_5vwhq")
+flat = true
+
+[node name="SfxOffButton" type="Button" parent="Control/Panel/CanvasLayer"]
+visible = false
+offset_left = 625.926
+offset_top = 350.0
+offset_right = 729.926
+offset_bottom = 457.0
+icon = ExtResource("2_uldn3")
+flat = true
 
 [node name="Asetukset" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
 position = Vector2(577.778, 55.5556)
@@ -122,7 +140,7 @@ position = Vector2(351.852, 187.037)
 texture = ExtResource("15_q55ld")
 
 [node name="Aanet" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
-position = Vector2(335.185, 346.296)
+position = Vector2(342.593, 364.815)
 texture = ExtResource("16_hi6v4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
