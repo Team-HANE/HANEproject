@@ -228,6 +228,10 @@ margin-left: 50px;
   }
 }
 
+.trailer {
+  text-align: center;
+}
+
 .modal {
   display: none;
   position: fixed;
