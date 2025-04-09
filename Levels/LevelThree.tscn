@@ -35,8 +35,8 @@ scale = Vector2(0.316895, 0.214193)
 texture = ExtResource("1_aj08v")
 
 [node name="5Life" type="Sprite2D" parent="."]
-position = Vector2(236, -124)
-scale = Vector2(0.376877, 0.334225)
+position = Vector2(241.507, -124)
+scale = Vector2(0.350274, 0.334225)
 texture = ExtResource("2_j1f85")
 script = ExtResource("3_k61eg")
 lives4 = ExtResource("4_ddpbm")
@@ -46,9 +46,9 @@ lives1 = ExtResource("7_kfj83")
 lives0 = ExtResource("8_vs7xq")
 
 [node name="TextureButton" type="TextureButton" parent="5Life"]
-offset_left = -1502.0
+offset_left = -1623.0
 offset_top = -141.0
-offset_right = -998.0
+offset_right = -1084.0
 offset_bottom = 87.0
 scale = Vector2(3.44111, 4.47072)
 mouse_filter = 1
@@ -73,16 +73,11 @@ position = Vector2(256, 59.1875)
 scale = Vector2(0.425439, 0.483314)
 texture = ExtResource("14_dt20v")
 
-[node name="Taso2Bussi" type="Sprite2D" parent="."]
-position = Vector2(217, -31)
-scale = Vector2(0.434486, 0.509259)
-texture = ExtResource("20_wh415")
-
 [node name="Nysse3" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = -126.0
-offset_top = -87.0
-offset_right = 324.0
-offset_bottom = 70.0
+offset_left = -177.0
+offset_top = -80.0
+offset_right = 252.0
+offset_bottom = 82.0
 scale = Vector2(0.4, 0.4)
 texture_normal = ExtResource("19_brice")
 script = ExtResource("15_m8u4j")

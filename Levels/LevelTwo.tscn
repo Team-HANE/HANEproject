@@ -54,10 +54,10 @@ _isWrongScene = ExtResource("15_tpawv")
 _wrongSound = ExtResource("12_7djdt")
 
 [node name="Taso2Lapio" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = -631.111
-offset_top = 13.3333
-offset_right = -523.111
-offset_bottom = 184.333
+offset_left = -631.0
+offset_top = 7.0
+offset_right = -511.0
+offset_bottom = 185.0
 texture_normal = ExtResource("12_kjbsv")
 script = ExtResource("13_10kat")
 OrderMatters = true
@@ -90,10 +90,10 @@ _correctSound = ExtResource("16_sucpe")
 _wrongSound = ExtResource("12_7djdt")
 
 [node name="Maa2" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = 517.778
-offset_top = 86.6667
-offset_right = 677.778
-offset_bottom = 246.667
+offset_left = 311.111
+offset_top = -35.5555
+offset_right = 611.111
+offset_bottom = 264.444
 scale = Vector2(0.996527, 1.07118)
 texture_normal = ExtResource("18_54dv7")
 script = ExtResource("13_10kat")

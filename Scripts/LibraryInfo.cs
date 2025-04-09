@@ -1,69 +1,53 @@
 using Godot;
 using System.Text.Json;
 
-public partial class LibraryInfo : Control
+namespace escapetampere
 {
-    private JsonElement jsonData;
-    private Label WhatIsIt;
-    private Label NameLabel;
-    private Label addressLabel;
-    private Label schoolInfoLabel;
-    private Label schoolNameLabel;
-    private Label schoolAddressLabel;
 
-    public override void _Ready()
+    public partial class LibraryInfo : Control
     {
-        schoolNameLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/SchoolNameLabel");
-        schoolAddressLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/SchoolAddressLabel");
-        WhatIsIt = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/Label");
-        schoolInfoLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/SchoolInfoLabel");
-        addressLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/AddressLabel");
-        NameLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/NameLabel");
+        private JsonElement jsonData;
+        private Label WhatIsIt;
+        private Label NameLabel;
+        private Label addressLabel;
+        private Label schoolInfoLabel;
+        private Label schoolNameLabel;
+        private Label schoolAddressLabel;
 
-
-        LoadJson("res://koulut.json");
-    }
-
-    public void LoadJson(string filePath)
-    {
-        if (!FileAccess.FileExists(filePath))
+        public override void _Ready()
         {
-            GD.PrintErr($"File not found: {filePath}");
-            return;
+            schoolNameLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/SchoolNameLabel");
+            schoolAddressLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/SchoolAddressLabel");
+            WhatIsIt = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/Label");
+            schoolInfoLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/SchoolInfoLabel");
+            addressLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/AddressLabel");
+            NameLabel = GetNode<Label>("Node2D/LibraryPanel/VBoxContainer/NameLabel");
+
+
+            jsonData = JsonDataLoader.Load("res://koulut.json") ?? default;
+
         }
 
-        using FileAccess file = FileAccess.Open(filePath, FileAccess.ModeFlags.Read);
-        string jsonText = file.GetAsText();
-
-        try
+        public void ShowLibraryInfo(int index)
         {
-            jsonData = JsonSerializer.Deserialize<JsonElement>(jsonText);
-        }
-        catch (System.Exception e)
-        {
-            GD.PrintErr("Failed to parse JSON: " + e.Message);
-        }
-    }
-
-    public void ShowLibraryInfo(int index)
-    {
-        WhatIsIt.Text = Tr("WHAT");
-        NameLabel.Text = Tr("LIB");
-        addressLabel.Text = Tr("ADDRESS") + "Pirkankatu 2";
-        schoolInfoLabel.Text = Tr("NEAREST");
-        if (jsonData.TryGetProperty("features", out JsonElement features) && features.GetArrayLength() > index)
-        {
-            JsonElement school = features[index];
-            if (school.TryGetProperty("properties", out JsonElement properties))
+            WhatIsIt.Text = Tr("WHAT");
+            NameLabel.Text = Tr("LIB");
+            addressLabel.Text = Tr("ADDRESS") + "Pirkankatu 2";
+            schoolInfoLabel.Text = Tr("NEAREST");
+            if (jsonData.TryGetProperty("features", out JsonElement features) && features.GetArrayLength() > index)
             {
-                schoolNameLabel.Text = properties.GetProperty("NIMI").GetString();
-                schoolAddressLabel.Text = Tr("ADDRESS") + properties.GetProperty("OSOITE").GetString() + ", " + properties.GetProperty("POSTINUMERO").GetString();
-                //lkmLabel.Text = $"Student amount: {studentLkm}";
+                JsonElement school = features[index];
+                if (school.TryGetProperty("properties", out JsonElement properties))
+                {
+                    schoolNameLabel.Text = properties.GetProperty("NIMI").GetString();
+                    schoolAddressLabel.Text = Tr("ADDRESS") + properties.GetProperty("OSOITE").GetString() + ", " + properties.GetProperty("POSTINUMERO").GetString();
+                    //lkmLabel.Text = $"Student amount: {studentLkm}";
+                }
             }
-        }
-        else
-        {
-            GD.PrintErr("Invalid index or JSON structure.");
+            else
+            {
+                GD.PrintErr("Invalid index or JSON structure.");
+            }
         }
     }
 }

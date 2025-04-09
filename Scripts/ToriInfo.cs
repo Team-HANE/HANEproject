@@ -20,7 +20,8 @@ namespace escapetampere
 			schoolInfoLabel = GetNode<Label>("Node2D/ToriPanel/VBoxContainer/SchoolInfoLabel");
 			addressLabel = GetNode<Label>("Node2D/ToriPanel/VBoxContainer/AddressLabel");
 
-			LoadJson("res://koulut.json");
+			jsonData = JsonDataLoader.Load("res://koulut.json") ?? default;
+
 		}
 		public void LoadJson(string filePath)
 		{

@@ -21,27 +21,8 @@ namespace escapetampere
 			NameLabel = GetNode<Label>("Node2D/ChurchPanel/VBoxContainer/NameLabel");
 			schoolInfoLabel = GetNode<Label>("Node2D/ChurchPanel/VBoxContainer/SchoolInfoLabel");
 			addressLabel = GetNode<Label>("Node2D/ChurchPanel/VBoxContainer/AddressLabel");
-			LoadJson("res://koulut.json");
-		}
-		public void LoadJson(string filePath)
-		{
-			if (!FileAccess.FileExists(filePath))
-			{
-				GD.PrintErr($"File not found: {filePath}");
-				return;
-			}
 
-			using FileAccess file = FileAccess.Open(filePath, FileAccess.ModeFlags.Read);
-			string jsonText = file.GetAsText();
-
-			try
-			{
-				jsonData = JsonSerializer.Deserialize<JsonElement>(jsonText);
-			}
-			catch (System.Exception e)
-			{
-				GD.PrintErr("Failed to parse JSON: " + e.Message);
-			}
+			jsonData = JsonDataLoader.Load("res://koulut.json") ?? default;
 		}
 
 		public void ShowChurchInfo(int index)
