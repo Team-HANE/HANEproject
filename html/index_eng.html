@@ -7,14 +7,11 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>HANE</title>
-    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/hane_logo.png" />
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -25,156 +22,162 @@
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                      <li class="nav-item">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item">
                         <a class="nav-link" href="https://webpages.tuni.fi/24tiko/" target="_blank">Gameportal</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://projects.tuni.fi/yhta/" target="_blank">Download game</a>
-                      </li>
-                      <li class="nav-item dropdown">
+                    </li>
+
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">Collaborations</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">Collaborations</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item"
-                              href="https://www.tuni.fi/fi/tutkimus/yhta-yhteisesti-alykas-kaupunki"
-                              target="_blank">Tamk</a></li>
-                          <li><a class="dropdown-item" href="#" id="yhtaLinkki">Yhtä</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.tuni.fi/fi/tutkimus/yhta-yhteisesti-alykas-kaupunki"
+                                    target="_blank">Tamk</a></li>
+                            <li><a class="dropdown-item" href="#" id="yhtaLinkki">Yhtä</a></li>
                         </ul>
-                      </li>
-                      <li id="language">VChoose language:
-                        <a href="index_eng.html"><img src="assets/eng.png" alt="eng" id="langeng"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" target="_blank">Download game</a>
+                    </li>
+                    <li class ="nav-item" id="language">Choose language: <a href="index_eng.html"><img src="assets/eng.png" alt="eng" id="langeng"></a>
                         <a href="index.html"><img src="assets/fi.png" alt="fi" id="langfi"></a>
-                      </li>
-                    </ul>
-                  </div>
-                <!-- Modaalin rakenne-->
-                <div id="yhtaModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2>Yhtä - Yhtenäisesti älykäs kaupunki</h2>
-                        <p>Yhtä is a project to test how digital infra can be used in Tampere to make the city a safer
-                            place for cyclists and walkers.
-
-                            YHTÄ-playbook is a result of this venture. With the playbook anyone can use the data to help
-                            with their ventures.
-
-                            <br>
-                            HANE uses data from schools of Tampere. The data is used with json, to display information
-                            about the schools in the game. Find these with the info-button!
-                        </p>
-                        <a href="https://projects.tuni.fi/yhta/" target="_blank">Link to Yhtä</a><br>
-                        <a href="https://www.yhta.fi" target="_blank">Link to Yhtä PlayBook</a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <!-- Page content-->
+
+    <div id="yhtaModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Yhtä - Yhtenäisesti älykäs kaupunki</h2>
+            <p>Yhtä is a project that explores how digital infrastructure of Tampere can be utilized. <br>
+
+                YHTÄ-playbook is a result of this venture. This playbook enables any software developer using data
+                produced by Tampere's ecosystem to build their own services.<br>
+                Primary focus is on making Tampere a safe city for pedestrians. <br>
+                Business Information Systems students from Tampere University of Applied Sciences are using this data in
+                their games. <br>
+                HANE uses data from Tampere in JSON format about local schools in their game Stop, Spot, Go!
+                The game's map mirrors the city of Tampere, with added info-buttons to showcase which building or
+                landmark is displayed and what the nearest school to that is.
+                This adds more informative content to the game, as well as a genuine feel of Tampere's traffic
+                environment.
+            </p>
+            <a href="https://projects.tuni.fi/yhta/" target="_blank">Link to Yhtä</a><br>
+            <a href="https://www.yhta.fi" target="_blank">Link to Yhtä PlayBook</a>
+        </div>
+    </div>
+
+
     <div class="container">
         <div class="text-center mt-5">
             <h1>GAMEPROJECT</h1>
             <p class="lead">We are HANE</p>
             <p></p>
         </div>
-        </div>
-        <div class="game">
-            <h1>STOP, SPOT, GO!</h1>
-            <p>Welcome to an exciting and educational game on the streets of Tampere!</p>
-            <p>This is an addictive point-and-click puzzle, where you can test your focus and attention to details. Move
-                from one level to another by solving puzzles and spotting dangers in traffic, all in the colorful city
-                of Tampere!</p>
+    </div>
 
-            <!-- Ensimmäinen kuvarivi -->
-            <div class="image-row">
-                <img src="assets/aloitus.png" alt="aloitusnäkymä">
-                <img src="assets/kartta.png" alt="tasovalikko">
+    <div class="game">
+        <h1>STOP, SPOT, GO!</h1>
+        <p>Welcome to an exciting and educational game on the streets of Tampere!</p>
+        <p>This is an addictive point-and-click puzzle, where you can test your focus and attention to details. Move
+            from one level to another by solving puzzles and spotting dangers in traffic, all in the colorful city
+            of Tampere!</p>
+
+
+        <div class="image-row">
+            <img src="assets/aloitus.png" alt="aloitusnäkymä">
+            <img src="assets/kartta.png" alt="tasovalikko">
+        </div>
+
+        <p>In the game the player moves along in Tampere as a pedestrian. It's not as easy as it sounds! Each level has
+            it's own problem: you will have to spot
+            and solve these problems to move on. Be careful though, if you make too many mistakes, you will have to
+            start
+            over!
+            This is fun game to learn about traffic safety and hone your problem solving skills!
+        </p>
+
+        <div class="image-row">
+            <img src="assets/taso1.png" alt="ensimmäinen taso">
+            <img src="assets/voitto.png" alt="voittonäkymä">
+        </div>
+    </div>
+
+    <div class="trailer">
+        <h1>Traileri</h1>
+        <div class="video-wrapper">
+            <video controls>
+                <source src="assets/traileri_eng.mp4" type="video/mp4" />
+                Your browser does not support video.
+        </div>
+    </div>
+
+    <div class="imgs">
+        <h1>Team</h1>
+        <section id="team">
+
+            <div class="person">
+                <h2>Helmi Haapasaari</h2>
+                <img src="assets/Helmi.jpeg" alt="person2">
             </div>
-
-            <p>The player moves along in Tampere as a pedestrian. Each level has it's own problem: you will have to spot
-                and solve these problems to move on. Be careful, if you make too many mistakes, you will have to start
-                over!
-                This is fun game to learn about traffic safety and help you move safer wherever you are!
-            </p>
-
-            <!-- Toinen kuvarivi -->
-            <div class="image-row">
-                <img src="assets/taso1.png" alt="ensimmäinen taso">
-                <img src="assets/voitto.png" alt="voittonäkymä">
+            <div class="person">
+                <h2>Aaro Nieminen</h2>
+                <img src="assets/aaro.jpg" alt="person1">
             </div>
-        </div>
-
-        <div class="trailer">
-            <h1>Traileri</h1>
-            <video controls width="650">
-            <source src ="assets/traileri_eng.mp4" type="video/mp4" />
-        </div>
-
-        <div class="imgs">
-            <h1>Team</h1>
-            <section id="team">
-
-                <div class="person">
-                    <h2>Helmi Haapasaari</h2>
-                    <img src="assets/Helmi.jpeg" alt="person2">
-                </div>
-                <div class="person">
-                    <h2>Aaro Nieminen</h2>
-                    <img src="assets/aaro.jpg" alt="person1">
-                </div>
-                <div class="person">
-                    <h2>Niina Tarvaala</h2>
-                    <img src="assets/niina.jpg" alt="person3">
-                </div>
-                <div class="person">
-                    <h2>Ellen<br />Leino</h2>
-                    <img src="assets/ellen.jpg" alt="person4">
-                </div>
-
-
-            </section>
-
-            <div id="logobar">
-                <img src="assets/yhtalogo.PNG" alt="Logo 1">
-                <img src="assets/tiko_logo_musta_fin.png" alt="Logo 2">
-                <img src="assets/TRE_LB22_AMK____fi_B3__NEGA.png" alt="Logo 3">
-                <img src="assets/euroopanunioni2.jpg" alt="Logo 4">
+            <div class="person">
+                <h2>Niina Tarvaala</h2>
+                <img src="assets/niina.jpg" alt="person3">
             </div>
+            <div class="person">
+                <h2>Ellen<br />Leino</h2>
+                <img src="assets/ellen.jpg" alt="person4">
+            </div>
+        </section>
+
+        <div id="logobar">
+            <img src="assets/yhtalogo.PNG" alt="Yhtä-hankkeen logo">
+            <img src="assets/tiko_logo_musta_fin.png" alt="Tampereen tietojenkäsittelijöiden logo">
+            <img src="assets/TRE_LB22_AMK____fi_B3__NEGA.png" alt="Tampereen ammattikorkeakoulun logo">
         </div>
-        <footer>
-            <p>&copy; 2025 HANE PROJEKTI | All Rights Reserved</p>
-        </footer>
+    </div>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+    <footer>
+        <p>&copy; 2025 HANE PROJEKTI | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const modal = document.getElementById("yhtaModal");
-                const linkki = document.getElementById("yhtaLinkki");
-                const closeBtn = document.querySelector(".close");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("yhtaModal");
+            const linkki = document.getElementById("yhtaLinkki");
+            const closeBtn = document.querySelector(".close");
 
-                linkki.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    modal.style.display = "block"; // Näytetään modal-ikkuna
-                });
-
-                closeBtn.addEventListener("click", function () {
-                    modal.style.display = "none"; // Piilotetaan modal-ikkuna
-                });
-
-                window.addEventListener("click", function (event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                });
+            linkki.addEventListener("click", function (event) {
+                event.preventDefault();
+                modal.style.display = "block";
             });
-        </script>
+
+            closeBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            window.addEventListener("click", function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
 
 </body>
 

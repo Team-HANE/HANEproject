@@ -138,8 +138,7 @@ Own css
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
- /*navbar*/
- /* Taustaväri */
+ /*navbarin taustaväri*/
 #navbar {
   background-color: #1dd3b0;
 }
@@ -164,7 +163,10 @@ Own css
 
 /* Kielivalikko */
 #language {
-margin-left: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  gap: 5px;
 }
 
 /* Lippukuvien koko */
