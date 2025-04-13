@@ -1,16 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://tioo6jmcf3eh"]
+[gd_scene load_steps=6 format=3 uid="uid://tioo6jmcf3eh"]
 
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="1_6ftbo"]
 [ext_resource type="Script" path="res://Scripts/ConfirmationPanel.cs" id="1_roj57"]
 [ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="2_8nyj3"]
 [ext_resource type="Texture2D" uid="uid://dirlrj3wnpoy8" path="res://Art/buttons/greenhome.png" id="2_us0lo"]
+[ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="4_cndcj"]
 
 [node name="ConfirmationPanel" type="Control" node_paths=PackedStringArray("backToLevel", "goHome")]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_roj57")
 backToLevel = NodePath("Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer/Back")
-goHome = NodePath("Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer/Home")
+goHome = NodePath("")
 
 [node name="Node2D" type="Node2D" parent="."]
 script = ExtResource("2_8nyj3")
@@ -46,10 +47,11 @@ justification_flags = 131
 layout_mode = 2
 alignment = 1
 
-[node name="Home" type="Button" parent="Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer"]
+[node name="Home" type="TextureButton" parent="Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-icon = ExtResource("2_us0lo")
-flat = true
+texture_normal = ExtResource("2_us0lo")
+script = ExtResource("4_cndcj")
+_sceneToLoadPath = "res://Levels/LevelSelect.tscn"
 
 [node name="Back" type="Button" parent="Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer"]
 layout_mode = 2

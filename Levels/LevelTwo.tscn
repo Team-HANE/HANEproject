@@ -1,9 +1,11 @@
-[gd_scene load_steps=22 format=3 uid="uid://xgxeyu1d51fu"]
+[gd_scene load_steps=24 format=3 uid="uid://xgxeyu1d51fu"]
 
 [ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="1_0a5nk"]
+[ext_resource type="Script" path="res://Scripts/AnimationControl.cs" id="2_4uem0"]
 [ext_resource type="Texture2D" uid="uid://sw5gobtafiyl" path="res://Art/background/Taso_2valmis.PNG" id="2_elfwk"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_rbc1r"]
 [ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="3_cjcan"]
+[ext_resource type="PackedScene" uid="uid://wjy686i2ukng" path="res://Levels/Animation/DigScene.tscn" id="3_vh0pq"]
 [ext_resource type="Texture2D" uid="uid://rpov7vloe5vb" path="res://Art/buttons/4life.png" id="4_qvc6y"]
 [ext_resource type="Texture2D" uid="uid://cwdluow5vttob" path="res://Art/buttons/3life.png" id="5_fhhem"]
 [ext_resource type="Texture2D" uid="uid://dtj0ngobj6xg2" path="res://Art/buttons/2life.png" id="6_wmuis"]
@@ -27,11 +29,6 @@ position = Vector2(303, 191)
 scale = Vector2(0.45, 0.45)
 script = ExtResource("1_0a5nk")
 
-[node name="Taso2Luonnos" type="Sprite2D" parent="."]
-position = Vector2(36.6666, -18.1946)
-scale = Vector2(0.695529, 0.53295)
-texture = ExtResource("2_elfwk")
-
 [node name="5Life" type="Sprite2D" parent="."]
 position = Vector2(593.333, -346.667)
 scale = Vector2(0.624147, 0.639345)
@@ -51,6 +48,36 @@ offset_bottom = 991.0
 mouse_filter = 1
 script = ExtResource("9_2yxc0")
 _isWrongScene = ExtResource("15_tpawv")
+_wrongSound = ExtResource("12_7djdt")
+
+[node name="Taso2Luonnos" type="Sprite2D" parent="."]
+position = Vector2(36.6666, -18.1946)
+scale = Vector2(0.695529, 0.53295)
+texture = ExtResource("2_elfwk")
+
+[node name="AnimationControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 436.0
+offset_top = 47.0
+offset_right = 696.0
+offset_bottom = 242.0
+script = ExtResource("2_4uem0")
+digScene = ExtResource("3_vh0pq")
+
+[node name="Maa2" type="TextureButton" parent="AnimationControl" groups=["Mistakes"]]
+offset_left = -31.5556
+offset_top = -55.8889
+offset_right = 268.444
+offset_bottom = 244.111
+scale = Vector2(0.996527, 1.07118)
+texture_normal = ExtResource("18_54dv7")
+script = ExtResource("13_10kat")
+OrderMatters = true
+OrderNumber = 1
+_isCorrectScene = ExtResource("14_r242f")
+_isWrongScene = ExtResource("15_tpawv")
+_correctSound = ExtResource("16_sucpe")
 _wrongSound = ExtResource("12_7djdt")
 
 [node name="Taso2Lapio" type="TextureButton" parent="." groups=["Mistakes"]]
@@ -89,19 +116,6 @@ _isWrongScene = ExtResource("15_tpawv")
 _correctSound = ExtResource("16_sucpe")
 _wrongSound = ExtResource("12_7djdt")
 
-[node name="Maa2" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = 311.111
-offset_top = -35.5555
-offset_right = 611.111
-offset_bottom = 264.444
-scale = Vector2(0.996527, 1.07118)
-texture_normal = ExtResource("18_54dv7")
-script = ExtResource("13_10kat")
-OrderMatters = true
-OrderNumber = 1
-_isCorrectScene = ExtResource("14_r242f")
-_isWrongScene = ExtResource("15_tpawv")
-
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(37.7778, -68.8889)
 
@@ -109,7 +123,6 @@ position = Vector2(37.7778, -68.8889)
 auto_translate_mode = 1
 initial_position = 2
 size = Vector2i(470, 115)
-visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="Level2PopupPanel"]

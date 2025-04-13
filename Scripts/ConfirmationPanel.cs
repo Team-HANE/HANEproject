@@ -14,19 +14,12 @@ namespace escapetampere
 			{
 				backToLevel.Pressed += OnStayPressed;
 			}
-			if (goHome != null)
-			{
-				goHome.Pressed += OnHomePressed;
-			}
+
         }
 
 		private void OnStayPressed()
 		{
 			QueueFree();
-		}
-		private void OnHomePressed()
-		{
-			GetTree().ChangeSceneToFile("res://Levels/mainmenu.tscn");
 		}
 	}
 }

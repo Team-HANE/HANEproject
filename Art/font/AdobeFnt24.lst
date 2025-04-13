@@ -19,7 +19,7 @@ hasSVG:no
 hasCOLR:no
 VariableFontType:NonVariableFont
 FileLength:53012
-FileModTime:1740642857
+FileModTime:1740646457
 WeightClass:400
 WidthClass:5
 AngleClass:0
@@ -31,27 +31,67 @@ NameArray:0,Win,1,Katahdin Round
 Handler:DirectoryHandler
 FontType:Invalid
 OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\KatahdinRound.otf.import
-FileModTime:1740642953
+FileModTime:1743319376
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
 OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\LICENSE
-FileModTime:1740642857
+FileModTime:1740646457
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
 OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\OFL.txt
-FileModTime:1740642857
+FileModTime:1740646457
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
 OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\README.md
-FileModTime:1740642857
+FileModTime:1740646457
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\Typodermic Desktop EULA 2023.pdf
+FileModTime:1742212394
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Junegull-Regular
+FamilyName:Junegull
+StyleName:Regular
+FullName:Junegull-Regular
+MenuName:Junegull
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\junegull rg.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:94640
+FileModTime:1742212394
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Junegull-Regular
+NameArray:0,Win,1,Junegull
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ellen\tamk\course\peliprojekti\HANEproject\Art\Font\junegull rg.otf.import
+FileModTime:1743319376
 %EndFont
 
