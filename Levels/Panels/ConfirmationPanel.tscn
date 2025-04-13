@@ -6,12 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://dirlrj3wnpoy8" path="res://Art/buttons/greenhome.png" id="2_us0lo"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="4_cndcj"]
 
-[node name="ConfirmationPanel" type="Control" node_paths=PackedStringArray("backToLevel", "goHome")]
+[node name="ConfirmationPanel" type="Control" node_paths=PackedStringArray("backToLevel")]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_roj57")
 backToLevel = NodePath("Node2D/ConfirmationPopup/VBoxContainer/HBoxContainer/Back")
-goHome = NodePath("")
 
 [node name="Node2D" type="Node2D" parent="."]
 script = ExtResource("2_8nyj3")

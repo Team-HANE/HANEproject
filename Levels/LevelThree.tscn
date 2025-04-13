@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://dml7ugbu8mntn"]
+[gd_scene load_steps=28 format=3 uid="uid://dml7ugbu8mntn"]
 
 [ext_resource type="Texture2D" uid="uid://cpssh0d73w3py" path="res://Art/background/Taso_3 valmis.PNG" id="1_aj08v"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_j1f85"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://b7ikrvc5x884t" path="res://Art/signs/60limit.png" id="16_r5e2e"]
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="17_itwpw"]
 [ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="18_45y6b"]
+[ext_resource type="Texture2D" uid="uid://bfqix7hkewkbo" path="res://Art/background/Taso_2_bussi_flip.png" id="18_rgsfu"]
 [ext_resource type="Texture2D" uid="uid://cij626isv4ihy" path="res://Art/background/Taso_2_bussivaarin.png" id="19_brice"]
 [ext_resource type="Texture2D" uid="uid://b85rvy4uc1xcj" path="res://Art/signs/poro.png" id="19_pm4xp"]
 [ext_resource type="AudioStream" uid="uid://dm6wuisi8lxa5" path="res://Audio/correctsound.mp3" id="20_16sqj"]
@@ -74,14 +75,14 @@ scale = Vector2(0.425439, 0.483314)
 texture = ExtResource("14_dt20v")
 
 [node name="Nysse3" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = -177.0
-offset_top = -80.0
-offset_right = 252.0
-offset_bottom = 82.0
+offset_left = -188.0
+offset_top = -85.0
+offset_right = 241.0
+offset_bottom = 77.0
 scale = Vector2(0.4, 0.4)
 texture_normal = ExtResource("19_brice")
 script = ExtResource("15_m8u4j")
-_secondTexture = ExtResource("20_wh415")
+_secondTexture = ExtResource("18_rgsfu")
 _isCorrectScene = ExtResource("17_itwpw")
 _isWrongScene = ExtResource("18_45y6b")
 _correctSound = ExtResource("20_16sqj")

@@ -66,6 +66,7 @@ script = ExtResource("2_4uem0")
 digScene = ExtResource("3_vh0pq")
 
 [node name="Maa2" type="TextureButton" parent="AnimationControl" groups=["Mistakes"]]
+layout_mode = 0
 offset_left = -31.5556
 offset_top = -55.8889
 offset_right = 268.444
