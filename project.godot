@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="Stop, Spot, Go!"
+config/version="1.0"
 run/main_scene="res://Levels/mainmenu.tscn"
 config/features=PackedStringArray("4.3", "C#", "Mobile")
-config/icon="res://Art/icon.svg"
+config/icon="res://Art/logo/logo.png"
 
 [audio]
 
