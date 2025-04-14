@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>HANE</title>
-    <link rel="icon" type="image/x-icon" href="assets/hane_logo.png" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/hane_logo.png">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,9 +52,11 @@
     </nav>
 
     <div id="downloadConfirm">
-        <p>Are you sure you want to download <strong>StopSpotGo</strong>?</p>
-        <button onclick="confirmDownload()">Yes, download</button>
-        <button onclick="hideDownloadConfirm()">Cancel</button>
+        <div class="dlcontent">
+            <p>Are you sure you want to download <strong>StopSpotGo</strong>?</p>
+            <button onclick="confirmDownload()">Yes, download</button>
+            <button onclick="hideDownloadConfirm()">Cancel</button>
+        </div>
     </div>
 
     <div id="yhtaModal" class="modal">
@@ -119,8 +121,9 @@
         <h1>Traileri</h1>
         <div class="video-wrapper">
             <video controls>
-                <source src="assets/traileri_eng.mp4" type="video/mp4" />
+                <source src="assets/traileri_eng.mp4" type="video/mp4">
                 Your browser does not support video.
+            </video>
         </div>
     </div>
 
@@ -141,7 +144,7 @@
                 <img src="assets/niina.jpg" alt="person3">
             </div>
             <div class="person">
-                <h2>Ellen<br />Leino</h2>
+                <h2>Ellen<br>Leino</h2>
                 <img src="assets/ellen.jpg" alt="person4">
             </div>
         </section>
@@ -184,6 +187,7 @@
                 }
             });
         });
+
         function showDownloadConfirm(event) {
             event.preventDefault();
             document.getElementById('downloadConfirm').style.display = 'block';
@@ -191,6 +195,7 @@
         }
 
         function hideDownloadConfirm() {
+
             document.getElementById('downloadConfirm').style.display = 'none';
 
         }
