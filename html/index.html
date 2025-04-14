@@ -38,7 +38,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://tuni-my.sharepoint.com/:u:/g/personal/ellen_leino_tuni_fi/EQmgaSPVvg5EsuXpzdN_YMoBAk-SqYq-qNdkqD8WSLe8hw?e=BO4EYU" target="_blank">Lataa peli</a>
+            <a class="nav-link" href="#" onclick="showDownloadConfirm(event)">Lataa peli</a>
           </li>
           <li class="nav-item" id="language">Valitse kieli:<a href="index_eng.html"><img src="assets/eng.png" alt="eng"
                 id="langeng"></a>
@@ -48,6 +48,12 @@
       </div>
     </div>
   </nav>
+
+  <div id="downloadConfirm">
+    <p>Oletko varma että haluat ladata <strong>StopSpotGo</strong>?</p>
+    <button onclick="confirmDownload()">Lataa</button>
+    <button onclick="hideDownloadConfirm()">Peruuta</button>
+  </div>
 
   <div id="yhtaModal" class="modal">
     <div class="modal-content">
@@ -173,6 +179,21 @@
         }
       });
     });
+    function showDownloadConfirm(event) {
+      event.preventDefault();
+      document.getElementById('downloadConfirm').style.display = 'block';
+
+    }
+
+    function hideDownloadConfirm() {
+      document.getElementById('downloadConfirm').style.display = 'none';
+
+    }
+
+    function confirmDownload() {
+      hideDownloadConfirm();
+      window.open('download/StopSpotGo0.4.apk', '_blank');
+    }
   </script>
 </body>
 

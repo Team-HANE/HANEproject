@@ -40,7 +40,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://tuni-my.sharepoint.com/:u:/g/personal/ellen_leino_tuni_fi/EQmgaSPVvg5EsuXpzdN_YMoBAk-SqYq-qNdkqD8WSLe8hw?e=BO4EYU" target="_blank">Download game</a>
+                        <a class="nav-link" href="#" onclick="showDownloadConfirm(event)">Download game</a>
                     </li>
                     <li class="nav-item" id="language">Choose language: <a href="index_eng.html"><img
                                 src="assets/eng.png" alt="eng" id="langeng"></a>
@@ -50,6 +50,12 @@
             </div>
         </div>
     </nav>
+
+    <div id="downloadConfirm">
+        <p>Are you sure you want to download <strong>StopSpotGo</strong>?</p>
+        <button onclick="confirmDownload()">Yes, download</button>
+        <button onclick="hideDownloadConfirm()">Cancel</button>
+    </div>
 
     <div id="yhtaModal" class="modal">
         <div class="modal-content">
@@ -178,6 +184,21 @@
                 }
             });
         });
+        function showDownloadConfirm(event) {
+            event.preventDefault();
+            document.getElementById('downloadConfirm').style.display = 'block';
+
+        }
+
+        function hideDownloadConfirm() {
+            document.getElementById('downloadConfirm').style.display = 'none';
+
+        }
+
+        function confirmDownload() {
+            hideDownloadConfirm();
+            window.open('download/StopSpotGo0.4.apk', '_blank');
+        }
     </script>
 
 </body>
