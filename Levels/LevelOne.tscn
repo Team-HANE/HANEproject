@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bdu37yryu36wg"]
+[gd_scene load_steps=21 format=3 uid="uid://bdu37yryu36wg"]
 
 [ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="1_dtkta"]
 [ext_resource type="Texture2D" uid="uid://d4mlwxppm1ve6" path="res://Art/background/Taso1.jpeg" id="1_p2aug"]
@@ -20,8 +20,6 @@
 [ext_resource type="Texture2D" uid="uid://tvustw16d1kj" path="res://Art/signs/normallight.png" id="16_ddtt4"]
 [ext_resource type="Texture2D" uid="uid://ha02wwur6msj" path="res://Art/buttons/0life.png" id="16_xs4i4"]
 [ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="17_tqio1"]
-[ext_resource type="AudioStream" uid="uid://dm6wuisi8lxa5" path="res://Audio/correctsound.mp3" id="19_4mgy8"]
-[ext_resource type="AudioStream" uid="uid://bqgid35ue1nom" path="res://Audio/wrongsound.mp3" id="20_a8ha7"]
 
 [node name="LevelOne" type="Node2D"]
 scale = Vector2(0.54, 0.54)
@@ -56,7 +54,6 @@ offset_bottom = 1015.51
 mouse_filter = 1
 script = ExtResource("6_08203")
 _isWrongScene = ExtResource("17_tqio1")
-_wrongSound = ExtResource("20_a8ha7")
 
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = 27.7778
@@ -82,8 +79,6 @@ script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("7_ttcyo")
 _isCorrectScene = ExtResource("15_ii8pm")
 _isWrongScene = ExtResource("17_tqio1")
-_correctSound = ExtResource("19_4mgy8")
-_wrongSound = ExtResource("20_a8ha7")
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
 initial_position = 2
@@ -111,5 +106,3 @@ script = ExtResource("16_8qffq")
 _secondTexture = ExtResource("16_ddtt4")
 _isCorrectScene = ExtResource("15_ii8pm")
 _isWrongScene = ExtResource("17_tqio1")
-_correctSound = ExtResource("19_4mgy8")
-_wrongSound = ExtResource("20_a8ha7")

@@ -87,6 +87,8 @@ namespace escapetampere
 			_currentLevelPath = newScenePath;
 			// resetoidaan elämät
 			SetLife(5);
+			// resetoidaan virhelaskuri (ei oo nätisti metodi get over it)
+			CurrentMistake = 0;
 			// lasketaan kentän virheet (optimointimahdollisuus)
 			CountMistakes();
 		}
@@ -96,6 +98,12 @@ namespace escapetampere
 		#region Mistake Management
 
 		private int _mistakes;
+
+		public int CurrentMistake
+		{
+			get;
+			set;
+		}
 
 		public int Mistakes
 		{

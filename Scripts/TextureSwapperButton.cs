@@ -33,7 +33,24 @@ namespace escapetampere
 
 		public override void _Pressed()
 		{
-			if (TextureNormal == _originalTexture)
+			// Check for ordering and then whether the sprite has been swapped already or not
+			// Could be made more readable and modular but I can't be arsed
+			if ((TextureNormal == _originalTexture) && OrderMatters)
+			{
+				if (OrderNumber == manager.CurrentMistake)
+				{
+					TextureNormal = _secondTexture;
+					manager.CurrentMistake = OrderNumber + 1;
+					manager.RemoveMistake();
+					IsCorrect();
+				}
+				else
+				{
+					manager.RemoveLife(1);
+					IsWrong();
+				}
+			}
+			else if ((TextureNormal == _originalTexture) && !OrderMatters)
 			{
 				TextureNormal = _secondTexture;
 				manager.RemoveMistake();

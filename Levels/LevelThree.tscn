@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dml7ugbu8mntn"]
+[gd_scene load_steps=26 format=3 uid="uid://dml7ugbu8mntn"]
 
 [ext_resource type="Texture2D" uid="uid://cpssh0d73w3py" path="res://Art/background/Taso_3 valmis.PNG" id="1_aj08v"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_j1f85"]
@@ -11,7 +11,6 @@
 [ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="9_l50v5"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="10_mlcj4"]
 [ext_resource type="Script" path="res://Scripts/BackButton.cs" id="11_7hltw"]
-[ext_resource type="AudioStream" uid="uid://bqgid35ue1nom" path="res://Audio/wrongsound.mp3" id="11_has1a"]
 [ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/Panels/ConfirmationPanel.tscn" id="12_b5efa"]
 [ext_resource type="Texture2D" uid="uid://rqqwnf4e1abi" path="res://Art/signs/1000limit.png" id="14_1lldg"]
 [ext_resource type="Texture2D" uid="uid://07s883jy1n2g" path="res://Art/background/Taso_3_tolppa.PNG" id="14_dt20v"]
@@ -22,7 +21,6 @@
 [ext_resource type="Texture2D" uid="uid://bfqix7hkewkbo" path="res://Art/background/Taso_2_bussi_flip.png" id="18_rgsfu"]
 [ext_resource type="Texture2D" uid="uid://cij626isv4ihy" path="res://Art/background/Taso_2_bussivaarin.png" id="19_brice"]
 [ext_resource type="Texture2D" uid="uid://b85rvy4uc1xcj" path="res://Art/signs/poro.png" id="19_pm4xp"]
-[ext_resource type="AudioStream" uid="uid://dm6wuisi8lxa5" path="res://Audio/correctsound.mp3" id="20_16sqj"]
 [ext_resource type="Texture2D" uid="uid://b63soahwq1yv4" path="res://Art/signs/ostrichlight.png" id="20_r81o6"]
 [ext_resource type="Texture2D" uid="uid://ceugntd4rtdoo" path="res://Art/background/Taso_2_bussi.PNG" id="20_wh415"]
 [ext_resource type="Texture2D" uid="uid://tvustw16d1kj" path="res://Art/signs/normallight.png" id="21_1htep"]
@@ -55,7 +53,6 @@ scale = Vector2(3.44111, 4.47072)
 mouse_filter = 1
 script = ExtResource("9_l50v5")
 _isWrongScene = ExtResource("18_45y6b")
-_wrongSound = ExtResource("11_has1a")
 
 [node name="BackButt" type="TextureButton" parent="."]
 offset_left = -307.0
@@ -85,8 +82,6 @@ script = ExtResource("15_m8u4j")
 _secondTexture = ExtResource("18_rgsfu")
 _isCorrectScene = ExtResource("17_itwpw")
 _isWrongScene = ExtResource("18_45y6b")
-_correctSound = ExtResource("20_16sqj")
-_wrongSound = ExtResource("11_has1a")
 
 [node name="1000Limit" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = 212.0
@@ -99,8 +94,6 @@ script = ExtResource("15_m8u4j")
 _secondTexture = ExtResource("16_r5e2e")
 _isCorrectScene = ExtResource("17_itwpw")
 _isWrongScene = ExtResource("18_45y6b")
-_correctSound = ExtResource("20_16sqj")
-_wrongSound = ExtResource("11_has1a")
 
 [node name="Nysse2" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = -316.0
@@ -112,8 +105,6 @@ script = ExtResource("15_m8u4j")
 _secondTexture = ExtResource("20_wh415")
 _isCorrectScene = ExtResource("17_itwpw")
 _isWrongScene = ExtResource("18_45y6b")
-_correctSound = ExtResource("20_16sqj")
-_wrongSound = ExtResource("11_has1a")
 
 [node name="Ostrichlight" type="TextureButton" parent="." groups=["Mistakes"]]
 offset_left = 224.0
@@ -126,8 +117,6 @@ script = ExtResource("15_m8u4j")
 _secondTexture = ExtResource("21_1htep")
 _isCorrectScene = ExtResource("17_itwpw")
 _isWrongScene = ExtResource("18_45y6b")
-_correctSound = ExtResource("20_16sqj")
-_wrongSound = ExtResource("11_has1a")
 
 [node name="Taso3Tolppa2" type="Sprite2D" parent="."]
 position = Vector2(105, -39)
@@ -145,5 +134,3 @@ script = ExtResource("15_m8u4j")
 _secondTexture = ExtResource("23_6e7u3")
 _isCorrectScene = ExtResource("17_itwpw")
 _isWrongScene = ExtResource("18_45y6b")
-_correctSound = ExtResource("20_16sqj")
-_wrongSound = ExtResource("11_has1a")
