@@ -99,11 +99,7 @@ namespace escapetampere
 
 		private int _mistakes;
 
-		public int CurrentMistake
-		{
-			get;
-			set;
-		}
+		public int CurrentMistake = 0;
 
 		public int Mistakes
 		{
