@@ -1,0 +1,63 @@
+[gd_scene load_steps=16 format=3 uid="uid://cooc8ji2nm1c3"]
+
+[ext_resource type="Texture2D" uid="uid://caphwmw8ft5pn" path="res://Art/background/Taso_3.PNG" id="1_l0qgy"]
+[ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_c4og8"]
+[ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="3_m6lcl"]
+[ext_resource type="Texture2D" uid="uid://rpov7vloe5vb" path="res://Art/buttons/4life.png" id="4_xi8m7"]
+[ext_resource type="Texture2D" uid="uid://cwdluow5vttob" path="res://Art/buttons/3life.png" id="5_bg7x3"]
+[ext_resource type="Texture2D" uid="uid://dtj0ngobj6xg2" path="res://Art/buttons/2life.png" id="6_yd1dw"]
+[ext_resource type="Texture2D" uid="uid://dbanmnysbpesq" path="res://Art/buttons/1life.png" id="7_y4yy1"]
+[ext_resource type="Texture2D" uid="uid://ha02wwur6msj" path="res://Art/buttons/0life.png" id="8_1dw8o"]
+[ext_resource type="Script" path="res://Scripts/LifeButton.cs" id="9_hnhc3"]
+[ext_resource type="PackedScene" uid="uid://co0bo2mh6v38f" path="res://Levels/Animation/Wrong.tscn" id="10_7wia1"]
+[ext_resource type="AudioStream" uid="uid://bqgid35ue1nom" path="res://Audio/wrongsound.mp3" id="11_agd5m"]
+[ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="12_skqjo"]
+[ext_resource type="Script" path="res://Scripts/BackButton.cs" id="13_v2fie"]
+[ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/Panels/ConfirmationPanel.tscn" id="14_7vhiy"]
+[ext_resource type="Texture2D" uid="uid://07s883jy1n2g" path="res://Art/background/Taso_3_tolppa.PNG" id="15_v3xqa"]
+
+[node name="LevelThree" type="Node2D"]
+
+[node name="Taso3Luonnos" type="Sprite2D" parent="."]
+position = Vector2(-1.5, -0.500015)
+scale = Vector2(0.316895, 0.214193)
+texture = ExtResource("1_l0qgy")
+
+[node name="5Life" type="Sprite2D" parent="."]
+position = Vector2(241.507, -124)
+scale = Vector2(0.350274, 0.334225)
+texture = ExtResource("2_c4og8")
+script = ExtResource("3_m6lcl")
+lives4 = ExtResource("4_xi8m7")
+lives3 = ExtResource("5_bg7x3")
+lives2 = ExtResource("6_yd1dw")
+lives1 = ExtResource("7_y4yy1")
+lives0 = ExtResource("8_1dw8o")
+
+[node name="TextureButton" type="TextureButton" parent="5Life"]
+offset_left = -1623.0
+offset_top = -141.0
+offset_right = -1084.0
+offset_bottom = 87.0
+scale = Vector2(3.44111, 4.47072)
+mouse_filter = 1
+script = ExtResource("9_hnhc3")
+_isWrongScene = ExtResource("10_7wia1")
+_wrongSound = ExtResource("11_agd5m")
+
+[node name="BackButt" type="TextureButton" parent="."]
+offset_left = -307.0
+offset_top = -153.0
+offset_right = -215.0
+offset_bottom = -61.0
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("12_skqjo")
+script = ExtResource("13_v2fie")
+confirmationScene = ExtResource("14_7vhiy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Taso3Tolppa" type="Sprite2D" parent="."]
+position = Vector2(-100.687, 31.0938)
+scale = Vector2(0.170614, 0.22058)
+texture = ExtResource("15_v3xqa")
