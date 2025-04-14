@@ -29,6 +29,11 @@ position = Vector2(303, 191)
 scale = Vector2(0.45, 0.45)
 script = ExtResource("1_0a5nk")
 
+[node name="Taso2Luonnos" type="Sprite2D" parent="."]
+position = Vector2(36.6666, -18.1946)
+scale = Vector2(0.695529, 0.53295)
+texture = ExtResource("2_elfwk")
+
 [node name="5Life" type="Sprite2D" parent="."]
 position = Vector2(593.333, -346.667)
 scale = Vector2(0.624147, 0.639345)
@@ -49,11 +54,6 @@ mouse_filter = 1
 script = ExtResource("9_2yxc0")
 _isWrongScene = ExtResource("15_tpawv")
 _wrongSound = ExtResource("12_7djdt")
-
-[node name="Taso2Luonnos" type="Sprite2D" parent="."]
-position = Vector2(36.6666, -18.1946)
-scale = Vector2(0.695529, 0.53295)
-texture = ExtResource("2_elfwk")
 
 [node name="AnimationControl" type="Control" parent="."]
 layout_mode = 3
@@ -124,6 +124,7 @@ position = Vector2(37.7778, -68.8889)
 auto_translate_mode = 1
 initial_position = 2
 size = Vector2i(470, 115)
+visible = true
 borderless = false
 
 [node name="Label" type="Label" parent="Level2PopupPanel"]

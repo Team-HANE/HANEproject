@@ -60,7 +60,7 @@ icon = ExtResource("6_p321y")
 flat = true
 icon_alignment = 1
 script = ExtResource("6_rb1d0")
-_sceneToLoadPath = "res://Levels/LevelThree.tscn"
+_sceneToLoadPath = "res://Levels/LevelFour.tscn"
 levelNumber = 2
 
 [node name="Level4" type="Button" parent="."]
@@ -72,7 +72,7 @@ icon = ExtResource("6_p321y")
 flat = true
 icon_alignment = 1
 script = ExtResource("6_rb1d0")
-_sceneToLoadPath = "res://Levels/LevelFour.tscn"
+_sceneToLoadPath = "res://Levels/LevelThree.tscn"
 levelNumber = 3
 
 [node name="BackButt" type="TextureButton" parent="."]

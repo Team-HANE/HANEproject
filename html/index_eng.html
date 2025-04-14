@@ -167,6 +167,22 @@
 
 
     <script>
+        function showDownloadConfirm(event) {
+            event.preventDefault();
+            document.getElementById('downloadConfirm').style.display = 'block';
+
+        }
+
+        function hideDownloadConfirm() {
+
+            document.getElementById('downloadConfirm').style.display = 'none';
+
+        }
+
+        function confirmDownload() {
+            hideDownloadConfirm();
+            window.open('download/StopSpotGo0.4.apk', '_blank');
+        }
         document.addEventListener("DOMContentLoaded", function () {
             const modal = document.getElementById("yhtaModal");
             const linkki = document.getElementById("yhtaLinkki");
@@ -188,22 +204,6 @@
             });
         });
 
-        function showDownloadConfirm(event) {
-            event.preventDefault();
-            document.getElementById('downloadConfirm').style.display = 'block';
-
-        }
-
-        function hideDownloadConfirm() {
-
-            document.getElementById('downloadConfirm').style.display = 'none';
-
-        }
-
-        function confirmDownload() {
-            hideDownloadConfirm();
-            window.open('download/StopSpotGo0.4.apk', '_blank');
-        }
     </script>
 
 </body>

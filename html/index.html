@@ -49,11 +49,11 @@
     </div>
   </nav>
 
-  <div id="downloadConfirm">
+  <div id="downloadConfirm" >
     <div class="dlcontent">
-    <p>Oletko varma että haluat ladata <strong>StopSpotGo</strong>?</p>
-    <button onclick="confirmDownload()">Lataa</button>
-    <button onclick="hideDownloadConfirm()">Peruuta</button>
+      <p>Oletko varma että haluat ladata <strong>StopSpotGo</strong>?</p>
+      <button onclick="confirmDownload()">Lataa</button>
+      <button onclick="hideDownloadConfirm()">Peruuta</button>
     </div>
   </div>
 
@@ -161,6 +161,21 @@
   <script src="js/scripts.js"></script>
 
   <script>
+    function showDownloadConfirm(event) {
+      event.preventDefault();
+      document.getElementById('downloadConfirm').style.display = 'block';
+
+    }
+
+    function hideDownloadConfirm() {
+      document.getElementById('downloadConfirm').style.display = 'none';
+
+    }
+
+    function confirmDownload() {
+      hideDownloadConfirm();
+      window.open('download/StopSpotGo0.4.apk', '_blank');
+    }
     document.addEventListener("DOMContentLoaded", function () {
       const modal = document.getElementById("yhtaModal");
       const linkki = document.getElementById("yhtaLinkki");
@@ -181,21 +196,6 @@
         }
       });
     });
-    function showDownloadConfirm(event) {
-      event.preventDefault();
-      document.getElementById('downloadConfirm').style.display = 'block';
-
-    }
-
-    function hideDownloadConfirm() {
-      document.getElementById('downloadConfirm').style.display = 'none';
-
-    }
-
-    function confirmDownload() {
-      hideDownloadConfirm();
-      window.open('download/StopSpotGo0.4.apk', '_blank');
-    }
   </script>
 </body>
 

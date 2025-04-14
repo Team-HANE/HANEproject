@@ -1,6 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://cooc8ji2nm1c3"]
+[gd_scene load_steps=24 format=3 uid="uid://cooc8ji2nm1c3"]
 
-[ext_resource type="Texture2D" uid="uid://caphwmw8ft5pn" path="res://Art/background/Taso_3.PNG" id="1_l0qgy"]
+[ext_resource type="Texture2D" uid="uid://bb73cxcts4qkx" path="res://Art/background/Taso_4.PNG" id="1_i17se"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_c4og8"]
 [ext_resource type="Script" path="res://Scripts/LifeUI.cs" id="3_m6lcl"]
 [ext_resource type="Texture2D" uid="uid://rpov7vloe5vb" path="res://Art/buttons/4life.png" id="4_xi8m7"]
@@ -15,13 +15,21 @@
 [ext_resource type="Script" path="res://Scripts/BackButton.cs" id="13_v2fie"]
 [ext_resource type="PackedScene" uid="uid://tioo6jmcf3eh" path="res://Levels/Panels/ConfirmationPanel.tscn" id="14_7vhiy"]
 [ext_resource type="Texture2D" uid="uid://07s883jy1n2g" path="res://Art/background/Taso_3_tolppa.PNG" id="15_v3xqa"]
+[ext_resource type="Texture2D" uid="uid://22daahv406p5" path="res://Art/background/suti.png" id="16_tarl3"]
+[ext_resource type="Script" path="res://Scripts/TextureSwapperButton.cs" id="17_qvc2f"]
+[ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="18_j456a"]
+[ext_resource type="AudioStream" uid="uid://dm6wuisi8lxa5" path="res://Audio/correctsound.mp3" id="19_ca3cf"]
+[ext_resource type="Texture2D" uid="uid://yhedhqhjo208" path="res://Art/background/ampari.png" id="20_1ei8x"]
+[ext_resource type="Texture2D" uid="uid://dnjqw1fckw44t" path="res://Art/background/vaarasuoja.png" id="21_havle"]
+[ext_resource type="Texture2D" uid="uid://cgy1rv7bigmd4" path="res://Art/background/suojatie.png" id="22_eobkm"]
+[ext_resource type="Texture2D" uid="uid://co5jaldhta3rc" path="res://Art/signs/crossing.png" id="23_tpw8i"]
 
 [node name="LevelThree" type="Node2D"]
 
-[node name="Taso3Luonnos" type="Sprite2D" parent="."]
-position = Vector2(-1.5, -0.500015)
-scale = Vector2(0.316895, 0.214193)
-texture = ExtResource("1_l0qgy")
+[node name="Taso4" type="Sprite2D" parent="."]
+position = Vector2(-1.5, 0.499884)
+scale = Vector2(0.316895, 0.215495)
+texture = ExtResource("1_i17se")
 
 [node name="5Life" type="Sprite2D" parent="."]
 position = Vector2(241.507, -124)
@@ -58,6 +66,56 @@ confirmationScene = ExtResource("14_7vhiy")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Taso3Tolppa" type="Sprite2D" parent="."]
-position = Vector2(-100.687, 31.0938)
+position = Vector2(55, 23)
 scale = Vector2(0.170614, 0.22058)
 texture = ExtResource("15_v3xqa")
+
+[node name="Suti" type="TextureButton" parent="." groups=["Mistakes"]]
+offset_left = 223.0
+offset_top = 100.0
+offset_right = 333.0
+offset_bottom = 153.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("16_tarl3")
+script = ExtResource("17_qvc2f")
+OrderMatters = true
+_isCorrectScene = ExtResource("18_j456a")
+_isWrongScene = ExtResource("10_7wia1")
+_correctSound = ExtResource("19_ca3cf")
+_wrongSound = ExtResource("11_agd5m")
+
+[node name="Ampari" type="TextureButton" parent="." groups=["Mistakes"]]
+offset_left = -239.0
+offset_top = -5.0
+offset_right = -182.0
+offset_bottom = 95.0
+scale = Vector2(0.95614, 0.86)
+texture_normal = ExtResource("20_1ei8x")
+script = ExtResource("17_qvc2f")
+OrderMatters = true
+OrderNumber = 1
+_isCorrectScene = ExtResource("18_j456a")
+_isWrongScene = ExtResource("10_7wia1")
+_correctSound = ExtResource("19_ca3cf")
+_wrongSound = ExtResource("11_agd5m")
+
+[node name="Vaarasuoja" type="TextureButton" parent="." groups=["Mistakes"]]
+offset_left = -20.0
+offset_top = 92.0
+offset_right = 12.0
+offset_bottom = 152.0
+texture_normal = ExtResource("21_havle")
+stretch_mode = 3
+script = ExtResource("17_qvc2f")
+_secondTexture = ExtResource("22_eobkm")
+OrderMatters = true
+OrderNumber = 2
+_isCorrectScene = ExtResource("18_j456a")
+_isWrongScene = ExtResource("10_7wia1")
+_correctSound = ExtResource("19_ca3cf")
+_wrongSound = ExtResource("11_agd5m")
+
+[node name="Crossing" type="Sprite2D" parent="."]
+position = Vector2(52, -30)
+scale = Vector2(0.51, 0.53)
+texture = ExtResource("23_tpw8i")
