@@ -22,6 +22,8 @@ namespace escapetampere
 		[Export] private AudioStream _wrongSound;
 		private AudioStreamPlayer _audioPlayer;
 
+		[Signal]
+		public delegate void CorrectPressedEventHandler();
 		public override void _Ready()
 		{
 			_originalTexture = TextureNormal;
@@ -67,6 +69,7 @@ namespace escapetampere
 		//Animation
 		public async void IsCorrect()
 		{
+			EmitSignal("CorrectPressed");
 			if (_correct == null && _isCorrectScene != null)
 			{
 				_correct = _isCorrectScene.Instantiate<GpuParticles2D>();
@@ -76,6 +79,7 @@ namespace escapetampere
 			_correct.Restart();
 			_correct.OneShot = true;
 
+
 			if (_correctSound != null)
 			{
 				_audioPlayer.Stream = _correctSound;
@@ -83,6 +87,8 @@ namespace escapetampere
 			}
 
 			await ToSignal(_correct, "finished");
+
+			await ToSignal(GetTree().CreateTimer(0.8f), "timeout");
 			manager.AnimationFinished();
 		}
 

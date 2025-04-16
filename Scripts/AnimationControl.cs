@@ -14,24 +14,24 @@ namespace escapetampere
 			digScene = (PackedScene)ResourceLoader.Load("res://Levels/Animation/DigScene.tscn");
 
 			pile = GetNode<TextureSwapperButton>("Maa2");
-			pile.Pressed += OnButtonPressed;
+			pile.Connect("CorrectPressed", new Callable(this, nameof(OnCorrect)));
+
 		}
 
-		private void OnButtonPressed()
+		private void PlayDigAnimation()
+		{
+			Node2D digInstance = digScene.Instantiate<Node2D>();
+			AddChild(digInstance);
+
+			animation = digInstance.GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+			animation.Play("dig");
+		}
+		private void OnCorrect()
 		{
 			if (!isDig)
 			{
-				Node2D digInstance = digScene.Instantiate<Node2D>();
-				AddChild(digInstance);
-
-				animation = digInstance.GetNode<AnimatedSprite2D>("AnimatedSprite2D");
-				animation.Play("dig");
-
-				pile.IsCorrect();
+				PlayDigAnimation();
 				isDig = true;
-			} else {
-
-				pile.IsWrong();
 			}
 		}
 	}
