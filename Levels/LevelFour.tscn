@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cooc8ji2nm1c3"]
+[gd_scene load_steps=26 format=3 uid="uid://cooc8ji2nm1c3"]
 
 [ext_resource type="Texture2D" uid="uid://bb73cxcts4qkx" path="res://Art/background/Taso_4.PNG" id="1_i17se"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_c4og8"]
@@ -20,7 +20,9 @@
 [ext_resource type="PackedScene" uid="uid://b8tovcgbux22r" path="res://Levels/Animation/Correct.tscn" id="18_j456a"]
 [ext_resource type="AudioStream" uid="uid://dm6wuisi8lxa5" path="res://Audio/correctsound.mp3" id="19_ca3cf"]
 [ext_resource type="Texture2D" uid="uid://yhedhqhjo208" path="res://Art/background/ampari.png" id="20_1ei8x"]
+[ext_resource type="Script" path="res://Scripts/DipControl.cs" id="20_7m038"]
 [ext_resource type="Texture2D" uid="uid://dnjqw1fckw44t" path="res://Art/background/vaarasuoja.png" id="21_havle"]
+[ext_resource type="PackedScene" uid="uid://dikcklbp75jvf" path="res://Levels/Animation/DipScene.tscn" id="21_ntprl"]
 [ext_resource type="Texture2D" uid="uid://cgy1rv7bigmd4" path="res://Art/background/suojatie.png" id="22_eobkm"]
 [ext_resource type="Texture2D" uid="uid://co5jaldhta3rc" path="res://Art/signs/crossing.png" id="23_tpw8i"]
 
@@ -85,11 +87,21 @@ _isWrongScene = ExtResource("10_7wia1")
 _correctSound = ExtResource("19_ca3cf")
 _wrongSound = ExtResource("11_agd5m")
 
-[node name="Ampari" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = -239.0
-offset_top = -5.0
-offset_right = -182.0
-offset_bottom = 95.0
+[node name="DipControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -254.0
+offset_top = 28.0
+offset_right = -202.0
+offset_bottom = 83.0
+script = ExtResource("20_7m038")
+dipScene = ExtResource("21_ntprl")
+
+[node name="Ampari" type="TextureButton" parent="DipControl" groups=["Mistakes"]]
+offset_left = -6.0
+offset_top = -23.0
+offset_right = 51.0
+offset_bottom = 77.0
 scale = Vector2(0.95614, 0.86)
 texture_normal = ExtResource("20_1ei8x")
 script = ExtResource("17_qvc2f")

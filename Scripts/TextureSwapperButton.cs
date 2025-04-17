@@ -87,8 +87,9 @@ namespace escapetampere
 			}
 
 			await ToSignal(_correct, "finished");
-
-			await ToSignal(GetTree().CreateTimer(0.8f), "timeout");
+			//Wait for animation and audio to finish, show the correct scene for a second
+			double time = 0.5f;
+			await ToSignal(GetTree().CreateTimer(time), "timeout");
 			manager.AnimationFinished();
 		}
 

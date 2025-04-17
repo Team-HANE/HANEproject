@@ -53,6 +53,7 @@ animations = [{
 [node name="DipScene" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_fo6ao")
 animation = &"dip"
 frame = 4
