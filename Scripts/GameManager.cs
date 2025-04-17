@@ -10,6 +10,7 @@ namespace escapetampere
 
 	{
 		private int _correctAnimation = 0;
+		private bool _waitForPaint = false;
 		#region Player Life Management
 		private int _life = 5;
 
@@ -130,6 +131,10 @@ namespace escapetampere
 
 			if (_mistakes == 0 && _correctAnimation == 0)
 			{
+				if (_waitForPaint)
+				{
+					return;
+				}
 				CompleteLevel();
 				ChangeScene("res://Levels/NextLevel.tscn");
 			}
@@ -139,6 +144,17 @@ namespace escapetampere
 		{
 			_correctAnimation--;
 			CheckVictory();
+		}
+		public void SetWaitingForPaint(bool value)
+		{
+			_waitForPaint = value;
+		}
+
+		public void OnPaintFinished()
+		{
+			_waitForPaint = false;
+			CompleteLevel();
+			ChangeScene("res://Levels/NextLevel.tscn");
 		}
 
 		#region Level Progression

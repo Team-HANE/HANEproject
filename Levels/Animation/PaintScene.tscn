@@ -1,0 +1,89 @@
+[gd_scene load_steps=12 format=3 uid="uid://bo0brq00duare"]
+
+[ext_resource type="Texture2D" uid="uid://cih662qd7mak7" path="res://Art/animation/paintsheet.png" id="1_c30gi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rlob"]
+atlas = ExtResource("1_c30gi")
+region = Rect2(30, 200, 574, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gj3m4"]
+atlas = ExtResource("1_c30gi")
+region = Rect2(604, 200, 574, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50wo7"]
+atlas = ExtResource("1_c30gi")
+region = Rect2(1178, 200, 574, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tv0ve"]
+atlas = ExtResource("1_c30gi")
+region = Rect2(1752, 200, 574, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5c51"]
+atlas = ExtResource("1_c30gi")
+region = Rect2(30, 808, 574, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3l3kq"]
+atlas = ExtResource("1_c30gi")
+region = Rect2(604, 808, 574, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxfhf"]
+atlas = ExtResource("1_c30gi")
+region = Rect2(1178, 808, 574, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehud7"]
+atlas = ExtResource("1_c30gi")
+region = Rect2(1752, 808, 574, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7arp"]
+atlas = ExtResource("1_c30gi")
+region = Rect2(2326, 808, 574, 608)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ar5v"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rlob")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gj3m4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50wo7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tv0ve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5c51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3l3kq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxfhf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehud7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7arp")
+}],
+"loop": true,
+"name": &"paint",
+"speed": 5.0
+}]
+
+[node name="PaintScene" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, 14)
+scale = Vector2(0.173171, 0.180592)
+sprite_frames = SubResource("SpriteFrames_7ar5v")
+animation = &"paint"
+frame = 7
+frame_progress = 0.659388

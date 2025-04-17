@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cooc8ji2nm1c3"]
+[gd_scene load_steps=27 format=3 uid="uid://cooc8ji2nm1c3"]
 
 [ext_resource type="Texture2D" uid="uid://bb73cxcts4qkx" path="res://Art/background/Taso_4.PNG" id="1_i17se"]
 [ext_resource type="Texture2D" uid="uid://brd66b43ts7e0" path="res://Art/buttons/5life.png" id="2_c4og8"]
@@ -23,8 +23,9 @@
 [ext_resource type="Script" path="res://Scripts/DipControl.cs" id="20_7m038"]
 [ext_resource type="Texture2D" uid="uid://dnjqw1fckw44t" path="res://Art/background/vaarasuoja.png" id="21_havle"]
 [ext_resource type="PackedScene" uid="uid://dikcklbp75jvf" path="res://Levels/Animation/DipScene.tscn" id="21_ntprl"]
-[ext_resource type="Texture2D" uid="uid://cgy1rv7bigmd4" path="res://Art/background/suojatie.png" id="22_eobkm"]
 [ext_resource type="Texture2D" uid="uid://co5jaldhta3rc" path="res://Art/signs/crossing.png" id="23_tpw8i"]
+[ext_resource type="Script" path="res://Scripts/PaintControl.cs" id="24_usul7"]
+[ext_resource type="PackedScene" uid="uid://bo0brq00duare" path="res://Levels/Animation/PaintScene.tscn" id="25_qpdt3"]
 
 [node name="LevelThree" type="Node2D"]
 
@@ -113,23 +114,33 @@ _isWrongScene = ExtResource("10_7wia1")
 _correctSound = ExtResource("19_ca3cf")
 _wrongSound = ExtResource("11_agd5m")
 
-[node name="Vaarasuoja" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = -20.0
-offset_top = 92.0
-offset_right = 12.0
-offset_bottom = 152.0
+[node name="Crossing" type="Sprite2D" parent="."]
+position = Vector2(52, -30)
+scale = Vector2(0.51, 0.53)
+texture = ExtResource("23_tpw8i")
+
+[node name="PaintControl" type="Control" parent="."]
+layout_mode = 3
+offset_left = -1.0
+offset_top = 103.0
+offset_right = 48.0
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("24_usul7")
+paintScene = ExtResource("25_qpdt3")
+
+[node name="Vaarasuoja" type="TextureButton" parent="PaintControl" groups=["Mistakes"]]
+offset_left = -12.0
+offset_top = -5.0
+offset_right = 20.0
+offset_bottom = 55.0
 texture_normal = ExtResource("21_havle")
 stretch_mode = 3
 script = ExtResource("17_qvc2f")
-_secondTexture = ExtResource("22_eobkm")
 OrderMatters = true
 OrderNumber = 2
 _isCorrectScene = ExtResource("18_j456a")
 _isWrongScene = ExtResource("10_7wia1")
 _correctSound = ExtResource("19_ca3cf")
 _wrongSound = ExtResource("11_agd5m")
-
-[node name="Crossing" type="Sprite2D" parent="."]
-position = Vector2(52, -30)
-scale = Vector2(0.51, 0.53)
-texture = ExtResource("23_tpw8i")
