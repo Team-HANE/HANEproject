@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://dikcklbp75jvf"]
+
+[ext_resource type="Texture2D" uid="uid://cejn2jsuw4gj" path="res://Art/animation/dipsheet.png" id="1_0gniw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkla1"]
+atlas = ExtResource("1_0gniw")
+region = Rect2(70, 0, 286, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rq1h1"]
+atlas = ExtResource("1_0gniw")
+region = Rect2(356, 0, 286, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2x01"]
+atlas = ExtResource("1_0gniw")
+region = Rect2(642, 0, 286, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2avan"]
+atlas = ExtResource("1_0gniw")
+region = Rect2(928, 0, 286, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dj18"]
+atlas = ExtResource("1_0gniw")
+region = Rect2(1214, 0, 286, 408)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fo6ao"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkla1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rq1h1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2x01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2avan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dj18")
+}],
+"loop": false,
+"name": &"dip",
+"speed": 5.0
+}]
+
+[node name="DipScene" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fo6ao")
+animation = &"dip"
+frame = 4
+frame_progress = 1.0

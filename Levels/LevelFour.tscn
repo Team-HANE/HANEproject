@@ -71,10 +71,11 @@ scale = Vector2(0.170614, 0.22058)
 texture = ExtResource("15_v3xqa")
 
 [node name="Suti" type="TextureButton" parent="." groups=["Mistakes"]]
-offset_left = 223.0
-offset_top = 100.0
-offset_right = 333.0
-offset_bottom = 153.0
+offset_left = 248.0
+offset_top = 86.0
+offset_right = 358.0
+offset_bottom = 139.0
+rotation = 0.312414
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("16_tarl3")
 script = ExtResource("17_qvc2f")
