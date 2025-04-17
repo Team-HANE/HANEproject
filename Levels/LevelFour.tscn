@@ -98,6 +98,7 @@ script = ExtResource("20_7m038")
 dipScene = ExtResource("21_ntprl")
 
 [node name="Ampari" type="TextureButton" parent="DipControl" groups=["Mistakes"]]
+layout_mode = 0
 offset_left = -6.0
 offset_top = -23.0
 offset_right = 51.0

@@ -84,9 +84,16 @@ texture_normal = ExtResource("4_xnjox")
 script = ExtResource("5_46hm5")
 _sceneToLoadPath = "res://Levels/mainmenu.tscn"
 
-[node name="Incompletelevel3" type="Sprite2D" parent="."]
-position = Vector2(-216.495, 242.462)
-texture = ExtResource("6_p321y")
+[node name="Level5" type="Button" parent="."]
+offset_left = -273.791
+offset_top = 195.545
+offset_right = -173.791
+offset_bottom = 318.545
+icon = ExtResource("6_p321y")
+flat = true
+script = ExtResource("6_rb1d0")
+_sceneToLoadPath = "res://Levels/LevelFive.tscn"
+levelNumber = 4
 
 [node name="Aloitatasta" type="Sprite2D" parent="."]
 position = Vector2(-292.512, -158.416)

@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://drlc0gq4ae8me"]
+
+[ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="1_7k1a6"]
+[ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="2_8ymwg"]
+
+[node name="LevelFive" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -326.0
+offset_top = -170.0
+offset_right = 331.0
+offset_bottom = 172.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 133.0
+offset_right = 521.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 58
+text = "Coming soon!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButt" type="TextureButton" parent="Panel"]
+offset_left = 19.0
+offset_top = 22.0
+offset_right = 111.0
+offset_bottom = 114.0
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("1_7k1a6")
+script = ExtResource("2_8ymwg")
+_sceneToLoadPath = "res://Levels/LevelSelect.tscn"
+
+[node name="Camera2D" type="Camera2D" parent="."]
