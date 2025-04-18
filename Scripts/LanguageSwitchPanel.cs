@@ -8,6 +8,7 @@ namespace escapetampere
 		private Label popupLabel;
 		private Label levelTwoPopup;
 		private Label confirmationPop;
+		private Label CSLabel;
 		private LanguageData _languageData;
 		public override void _Ready()
 		{
@@ -19,6 +20,9 @@ namespace escapetampere
 
 			if (HasNode("ConfirmationPopup/VBoxContainer/Label"))
 				confirmationPop = GetNode<Label>("ConfirmationPopup/VBoxContainer/Label");
+
+			if (HasNode("CSPanel/Label"))
+				CSLabel = GetNode<Label>("CSPanel/Label");
 
 			Translation fiTranslation = new Translation();
 			Translation enTranslation = new Translation();
@@ -43,6 +47,10 @@ namespace escapetampere
 			if (confirmationPop != null)
 			{
 				confirmationPop.Text = Tr("CONFIRMATION_POP");
+			}
+			if (CSLabel != null)
+			{
+				CSLabel.Text = Tr("COMING_SOON");
 			}
 		}
 		private void ChangeLanguage(string locale)

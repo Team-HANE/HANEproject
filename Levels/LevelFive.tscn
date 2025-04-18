@@ -1,28 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://drlc0gq4ae8me"]
+[gd_scene load_steps=4 format=3 uid="uid://drlc0gq4ae8me"]
 
+[ext_resource type="Script" path="res://Scripts/LanguageSwitchPanel.cs" id="1_2bixv"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="1_7k1a6"]
 [ext_resource type="Script" path="res://Scripts/TextureSceneSwapper.cs" id="2_8ymwg"]
 
 [node name="LevelFive" type="Node2D"]
+script = ExtResource("1_2bixv")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="CSPanel" type="Panel" parent="."]
 offset_left = -326.0
 offset_top = -170.0
 offset_right = 331.0
 offset_bottom = 172.0
 
-[node name="Label" type="Label" parent="Panel"]
+[node name="Label" type="Label" parent="CSPanel"]
 layout_mode = 0
 offset_left = 124.0
 offset_top = 133.0
 offset_right = 521.0
 offset_bottom = 204.0
 theme_override_font_sizes/font_size = 58
-text = "Coming soon!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BackButt" type="TextureButton" parent="Panel"]
+[node name="BackButt" type="TextureButton" parent="CSPanel"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 22.0
 offset_right = 111.0

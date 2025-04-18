@@ -30,7 +30,11 @@ namespace escapetampere
 			AddChild(paintInstance);
 
 			paintAnim = paintInstance.GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+			paintInstance.GlobalPosition = crossing.GlobalPosition;
+
+
 			paintAnim.Play("paint");
+
 
 			await ToSignal (paintAnim, "animation_finished");
 			 EmitSignal(nameof(PaintFinished));

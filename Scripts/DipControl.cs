@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Globalization;
 
 namespace escapetampere
 {
@@ -23,6 +24,8 @@ namespace escapetampere
 			AddChild(digInstance);
 
 			dipAnim = digInstance.GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+
+			digInstance.GlobalPosition = bucket.GlobalPosition;
 			dipAnim.Play("dip");
 		}
 		private void OnCorrect()
