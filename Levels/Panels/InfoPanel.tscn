@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://di7k1yw8pwssr"]
 
-[ext_resource type="Script" path="res://Scripts/SchoolInfo.cs" id="1_wxyfu"]
+[ext_resource type="Script" path="res://Scripts/Panels/SchoolInfo.cs" id="1_gh84p"]
 
 [node name="InfoPanel" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_wxyfu")
+script = ExtResource("1_gh84p")
 
 [node name="Node2D" type="Node2D" parent="."]
 

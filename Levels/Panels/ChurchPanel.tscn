@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://dt8yp2cl082ku"]
 
-[ext_resource type="Script" path="res://Scripts/ChurchInfo.cs" id="1_5dmqu"]
+[ext_resource type="Script" path="res://Scripts/Panels/ChurchInfo.cs" id="1_8qeg0"]
 
 [node name="ChurchPanel" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_5dmqu")
+script = ExtResource("1_8qeg0")
 
 [node name="Node2D" type="Node2D" parent="."]
 

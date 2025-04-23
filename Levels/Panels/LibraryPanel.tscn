@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://crx1xwiwvqmfd"]
 
-[ext_resource type="Script" path="res://Scripts/LibraryInfo.cs" id="1_0b4ui"]
+[ext_resource type="Script" path="res://Scripts/Panels/LibraryInfo.cs" id="1_uj7wi"]
 
 [node name="LibraryPanel" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_0b4ui")
+script = ExtResource("1_uj7wi")
 
 [node name="Node2D" type="Node2D" parent="."]
 

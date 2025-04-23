@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://02pyujlesocj"]
+[gd_scene load_steps=13 format=3 uid="uid://02pyujlesocj"]
 
 [ext_resource type="Texture2D" uid="uid://c7am4sb5crekt" path="res://Art/map/BetterMap.png" id="3_7xhu0"]
 [ext_resource type="Texture2D" uid="uid://ddowyb8c8653u" path="res://Art/buttons/backbutt.png" id="4_xnjox"]
@@ -6,16 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://cyqugnbqfls6y" path="res://Art/buttons/info.png" id="6_4ofhy"]
 [ext_resource type="Texture2D" uid="uid://bi0cjpmsdmwmn" path="res://Art/map/incompletelevel.png" id="6_p321y"]
 [ext_resource type="Script" path="res://Scripts/SceneSwapper.cs" id="6_rb1d0"]
-[ext_resource type="Script" path="res://Scripts/ShowInfoButton.cs" id="7_jfjql"]
-[ext_resource type="PackedScene" uid="uid://di7k1yw8pwssr" path="res://Levels/Panels/InfoPanel.tscn" id="8_t63y7"]
-[ext_resource type="Script" path="res://Scripts/ShowNasiButton.cs" id="9_6bfe0"]
-[ext_resource type="Script" path="res://Scripts/ShowLibraryInfo.cs" id="9_ywgbx"]
-[ext_resource type="PackedScene" uid="uid://crx1xwiwvqmfd" path="res://Levels/Panels/LibraryPanel.tscn" id="10_gvty8"]
+[ext_resource type="Script" path="res://Scripts/Panels/ShowInfoButton.cs" id="8_6wrtx"]
+[ext_resource type="Script" path="res://Scripts/Panels/ShowNasiButton.cs" id="9_dsudq"]
+[ext_resource type="Script" path="res://Scripts/Panels/ShowLibraryInfo.cs" id="10_hxp3x"]
 [ext_resource type="Texture2D" uid="uid://3tjv4voyhs4r" path="res://Art/background/aloitatasta.png" id="10_wwowo"]
-[ext_resource type="Script" path="res://Scripts/ShowChurchButton.cs" id="13_nw1k3"]
-[ext_resource type="PackedScene" uid="uid://dt8yp2cl082ku" path="res://Levels/Panels/ChurchPanel.tscn" id="14_s22qw"]
-[ext_resource type="Script" path="res://Scripts/ShowToriButton.cs" id="15_586xv"]
-[ext_resource type="PackedScene" uid="uid://ci6vcaoxswxj5" path="res://Levels/Panels/ToriPanel.tscn" id="16_bpho1"]
+[ext_resource type="Script" path="res://Scripts/Panels/ShowToriButton.cs" id="12_4e0lj"]
+[ext_resource type="Script" path="res://Scripts/Panels/ShowChurchButton.cs" id="13_2r0mj"]
 
 [node name="Bigmap" type="Sprite2D"]
 position = Vector2(319, 159)
@@ -111,8 +107,7 @@ icon = ExtResource("6_4ofhy")
 flat = true
 icon_alignment = 1
 vertical_icon_alignment = 2
-script = ExtResource("7_jfjql")
-schoolInfoScene = ExtResource("8_t63y7")
+script = ExtResource("8_6wrtx")
 
 [node name="ShowNasiButton" type="Button" parent="."]
 offset_left = 433.0
@@ -122,7 +117,7 @@ offset_bottom = -250.0
 icon = ExtResource("6_4ofhy")
 flat = true
 icon_alignment = 1
-script = ExtResource("9_6bfe0")
+script = ExtResource("9_dsudq")
 
 [node name="ShowLibraryButton" type="Button" parent="."]
 offset_left = -25.7411
@@ -132,8 +127,7 @@ offset_bottom = 82.1683
 icon = ExtResource("6_4ofhy")
 flat = true
 vertical_icon_alignment = 0
-script = ExtResource("9_ywgbx")
-libraryInfoScene = ExtResource("10_gvty8")
+script = ExtResource("10_hxp3x")
 
 [node name="ShowChurchButton" type="Button" parent="."]
 offset_left = 283.152
@@ -144,8 +138,7 @@ icon = ExtResource("6_4ofhy")
 flat = true
 icon_alignment = 2
 vertical_icon_alignment = 2
-script = ExtResource("13_nw1k3")
-ChurchInfoScene = ExtResource("14_s22qw")
+script = ExtResource("13_2r0mj")
 
 [node name="ShowToriButton" type="Button" parent="."]
 offset_left = -746.0
@@ -156,5 +149,4 @@ icon = ExtResource("6_4ofhy")
 flat = true
 icon_alignment = 2
 vertical_icon_alignment = 2
-script = ExtResource("15_586xv")
-ToriInfoScene = ExtResource("16_bpho1")
+script = ExtResource("12_4e0lj")

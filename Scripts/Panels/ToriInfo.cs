@@ -9,6 +9,7 @@ namespace escapetampere
 		private JsonElement jsonData;
 		private Label WhatIsIt;
 		private Label addressLabel;
+		private Label nameLabel;
 		private Label schoolInfoLabel;
 		private Label schoolNameLabel;
 		private Label schoolAddressLabel;
@@ -19,6 +20,7 @@ namespace escapetampere
 			WhatIsIt = GetNode<Label>("Node2D/ToriPanel/VBoxContainer/Label");
 			schoolInfoLabel = GetNode<Label>("Node2D/ToriPanel/VBoxContainer/SchoolInfoLabel");
 			addressLabel = GetNode<Label>("Node2D/ToriPanel/VBoxContainer/AddressLabel");
+			nameLabel = GetNode<Label>("Node2D/ToriPanel/VBoxContainer/NameLabel");
 
 			jsonData = JsonDataLoader.Load("res://koulut.json") ?? default;
 
@@ -47,6 +49,7 @@ namespace escapetampere
 		public void ShowToriInfo(int index)
 		{
 			WhatIsIt.Text = Tr("WHAT");
+			nameLabel.Text = Tr("Pyynikintori");
 			addressLabel.Text = Tr("ADDRESS") + "Pirkankatu 7";
 			schoolInfoLabel.Text = Tr("NEAREST");
 			if (jsonData.TryGetProperty("features", out JsonElement features) && features.GetArrayLength() > index)

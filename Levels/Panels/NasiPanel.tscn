@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://cowau3fhmuku8"]
 
-[ext_resource type="Script" path="res://Scripts/NasiInfo.cs" id="1_0ranf"]
+[ext_resource type="Script" path="res://Scripts/Panels/NasiInfo.cs" id="1_givpd"]
 
 [node name="NasiInfo" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_0ranf")
+script = ExtResource("1_givpd")
 
 [node name="Node2D" type="Node2D" parent="."]
 
