@@ -113,24 +113,6 @@ icon = ExtResource("3_5vwhq")
 flat = true
 icon_alignment = 1
 
-[node name="SfxOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
-visible = false
-offset_left = 477.778
-offset_top = 348.148
-offset_right = 589.778
-offset_bottom = 472.148
-icon = ExtResource("3_5vwhq")
-flat = true
-
-[node name="SfxOffButton" type="Button" parent="Control/Panel/CanvasLayer"]
-visible = false
-offset_left = 625.926
-offset_top = 350.0
-offset_right = 729.926
-offset_bottom = 457.0
-icon = ExtResource("2_uldn3")
-flat = true
-
 [node name="Asetukset" type="Sprite2D" parent="Control/Panel/CanvasLayer"]
 position = Vector2(577.778, 55.5556)
 texture = ExtResource("13_ma42d")
