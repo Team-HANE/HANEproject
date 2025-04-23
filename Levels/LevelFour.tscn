@@ -130,6 +130,7 @@ script = ExtResource("24_usul7")
 paintScene = ExtResource("25_qpdt3")
 
 [node name="Vaarasuoja" type="TextureButton" parent="PaintControl" groups=["Mistakes"]]
+layout_mode = 0
 offset_left = 10.0
 offset_top = 4.0
 offset_right = 49.0

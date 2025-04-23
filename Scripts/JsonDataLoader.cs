@@ -6,12 +6,12 @@ namespace escapetampere
 {
     public static class JsonDataLoader
     {
-        private static JsonElement? cachedData = null;
+        private static JsonElement? Data = null;
 
         public static JsonElement? Load(string path)
         {
-            if (cachedData != null)
-                return cachedData;
+            if (Data != null)
+                return Data;
 
             if (!FileAccess.FileExists(path))
             {
@@ -23,8 +23,8 @@ namespace escapetampere
             {
                 using FileAccess file = FileAccess.Open(path, FileAccess.ModeFlags.Read);
                 string jsonText = file.GetAsText();
-                cachedData = JsonSerializer.Deserialize<JsonElement>(jsonText);
-                return cachedData;
+                Data = JsonSerializer.Deserialize<JsonElement>(jsonText);
+                return Data;
             }
             catch (Exception ex)
             {
