@@ -68,6 +68,7 @@ scale = Vector2(0.281626, 0.262115)
 texture = ExtResource("8_ge08d")
 
 [node name="Fi" type="Button" parent="Control/Panel/CanvasLayer"]
+z_index = 1
 offset_left = 490.741
 offset_top = 135.185
 offset_right = 578.741
@@ -76,6 +77,7 @@ icon = ExtResource("9_i5234")
 flat = true
 
 [node name="Eng" type="Button" parent="Control/Panel/CanvasLayer"]
+z_index = 1
 offset_left = 637.037
 offset_top = 135.185
 offset_right = 725.037
@@ -94,6 +96,7 @@ _sceneToLoadPath = "res://Levels/mainmenu.tscn"
 metadata/_edit_use_anchors_ = true
 
 [node name="SoundOffButton" type="Button" parent="Control/Panel/CanvasLayer"]
+z_index = 1
 clip_contents = true
 offset_left = 640.741
 offset_top = 307.407
@@ -103,6 +106,7 @@ icon = ExtResource("2_uldn3")
 flat = true
 
 [node name="SoundOnButton" type="Button" parent="Control/Panel/CanvasLayer"]
+z_index = 1
 clip_contents = true
 custom_minimum_size = Vector2(30, 30)
 offset_left = 468.518
